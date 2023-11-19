@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/tb_xorop_isim_beh.exe" -prj "/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/tb_xorop_beh.prj" "work.tb_xorop" 
