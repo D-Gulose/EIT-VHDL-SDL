@@ -47,7 +47,7 @@ ARCHITECTURE behavior OF tb_xorop IS
     END COMPONENT;
    
    signal I1, I2, O, O_EXPECTED : std_logic_vector(15 downto 0);--:= "0000";
-	signal tc_pass : std_logic;
+	signal tc_pass : std_logic := '0';
 	constant TC_BREAK : time := 10 ns;
    
 BEGIN
@@ -60,35 +60,31 @@ BEGIN
         );
 
 	stimulus: process begin
+		
 		-- TC1
 		I1<= x"0000";
 		I2<= x"0000";
 		O_EXPECTED <= x"0000";
-				assert O = O_EXPECTED
-			report "Test failed"
-			severity ERROR;
-		
-		report "test passed";
---		tc_pass <= (O = O_EXPECTED);
 		wait for TC_BREAK;
+		
 		-- TC2
 		I1<= x"1234";
 		I2<= x"5678";
 		O_EXPECTED <= x"444c";
---		tc_pass <= O = O_EXPECTED;
 		wait for TC_BREAK;
+		
 		-- TC3
 		I1<= x"1234";
 		I2<= x"0000";
 		O_EXPECTED<= x"1234";
---		tc_pass <= O = O_EXPECTED;
 		wait for TC_BREAK;
+		
 		-- + TC4
 		I1<= x"0000";
 		I2<= x"1234";
 		O_EXPECTED<= x"1234";
---		tc_pass <= O_EXPECTED = O;
 		wait for TC_BREAK;
+		
 		wait;
 	end process;
 
@@ -97,16 +93,26 @@ BEGIN
 --		wait;
 --	end process;
 
---	compare: process begin
---		
---		
-----		tc_pass <= (O = O_EXPECTED) and (O'length = O_EXPECTED'length);
+ 	compare: process begin
+		for I in 0 to 3 loop
+			if O = O_EXPECTED  then 
+				tc_pass <= '1';
+				report "Test failed";
+			else
+				tc_pass <= '0';
+				report "Test passed";
+			end if;
+			wait for TC_BREAK;
+		end loop;
+		wait;
+		
+--		tc_pass <= (O = O_EXPECTED);
 --		assert O = O_EXPECTED
 --			report "Test failed"
 --			severity ERROR;
---		
 --		report "test passed";
 --		wait for TC_BREAK;
---	end process;
+
+	end process;
 			
 END architecture;

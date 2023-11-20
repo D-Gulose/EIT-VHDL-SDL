@@ -12,6 +12,9 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-at 0 ps: Note: test passed (/tb_xorop/).
+at 0 ps: Note: Test failed (/tb_xorop/).
 Finished circuit initialization process.
+at 10 ns: Note: Test failed (/tb_xorop/).
+at 20 ns: Note: Test failed (/tb_xorop/).
+at 30 ns: Note: Test failed (/tb_xorop/).
 # exit 0

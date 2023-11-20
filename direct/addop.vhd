@@ -46,7 +46,7 @@ begin
 	sum <= ('0' & unsigned(I1) )+ ('0' & unsigned(I2));
 	O <= std_logic_vector(sum(15 downto 0));
 	
-	wait;
+	wait; 
 	end process;
 
 end Behavioral;

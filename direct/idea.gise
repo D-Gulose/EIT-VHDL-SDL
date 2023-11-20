@@ -66,50 +66,45 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1700394959" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1700394959">
+    <transform xil_pn:end_ts="1700521232" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1700521232">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1700394959" xil_pn:in_ck="-8852174699285111459" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1700417665">
-      <status xil_pn:value="ExecutingRun"/>
+    <transform xil_pn:end_ts="1700521232" xil_pn:in_ck="5402855825807005098" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1700521232">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputAdded"/>
-      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="addop.vhd"/>
       <outfile xil_pn:name="idea.vhd"/>
       <outfile xil_pn:name="mulop.vhd"/>
+      <outfile xil_pn:name="tb_addop.vhd"/>
       <outfile xil_pn:name="tb_xorop.vhd"/>
       <outfile xil_pn:name="xorop.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1700394960" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="5940145855207783971" xil_pn:start_ts="1700394960">
+    <transform xil_pn:end_ts="1700521232" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="5940145855207783971" xil_pn:start_ts="1700521232">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1700394960" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="75494274100487909" xil_pn:start_ts="1700394960">
+    <transform xil_pn:end_ts="1700521232" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="75494274100487909" xil_pn:start_ts="1700521232">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1700394960" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-5344199949301411750" xil_pn:start_ts="1700394960">
+    <transform xil_pn:end_ts="1700521232" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="-5344199949301411750" xil_pn:start_ts="1700521232">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1700394960" xil_pn:in_ck="-5150246732786121915" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1700394960">
+    <transform xil_pn:end_ts="1700521232" xil_pn:in_ck="5402855825807005098" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1700521232">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="InputAdded"/>
+      <outfile xil_pn:name="addop.vhd"/>
       <outfile xil_pn:name="idea.vhd"/>
       <outfile xil_pn:name="mulop.vhd"/>
+      <outfile xil_pn:name="tb_addop.vhd"/>
       <outfile xil_pn:name="tb_xorop.vhd"/>
       <outfile xil_pn:name="xorop.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1700394962" xil_pn:in_ck="-5150246732786121915" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2358905382328447864" xil_pn:start_ts="1700394960">
+    <transform xil_pn:end_ts="1700521235" xil_pn:in_ck="5402855825807005098" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-2358905382328447864" xil_pn:start_ts="1700521232">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
@@ -119,13 +114,9 @@
       <outfile xil_pn:name="tb_xorop_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1700394963" xil_pn:in_ck="-9015860027830902973" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6795229045039823691" xil_pn:start_ts="1700394962">
+    <transform xil_pn:end_ts="1700521235" xil_pn:in_ck="-9015860027830902973" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-6795229045039823691" xil_pn:start_ts="1700521235">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="tb_xorop_isim_beh.wdb"/>
@@ -162,6 +153,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="idea.lso"/>
@@ -184,6 +179,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="idea.bld"/>
@@ -194,6 +190,7 @@
       <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
       <outfile xil_pn:name="idea_map.map"/>
       <outfile xil_pn:name="idea_map.mrp"/>

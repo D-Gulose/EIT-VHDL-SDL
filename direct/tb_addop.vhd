@@ -2,7 +2,7 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   18:14:27 11/19/2023
+-- Create Date:   22:38:33 11/20/2023
 -- Design Name:   
 -- Module Name:   /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/tb_addop.vhd
 -- Project Name:  idea
