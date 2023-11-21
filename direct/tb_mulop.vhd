@@ -2,15 +2,15 @@
 -- Company: 
 -- Engineer:
 --
--- Create Date:   21:55:23 11/18/2023
+-- Create Date:   18:27:04 11/21/2023
 -- Design Name:   
--- Module Name:   /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/tb_xorop.vhd
+-- Module Name:   /nas/lrz/home/ge74men/Rep-EIT-VHDL-SDL/direct/tb_mulop.vhd
 -- Project Name:  idea
 -- Target Device:  
 -- Tool versions:  
 -- Description:   
 -- 
--- VHDL Test Bench Created by ISE for module: xorop
+-- VHDL Test Bench Created by ISE for module: mulop
 -- 
 -- Dependencies:
 -- 
@@ -27,70 +27,67 @@
 --------------------------------------------------------------------------------
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
-use ieee.std_logic_unsigned.all;
  
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
  
-ENTITY tb_xorop IS
-END tb_xorop; -- no input/output
+ENTITY tb_mulop IS
+END tb_mulop;
  
-ARCHITECTURE behavior OF tb_xorop IS 
+ARCHITECTURE behavior OF tb_mulop IS 
  
-    COMPONENT xorop -- Component Declaration for the Unit Under Test (UUT)
-    PORT(
-         I1 : IN  std_logic_vector(15 downto 0);
-         I2 : IN  std_logic_vector(15 downto 0);
-         O : OUT  std_logic_vector(15 downto 0)
+    -- Component Declaration for the Unit Under Test (UUT)
+ 
+   COMPONENT mulop
+   PORT(
+         I_1 : IN  std_logic_vector(15 downto 0);
+         I_2 : IN  std_logic_vector(15 downto 0);
+         O_1 : OUT  std_logic_vector(15 downto 0)
         );
-    END COMPONENT;
-   
-   signal I1, I2, O, O_EXPECTED : std_logic_vector(15 downto 0);--:= "0000";
+   END COMPONENT;
+    
+   --Inputs
+   signal I_1, I_2 : std_logic_vector(15 downto 0) := (others => '0');
+   signal O_1: std_logic_vector(15 downto 0) := (others => '0');
+	signal O_expected : std_logic_vector(15 downto 0) := (others => '0');
 	signal tc_pass : std_logic := '0';
 	constant TC_BREAK : time := 10 ns;
-   
-BEGIN
- 
-	-- Instantiate the Unit Under Test (UUT)
-   UUT_xorop_instance: xorop PORT MAP (
-          I1 => I1,
-          I2 => I2,
-          O => O --?
-        );
+	
+begin
 
-	stimulus: process begin
+	uut_mulop_instance: mulop port map (
+		I_1 => I_1,
+		I_2 => I_2,
+		O_1 => O_1 );
+	
+	test: process begin
 		
 		-- TC1
-		I1<= x"0000";
-		I2<= x"0000";
-		O_EXPECTED <= x"0000";
+		I_1<= x"0000";
+		I_2<= x"0000";
+		O_EXPECTED <= x"0001";
 		wait for TC_BREAK;
 		
 		-- TC2
-		I1<= x"1234";
-		I2<= x"5678";
-		O_EXPECTED <= x"444c";
+		I_1 <= x"0001";
+		I_2 <= x"0000";
+		O_EXPECTED <= x"0000";
 		wait for TC_BREAK;
 		
-		-- TC3
-		I1<= x"1234";
-		I2<= x"0000";
-		O_EXPECTED<= x"1234";
-		wait for TC_BREAK;
-		
-		-- + TC4
-		I1<= x"0000";
-		I2<= x"1234";
-		O_EXPECTED<= x"1234";
+		-- TC
+		I_1 <= x"7fff";
+		I_2 <= x"7fff";
+		O_EXPECTED <= x"c003";
 		wait for TC_BREAK;
 		
 		wait;
 	end process;
 	
- 	compare: process begin
+	compare: process begin
+		
 		for I in 0 to 3 loop
-			if O = O_EXPECTED  then 
+			if O_1 = O_EXPECTED  then 
 				tc_pass <= '1';
 				report "Test passed";
 			else
@@ -99,7 +96,8 @@ BEGIN
 			end if;
 			wait for TC_BREAK;
 		end loop;
+		
 		wait;
 	end process;
-			
+
 END architecture;

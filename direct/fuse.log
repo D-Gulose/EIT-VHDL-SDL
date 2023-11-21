@@ -1,23 +1,24 @@
-Running: /opt/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/tb_xorop_isim_beh.exe -prj /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/tb_xorop_beh.prj work.tb_xorop 
+Running: /nas/ei/share/tools/xilinx/ise/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /nas/lrz/home/ge74men/Rep-EIT-VHDL-SDL/direct/tb_mulop_isim_beh.exe -prj /nas/lrz/home/ge74men/Rep-EIT-VHDL-SDL/direct/tb_mulop_beh.prj work.tb_mulop 
 ISim P.20131013 (signature 0xfbc00daa)
-Number of CPUs detected in this system: 1
-Turning on mult-threading, number of parallel sub-compilation jobs: 0 
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/xorop.vhd" into library work
-Parsing VHDL file "/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/tb_xorop.vhd" into library work
+Parsing VHDL file "/nas/lrz/home/ge74men/Rep-EIT-VHDL-SDL/direct/mulop.vhd" into library work
+Parsing VHDL file "/nas/lrz/home/ge74men/Rep-EIT-VHDL-SDL/direct/tb_mulop.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 96644 KB
-Fuse CPU Usage: 560 ms
+Fuse Memory Usage: 91984 KB
+Fuse CPU Usage: 1040 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package std_logic_arith
 Compiling package std_logic_unsigned
-Compiling architecture behavioral of entity xorop [xorop_default]
-Compiling architecture behavior of entity tb_xorop
+Compiling architecture behavioral of entity mulop [mulop_default]
+Compiling architecture behavior of entity tb_mulop
 Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
 Compiled 7 VHDL Units
-Built simulation executable /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/tb_xorop_isim_beh.exe
-Fuse Memory Usage: 111864 KB
-Fuse CPU Usage: 750 ms
-GCC CPU Usage: 360 ms
+Built simulation executable /nas/lrz/home/ge74men/Rep-EIT-VHDL-SDL/direct/tb_mulop_isim_beh.exe
+Fuse Memory Usage: 664244 KB
+Fuse CPU Usage: 1160 ms
+GCC CPU Usage: 1530 ms

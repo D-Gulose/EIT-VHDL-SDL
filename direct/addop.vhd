@@ -19,7 +19,9 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
-use IEEE.NUMERIC_STD.ALL;
+--use ieee.numeric_std.all;
+--use IEEE.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -38,16 +40,16 @@ entity addop is
 end addop;
 
 architecture Behavioral of addop is
-	signal sum : UNSIGNED(16 downto 0);
-begin
+	signal sum : std_logic_vector(16 downto 0);
+
+begin	
 	
-	process begin
-	sum <= (others => '0');
-	sum <= ('0' & unsigned(I1) )+ ('0' & unsigned(I2));
-	O <= std_logic_vector(sum(15 downto 0));
-	
-	wait; 
+	process(I1, I2, sum)
+		begin
+		sum <= (others => '0');
+		sum <= ('0' & I1) + ('0' + I2);
+		O <= sum(15 downto 0);
+	 
 	end process;
 
 end Behavioral;
-

@@ -27,6 +27,7 @@
 --------------------------------------------------------------------------------
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
+USE IEEE.std_logic_unsigned.all;
  
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -49,46 +50,76 @@ ARCHITECTURE behavior OF tb_addop IS
     
 
    --Inputs
-   signal I1 : std_logic_vector(15 downto 0) := (others => '0');
-   signal I2 : std_logic_vector(15 downto 0) := (others => '0');
+--   signal I1 : std_logic_vector(15 downto 0) := (others => '0');
+--   signal I2 : std_logic_vector(15 downto 0) := (others => '0');
 
- 	--Outputs
-   signal O : std_logic_vector(15 downto 0);
-   -- No clocks detected in port list. Replace <clock> below with 
-   -- appropriate port name 
- 
-   constant <clock>_period : time := 10 ns;
- 
+   signal I1, I2, O, O_EXPECTED : std_logic_vector(15 downto 0);
+	signal tc_pass : std_logic := '0';
+	constant TC_BREAK : time := 10 ns;
+   
 BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
-   uut: addop PORT MAP (
+   UUT_addop_instance: addop PORT MAP (
           I1 => I1,
           I2 => I2,
-          O => O
+          O => O 
         );
 
-   -- Clock process definitions
-   <clock>_process :process
-   begin
-		<clock> <= '0';
-		wait for <clock>_period/2;
-		<clock> <= '1';
-		wait for <clock>_period/2;
-   end process;
- 
+	stimulus: process begin
+		
+		-- TC1
+		I1<= x"0000";
+		I2<= x"0000";
+		O_EXPECTED <= x"0000";
+		wait for TC_BREAK;
+		
+		-- TC2
+		I1<= x"7ce3";
+		I2<= x"0000";
+		O_EXPECTED <= x"7ce3";
+		wait for TC_BREAK;
+		
+		-- TC3
+		I1<= x"7ce3";
+		I2<= x"2db6";
+		O_EXPECTED<= x"aa99";
+		wait for TC_BREAK;
+		
+		-- TC4
+		I1<= x"fce3";
+		I2<= x"2db6";
+		O_EXPECTED<= x"2a99";
+		wait for TC_BREAK;
+		
+		-- TC5
+		I1<= x"fce3";
+		I2<= x"edb6";
+		O_EXPECTED<= x"ea99";
+		wait for TC_BREAK;
+		
+		-- TC6
+		I1<= x"7ce3";
+		I2<= x"edb6";
+		O_EXPECTED<= x"6a99";
+		wait for TC_BREAK;
+		
+		wait;
+	end process;
+	
+ 	compare: process begin
+		for I in 0 to 6 loop
+			if O = O_EXPECTED  then 
+				tc_pass <= '1';
+				report "Test passed";
+			else
+				tc_pass <= '0';
+				report "Test failed";
+			end if;
+			wait for TC_BREAK;
+		end loop;
+		wait;
+	end process;
+			
+END architecture;
 
-   -- Stimulus process
-   stim_proc: process
-   begin		
-      -- hold reset state for 100 ns.
-      wait for 100 ns;	
-
-      wait for <clock>_period*10;
-
-      -- insert stimulus here 
-
-      wait;
-   end process;
-
-END;
