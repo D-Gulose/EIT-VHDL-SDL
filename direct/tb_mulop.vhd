@@ -76,17 +76,69 @@ begin
 		wait for TC_BREAK;
 		
 		-- TC
+		I_1 <= x"0001";
+		I_2 <= x"0001";
+		O_EXPECTED <= x"0001";
+		wait for TC_BREAK;
+		
+		-- TC
+		I_1 <= x"0003";
+		I_2 <= x"0001";
+		O_EXPECTED <= x"0003";
+		wait for TC_BREAK;
+
+
+		-- TC
+		I_1 <= x"0003";
+		I_2 <= x"0003";
+		O_EXPECTED <= x"0009";
+		wait for TC_BREAK;
+
+
+		-- TC
+		I_1 <= x"7fff";
+		I_2 <= x"0003";
+		O_EXPECTED <= x"7ffc";
+		wait for TC_BREAK;
+
+
+		-- TC
 		I_1 <= x"7fff";
 		I_2 <= x"7fff";
 		O_EXPECTED <= x"c003";
 		wait for TC_BREAK;
+		
+		-- TC
+		I_1 <= x"ffff";
+		I_2 <= x"7fff";
+		O_EXPECTED <= x"0003";
+		wait for TC_BREAK;
+		
+		-- TC
+		I_1 <= x"ffff";
+		I_2 <= x"ffff";
+		O_EXPECTED <= x"0004";
+		wait for TC_BREAK;
+
+		-- TC
+		I_1 <= x"8000";
+		I_2 <= x"ffff";
+		O_EXPECTED <= x"0001";
+		wait for TC_BREAK;
+		
+		-- TC
+		I_1 <= x"8000";
+		I_2 <= x"8000";
+		O_EXPECTED <= x"c001";
+		wait for TC_BREAK;
+
 		
 		wait;
 	end process;
 	
 	compare: process begin
 		
-		for I in 0 to 3 loop
+		for I in 0 to 10 loop
 			if O_1 = O_EXPECTED  then 
 				tc_pass <= '1';
 				report "Test passed";
