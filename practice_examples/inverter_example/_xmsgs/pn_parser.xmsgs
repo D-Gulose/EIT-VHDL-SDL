@@ -8,7 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/practice_examples/inverter_example/tb_inverter.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/practice_examples/inverter_example/inverter.vhd&quot; into library work</arg>
 </msg>
 
 </messages>
