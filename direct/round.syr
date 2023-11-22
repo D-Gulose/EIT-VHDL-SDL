@@ -1,0 +1,496 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.01 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.01 secs
+ 
+--> 
+Reading design: round.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "round.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "round"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : round
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/mulop.vhd" in Library work.
+Architecture behavioral of Entity mulop is up to date.
+Compiling vhdl file "/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/addop.vhd" in Library work.
+Architecture behavioral of Entity addop is up to date.
+Compiling vhdl file "/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/xorop.vhd" in Library work.
+Architecture behavioral of Entity xorop is up to date.
+Compiling vhdl file "/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/round.vhd" in Library work.
+Architecture behavioral of Entity round is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <round> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <mulop> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <addop> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <xorop> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <round> in library <work> (Architecture <behavioral>).
+Entity <round> analyzed. Unit <round> generated.
+
+Analyzing Entity <mulop> in library <work> (Architecture <behavioral>).
+Entity <mulop> analyzed. Unit <mulop> generated.
+
+Analyzing Entity <addop> in library <work> (Architecture <behavioral>).
+Entity <addop> analyzed. Unit <addop> generated.
+
+Analyzing Entity <xorop> in library <work> (Architecture <behavioral>).
+Entity <xorop> analyzed. Unit <xorop> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <mulop>.
+    Related source file is "/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/mulop.vhd".
+WARNING:Xst:653 - Signal <base2_power16> is used but never assigned. This sourceless signal will be automatically connected to value 10000000000000000.
+    Found 32-bit subtractor for signal <sum$addsub0000> created at line 74.
+    Found 32-bit adder for signal <sum$addsub0001> created at line 76.
+    Found 17-bit comparator less for signal <sum$cmp_lt0000> created at line 75.
+    Found 32-bit addsub for signal <sum$mux0000> created at line 75.
+    Found 17x17-bit multiplier for signal <tmp$mult0000> created at line 71.
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+	inferred   1 Comparator(s).
+Unit <mulop> synthesized.
+
+
+Synthesizing Unit <addop>.
+    Related source file is "/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/addop.vhd".
+WARNING:Xst:646 - Signal <sum<16>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 17-bit adder for signal <sum>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <addop> synthesized.
+
+
+Synthesizing Unit <xorop>.
+    Related source file is "/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/xorop.vhd".
+    Found 16-bit xor2 for signal <O>.
+Unit <xorop> synthesized.
+
+
+Synthesizing Unit <round>.
+    Related source file is "/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/round.vhd".
+WARNING:Xst:1780 - Signal <wz6> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <wz5> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <wz4> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <wz3> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <wz2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <wz1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <wy4> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <wy3> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <wy2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <wy1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <wx4> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <wx3> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <wx2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <wx1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <round> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 4
+ 17x17-bit multiplier                                  : 4
+# Adders/Subtractors                                   : 16
+ 17-bit adder                                          : 4
+ 32-bit adder                                          : 4
+ 32-bit addsub                                         : 4
+ 32-bit subtractor                                     : 4
+# Comparators                                          : 4
+ 17-bit comparator less                                : 4
+# Xors                                                 : 6
+ 16-bit xor2                                           : 6
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 4
+ 17x17-bit multiplier                                  : 4
+# Adders/Subtractors                                   : 16
+ 16-bit adder                                          : 4
+ 32-bit adder                                          : 4
+ 32-bit addsub                                         : 4
+ 32-bit subtractor                                     : 4
+# Comparators                                          : 4
+ 17-bit comparator less                                : 4
+# Xors                                                 : 6
+ 16-bit xor2                                           : 6
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <round> ...
+
+Optimizing unit <mulop> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block round, actual ratio is 6.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : round.ngr
+Top Level Output File Name         : round
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 224
+
+Cell Usage :
+# BELS                             : 885
+#      GND                         : 1
+#      INV                         : 4
+#      LUT2                        : 256
+#      LUT3                        : 81
+#      LUT4                        : 101
+#      MUXCY                       : 248
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XORCY                       : 192
+# IO Buffers                       : 224
+#      IBUF                        : 160
+#      OBUF                        : 64
+# MULTs                            : 4
+#      MULT18X18SIO                : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      237  out of   4656     5%  
+ Number of 4 input LUTs:                442  out of   9312     4%  
+ Number of IOs:                         224
+ Number of bonded IOBs:                 224  out of    232    96%  
+ Number of MULT18X18SIOs:                 4  out of     20    20%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 61.061ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 46472616603009024 / 64
+-------------------------------------------------------------------------
+Delay:               61.061ns (Levels of Logic = 112)
+  Source:            z4<0> (PAD)
+  Destination:       y3<15> (PAD)
+
+  Data Path: z4<0> to y3<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.218   0.622  z4_0_IBUF (z4_0_IBUF)
+     LUT4:I0->O            1   0.704   0.595  lv1_mod_r/i2var_cmp_eq000012 (lv1_mod_r/i2var_cmp_eq000012)
+     LUT4:I0->O            1   0.704   0.420  lv1_mod_r/i2var_cmp_eq000076 (lv1_mod_r/i2var_cmp_eq0000)
+     MULT18X18SIO:B16->P16    3   4.860   0.610  lv1_mod_r/Mmult_tmp_mult0000 (lv1_mod_r/tmp_mult0000<16>)
+     LUT2:I1->O            1   0.704   0.000  lv1_mod_r/Mcompar_sum_cmp_lt0000_lut<0> (lv1_mod_r/Mcompar_sum_cmp_lt0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<0> (lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<1> (lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<2> (lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<3> (lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<4> (lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<5> (lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<6> (lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<7> (lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<8> (lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<9> (lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<10> (lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<11> (lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<12> (lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<13> (lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<14> (lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<15> (lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<15>)
+     MUXCY:CI->O          32   0.059   1.437  lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<16> (lv1_mod_r/Mcompar_sum_cmp_lt0000_cy<16>)
+     LUT3:I0->O            1   0.704   0.595  lv1_mod_r/sum_mux0001<0>1 (lv1_mod_r/sum_mux0001<0>)
+     LUT3:I0->O            1   0.704   0.000  lv1_mod_r/Maddsub_sum_mux0000_lut<0> (lv1_mod_r/Maddsub_sum_mux0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  lv1_mod_r/Maddsub_sum_mux0000_cy<0> (lv1_mod_r/Maddsub_sum_mux0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  lv1_mod_r/Maddsub_sum_mux0000_cy<1> (lv1_mod_r/Maddsub_sum_mux0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  lv1_mod_r/Maddsub_sum_mux0000_cy<2> (lv1_mod_r/Maddsub_sum_mux0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  lv1_mod_r/Maddsub_sum_mux0000_cy<3> (lv1_mod_r/Maddsub_sum_mux0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  lv1_mod_r/Maddsub_sum_mux0000_cy<4> (lv1_mod_r/Maddsub_sum_mux0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  lv1_mod_r/Maddsub_sum_mux0000_cy<5> (lv1_mod_r/Maddsub_sum_mux0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  lv1_mod_r/Maddsub_sum_mux0000_cy<6> (lv1_mod_r/Maddsub_sum_mux0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  lv1_mod_r/Maddsub_sum_mux0000_cy<7> (lv1_mod_r/Maddsub_sum_mux0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  lv1_mod_r/Maddsub_sum_mux0000_cy<8> (lv1_mod_r/Maddsub_sum_mux0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  lv1_mod_r/Maddsub_sum_mux0000_cy<9> (lv1_mod_r/Maddsub_sum_mux0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  lv1_mod_r/Maddsub_sum_mux0000_cy<10> (lv1_mod_r/Maddsub_sum_mux0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  lv1_mod_r/Maddsub_sum_mux0000_cy<11> (lv1_mod_r/Maddsub_sum_mux0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  lv1_mod_r/Maddsub_sum_mux0000_cy<12> (lv1_mod_r/Maddsub_sum_mux0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  lv1_mod_r/Maddsub_sum_mux0000_cy<13> (lv1_mod_r/Maddsub_sum_mux0000_cy<13>)
+     XORCY:CI->O           2   0.804   0.622  lv1_mod_r/Maddsub_sum_mux0000_xor<14> (o_lv1_mod_r<14>)
+     LUT2:I0->O            2   0.704   0.622  lv2_xor/Mxor_O_Result<14>1 (o_lv2_xor<14>)
+     LUT4:I0->O            1   0.704   0.499  lv4_mod_l/i1var_cmp_eq000086_SW0 (N2)
+     LUT4:I1->O            1   0.704   0.420  lv4_mod_l/i1var_cmp_eq000086 (lv4_mod_l/i1var_cmp_eq0000)
+     MULT18X18SIO:A16->P16    3   4.860   0.610  lv4_mod_l/Mmult_tmp_mult0000 (lv4_mod_l/tmp_mult0000<16>)
+     LUT2:I1->O            1   0.704   0.000  lv4_mod_l/Mcompar_sum_cmp_lt0000_lut<0> (lv4_mod_l/Mcompar_sum_cmp_lt0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<0> (lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<1> (lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<2> (lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<3> (lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<4> (lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<5> (lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<6> (lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<7> (lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<8> (lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<9> (lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<10> (lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<11> (lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<12> (lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<13> (lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<14> (lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<15> (lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<15>)
+     MUXCY:CI->O          32   0.059   1.437  lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<16> (lv4_mod_l/Mcompar_sum_cmp_lt0000_cy<16>)
+     LUT3:I0->O            1   0.704   0.595  lv4_mod_l/sum_mux0001<0>1 (lv4_mod_l/sum_mux0001<0>)
+     LUT3:I0->O            1   0.704   0.000  lv4_mod_l/Maddsub_sum_mux0000_lut<0> (lv4_mod_l/Maddsub_sum_mux0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  lv4_mod_l/Maddsub_sum_mux0000_cy<0> (lv4_mod_l/Maddsub_sum_mux0000_cy<0>)
+     XORCY:CI->O           2   0.804   0.482  lv4_mod_l/Maddsub_sum_mux0000_xor<1> (o_lv4_mod_l<1>)
+     LUT3:I2->O            1   0.704   0.000  lv4_add_r/Madd_sum_Madd_lut<1> (lv4_add_r/Madd_sum_Madd_lut<1>)
+     MUXCY:S->O            1   0.464   0.000  lv4_add_r/Madd_sum_Madd_cy<1> (lv4_add_r/Madd_sum_Madd_cy<1>)
+     XORCY:CI->O           2   0.804   0.482  lv4_add_r/Madd_sum_Madd_xor<2> (o_lv4_add_r<2>)
+     LUT3:I2->O            1   0.704   0.595  lv5_mod_r/i2var_cmp_eq00008 (lv5_mod_r/i2var_cmp_eq00008)
+     LUT4:I0->O            1   0.704   0.455  lv5_mod_r/i2var_cmp_eq000024 (lv5_mod_r/i2var_cmp_eq000024)
+     LUT4:I2->O            1   0.704   0.420  lv5_mod_r/i2var_cmp_eq000088 (lv5_mod_r/i2var_cmp_eq0000)
+     MULT18X18SIO:B16->P16    3   4.860   0.610  lv5_mod_r/Mmult_tmp_mult0000 (lv5_mod_r/tmp_mult0000<16>)
+     LUT2:I1->O            1   0.704   0.000  lv5_mod_r/Mcompar_sum_cmp_lt0000_lut<0> (lv5_mod_r/Mcompar_sum_cmp_lt0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<0> (lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<1> (lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<2> (lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<3> (lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<4> (lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<5> (lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<6> (lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<7> (lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<8> (lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<9> (lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<10> (lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<11> (lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<12> (lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<13> (lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<14> (lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<15> (lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<15>)
+     MUXCY:CI->O          32   0.059   1.437  lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<16> (lv5_mod_r/Mcompar_sum_cmp_lt0000_cy<16>)
+     LUT3:I0->O            1   0.704   0.595  lv5_mod_r/sum_mux0001<0>1 (lv5_mod_r/sum_mux0001<0>)
+     LUT3:I0->O            1   0.704   0.000  lv5_mod_r/Maddsub_sum_mux0000_lut<0> (lv5_mod_r/Maddsub_sum_mux0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  lv5_mod_r/Maddsub_sum_mux0000_cy<0> (lv5_mod_r/Maddsub_sum_mux0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  lv5_mod_r/Maddsub_sum_mux0000_cy<1> (lv5_mod_r/Maddsub_sum_mux0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  lv5_mod_r/Maddsub_sum_mux0000_cy<2> (lv5_mod_r/Maddsub_sum_mux0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  lv5_mod_r/Maddsub_sum_mux0000_cy<3> (lv5_mod_r/Maddsub_sum_mux0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  lv5_mod_r/Maddsub_sum_mux0000_cy<4> (lv5_mod_r/Maddsub_sum_mux0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  lv5_mod_r/Maddsub_sum_mux0000_cy<5> (lv5_mod_r/Maddsub_sum_mux0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  lv5_mod_r/Maddsub_sum_mux0000_cy<6> (lv5_mod_r/Maddsub_sum_mux0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  lv5_mod_r/Maddsub_sum_mux0000_cy<7> (lv5_mod_r/Maddsub_sum_mux0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  lv5_mod_r/Maddsub_sum_mux0000_cy<8> (lv5_mod_r/Maddsub_sum_mux0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  lv5_mod_r/Maddsub_sum_mux0000_cy<9> (lv5_mod_r/Maddsub_sum_mux0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  lv5_mod_r/Maddsub_sum_mux0000_cy<10> (lv5_mod_r/Maddsub_sum_mux0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  lv5_mod_r/Maddsub_sum_mux0000_cy<11> (lv5_mod_r/Maddsub_sum_mux0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  lv5_mod_r/Maddsub_sum_mux0000_cy<12> (lv5_mod_r/Maddsub_sum_mux0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  lv5_mod_r/Maddsub_sum_mux0000_cy<13> (lv5_mod_r/Maddsub_sum_mux0000_cy<13>)
+     XORCY:CI->O           3   0.804   0.610  lv5_mod_r/Maddsub_sum_mux0000_xor<14> (o_lv5_mod_r<14>)
+     LUT2:I1->O            1   0.704   0.000  lv5_add_l/Madd_sum_Madd_lut<14> (lv5_add_l/Madd_sum_Madd_lut<14>)
+     MUXCY:S->O            0   0.464   0.000  lv5_add_l/Madd_sum_Madd_cy<14> (lv5_add_l/Madd_sum_Madd_cy<14>)
+     XORCY:CI->O           2   0.804   0.622  lv5_add_l/Madd_sum_Madd_xor<15> (o_lv5_add_l<15>)
+     LUT2:I0->O            1   0.704   0.420  lv7_xor_r/Mxor_O_Result<15>1 (y4_15_OBUF)
+     OBUF:I->O                 3.272          y4_15_OBUF (y4<15>)
+    ----------------------------------------
+    Total                     61.061ns (45.248ns logic, 15.813ns route)
+                                       (74.1% logic, 25.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 0.97 secs
+ 
+--> 
+
+
+Total memory usage is 622628 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   16 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

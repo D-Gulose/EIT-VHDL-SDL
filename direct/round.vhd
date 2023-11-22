@@ -29,10 +29,11 @@ use IEEE.STD_LOGIC_1164.ALL;
 --library UNISIM;
 --use UNISIM.VComponents.all;
 
-entity round is
-    Port ( x1, x2, x3, x4 : in  std_logic_vector(15 downto 0);
-           z1, z2, z3, z4, z5, z6 : in  std_logic_vector(15 downto 0);
-			  y1, y2, y3, y4 : out  std_logic_vector(15 downto 0));
+entity round is 
+	Port ( 
+		x1, x2, x3, x4, z1, z2, z3, z4, z5, z6 : in std_logic_vector(15 downto 0);
+		y1, y2, y3, y4 : out std_logic_vector(15 downto 0)
+	);
 end round;
 
 architecture Behavioral of round is
@@ -58,12 +59,12 @@ architecture Behavioral of round is
 	); end component;
 
 	-- SIGNALS
-	signal 
-		wx1, wx2, wx3, wx4, 
-		wz1, wz2, wz3, wz4, wz5, wz6, 
-		wy1, wy2, wy3, wy4 
-	: std_logic_vector(15 downto 0);
-	
+--	signal 
+--		wx1, wx2, wx3, wx4, 
+--		wz1, wz2, wz3, wz4, wz5, wz6, 
+--		wy1, wy2, wy3, wy4 
+--	: std_logic_vector(15 downto 0);
+--	
 	signal 
 		o_lv1_mod_l, o_lv1_mod_r, o_lv1_add_l, o_lv1_add_r,
 		o_lv2_xor,
@@ -93,26 +94,7 @@ begin
 --	lv6_xor_r : xorop port map (i1 => o_lv5_mod_r, o_lv1_add_r, wy2);
 --	lv7_xor_l : xorop port map (i1 => o_lv1_add_l, o_lv5_add_l, wy3);
 --	lv7_xor_r : xorop port map (i1 => o_lv1_mod_r, o_lv5_add_l, wy4);
-	
-	lv1_mod_l : mulop port map (x1, z1, o_lv1_mod_l);
-	lv1_mod_r : mulop port map (x4, z4, o_lv1_mod_r);
-	lv1_add_l : addop port map (x2, z2, o_lv1_add_l);
-	lv1_add_r : addop port map (x3, z3, o_lv1_add_r);
-	
-	lv2_xor : xorop port map (o_lv1_mod_l, o_lv1_mod_r, o_lv2_xor);
-	lv3_xor : xorop port map (o_lv1_add_l, o_lv1_add_r, o_lv3_xor);
-	
-	lv4_mod_l : mulop port map (o_lv2_xor, z5, o_lv4_mod_l);
-	
-	lv4_add_r : addop port map	(o_lv3_xor, o_lv4_mod_l, o_lv4_add_r);
-	lv5_mod_r : mulop port map (z6, o_lv4_add_r, o_lv5_mod_r);
-	lv5_add_l : addop port map (o_lv4_mod_l, o_lv5_mod_r, o_lv5_add_l);
-	
-	lv6_xor_l : xorop port map (o_lv1_mod_l, o_lv5_mod_r, y1);
-	lv6_xor_r : xorop port map (o_lv5_mod_r, o_lv1_add_r, y2);
-	lv7_xor_l : xorop port map (o_lv1_add_l, o_lv5_add_l, y3);
-	lv7_xor_r : xorop port map (o_lv1_mod_r, o_lv5_add_l, y4);
-	
+
 --	process(
 --		x1, x2, x3, x4, 
 --		z1, z2, z3, z4, z5, z6,
@@ -123,6 +105,21 @@ begin
 --		wz1<=z1; wz2<=z2; wz3<=z3; wz4<=z4; wz5<=z5; wz6<=z6; 
 --		y1 <= wy1; y2 <= wy2; y3<=wy3; y4<=wy4;
 --	end process;
-		
+	
+	lv1_mod_l: mulop port map(x1, 	z1,	o_lv1_mod_l);
+	lv1_mod_r: mulop port map(x4, 	z4,	o_lv1_mod_r);
+	lv1_add_l: addop port map(x2, 	z2,	o_lv1_add_l);
+	lv1_add_r: addop port map(x3,		z3,	o_lv1_add_r);
+	lv2_xor 	: xorop port map(o_lv1_mod_l, 	o_lv1_add_r, 	o_lv2_xor);
+	lv3_xor 	: xorop port map(o_lv1_add_l, 	o_lv1_mod_r, 	o_lv3_xor);
+	lv4_mod_l: mulop port map(o_lv2_xor, 		z5, 				o_lv4_mod_l);
+	lv4_add_r: addop port map(o_lv3_xor, 		o_lv4_mod_l,	o_lv4_add_r);
+	lv5_mod_r: mulop port map(z6,					o_lv4_add_r, 	o_lv5_mod_r);
+	lv5_add_l: addop port map(o_lv4_mod_l, 	o_lv5_mod_r, 	o_lv5_add_l);
+	lv6_xor_l: xorop port map(o_lv1_mod_l, 	o_lv5_mod_r, 	y1);
+	lv6_xor_r: xorop port map(o_lv5_mod_r, 	o_lv1_add_r, 	y2);
+	lv7_xor_l: xorop port map(o_lv1_add_l, 	o_lv5_add_l, 	y3);
+	lv7_xor_r: xorop port map(o_lv1_mod_r, 	o_lv5_add_l, 	y4);
+	
 end Behavioral;
 

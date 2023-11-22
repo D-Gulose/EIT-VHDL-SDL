@@ -1,6 +1,11 @@
-EN idea NULL /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/idea.vhd sub00/vhpl04 1700417562
-AR addop behavioral /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/addop.vhd sub00/vhpl03 1700517556
-EN addop NULL /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/addop.vhd sub00/vhpl02 1700517555
-EN xorop NULL /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/xorop.vhd sub00/vhpl00 1700393543
-AR idea structural /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/idea.vhd sub00/vhpl05 1700417563
-AR xorop behavioral /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/xorop.vhd sub00/vhpl01 1700393544
+EN idea NULL /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/idea.vhd sub00/vhpl00 1700682679
+AR addop behavioral /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/addop.vhd sub00/vhpl07 1700683512
+EN mulop NULL /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/mulop.vhd sub00/vhpl02 1700683509
+AR round behavioral /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/round.vhd sub00/vhpl09 1700683516
+EN addop NULL /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/addop.vhd sub00/vhpl06 1700683511
+EN round NULL /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/round.vhd sub00/vhpl08 1700683515
+EN tb_round NULL /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/tb_round.vhd sub00/vhpl10 1700683158
+EN xorop NULL /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/xorop.vhd sub00/vhpl04 1700683513
+AR mulop behavioral /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/mulop.vhd sub00/vhpl03 1700683510
+AR idea structural /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/idea.vhd sub00/vhpl01 1700682680
+AR xorop behavioral /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/xorop.vhd sub00/vhpl05 1700683514

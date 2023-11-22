@@ -41,49 +41,18 @@ ARCHITECTURE behavior OF tb_round IS
  
     COMPONENT round
     PORT(
-         x1 : IN  std_logic;
-         x2 : IN  std_logic;
-         x3 : IN  std_logic;
-         x4 : IN  std_logic;
-         z1 : IN  std_logic;
-         z2 : IN  std_logic;
-         z3 : IN  std_logic;
-         z4 : IN  std_logic;
-         z5 : IN  std_logic;
-         z6 : IN  std_logic;
-         y1 : OUT  std_logic;
-         y2 : OUT  std_logic;
-         y3 : OUT  std_logic;
-         y4 : OUT  std_logic
-        );
+         x1,x2,x3,x4,z1,z2,z3,z4,z5,z6 : IN std_logic_vector(15 downto 0);
+         y1, y2, y3, y4 : OUT  std_logic_vector(15 downto 0)
+         );
     END COMPONENT;
-    
-
-   --Inputs
-   signal x1 : std_logic_vector(15 dow := '0';
-   signal x2 : std_logic := '0';
-   signal x3 : std_logic := '0';
-   signal x4 : std_logic := '0';
-   signal z1 : std_logic := '0';
-   signal z2 : std_logic := '0';
-   signal z3 : std_logic := '0';
-   signal z4 : std_logic := '0';
-   signal z5 : std_logic := '0';
-   signal z6 : std_logic := '0';
-
- 	--Outputs
-   signal y1 : std_logic;
-   signal y2 : std_logic;
-   signal y3 : std_logic;
-   signal y4 : std_logic;
-
-
-   signal I1, I2, O, O_EXPECTED : std_logic_vector(15 downto 0);
+   
+	-- Signals
+   signal x1, x2, x3, x4, z1, z2, z3, z4, z5, z6, y1, y1e, y2, y2e, y3, y3e, y4, y4e
+		: std_logic_vector(15 downto 0);
 	signal tc_pass : std_logic := '0';
-	constant TC_BREAK : time := 30 ns;
+	constant TC_BREAK : time := 10 ns;
 
  begin
- 
     uut: round PORT MAP (
           x1 => x1,
           x2 => x2,
@@ -100,13 +69,6 @@ ARCHITECTURE behavior OF tb_round IS
           y3 => y3,
           y4 => y4
         );
- 
-	-- Instantiate the Unit Under Test (UUT)
-   UUT_addop_instance: addop PORT MAP (
-          I1 => I1,
-          I2 => I2,
-          O => O 
-        );
 
 stimulus: process begin
 
@@ -115,18 +77,17 @@ stimulus: process begin
 		X2 <= x"0000";
 		X3 <= x"0000";
 		X4 <= x"0000";
-		
 		Z1 <= x"0000";
 		Z2 <= x"0000";
 		Z3 <= x"0000";
 		Z4 <= x"0000";
 		Z5 <= x"0000";
 		Z6 <= x"0000";
-		
-		y1 <= x"0001";
-		y2 <= x"0000";
-		y3 <= x"0000";
-		y4 <= x"0001";
+		--
+		y1e <= x"0001";
+		y2e <= x"0000";
+		y3e <= x"0000";
+		y4e <= x"0001";
 		
 		wait for TC_BREAK;
 
@@ -141,10 +102,11 @@ stimulus: process begin
 		Z4 <= x"0000";
 		Z5 <= x"0000";
 		Z6 <= x"0000";
-		y1 <= x"0003";
-		y2 <= x"0001";
-		y3 <= x"0000";
-		y4 <= x"0001";
+		--
+		y1e <= x"0003";
+		y2e <= x"0001";
+		y3e <= x"0000";
+		y4e <= x"0001";
 		wait for TC_BREAK;
 		
 		-- TC3
@@ -158,10 +120,11 @@ stimulus: process begin
 		Z4 <= x"0000";
 		Z5 <= x"0000";
 		Z6 <= x"0000";
-		y1 <= x"5555";
-		y2 <= x"5557";
-		y3 <= x"fffc";
-		y4 <= x"5557";
+		--
+		y1e <= x"5555";
+		y2e <= x"5557";
+		y3e <= x"fffc";
+		y4e <= x"5557";
 		wait for TC_BREAK;
 		
 		-- TC4
@@ -175,10 +138,11 @@ stimulus: process begin
 		Z4 <= x"0000";
 		Z5 <= x"0000";
 		Z6 <= x"0000";
-		y1 <= x"aaae";
-		y2 <= x"fff9";
-		y3 <= x"fffc";
-		y4 <= x"5557";
+		--
+		y1e <= x"aaae";
+		y2e <= x"fff9";
+		y3e <= x"fffc";
+		y4e <= x"5557";
 		wait for TC_BREAK;
 		
 		-- TC5
@@ -192,10 +156,11 @@ stimulus: process begin
 		Z4 <= x"0000";
 		Z5 <= x"0000";
 		Z6 <= x"0000";
-		y1 <= x"e390";
-		y2 <= x"b6c7";
-		y3 <= x"2496";
-		y4 <= x"5553";
+		--
+		y1e <= x"e390";
+		y2e <= x"b6c7";
+		y3e <= x"2496";
+		y4e <= x"5553";
 		wait for TC_BREAK;
 		
 		-- TC6
@@ -209,10 +174,11 @@ stimulus: process begin
 		Z4 <= x"0000";
 		Z5 <= x"0000";
 		Z6 <= x"0000";
-		y1 <= x"e390";
-		y2 <= x"ffed";
-		y3 <= x"2496";
-		y4 <= x"5553";
+		--
+		y1e <= x"e390";
+		y2e <= x"ffed";
+		y3e <= x"2496";
+		y4e <= x"5553";
 		wait for TC_BREAK;
 		
 		-- TC7
@@ -226,10 +192,11 @@ stimulus: process begin
 		Z4 <= x"0000";
 		Z5 <= x"0000";
 		Z6 <= x"0000";
-		y1 <= x"4921";
-		y2 <= x"555c";
-		y3 <= x"2496";
-		y4 <= x"38e2";
+		--
+		y1e <= x"4921";
+		y2e <= x"555c";
+		y3e <= x"2496";
+		y4e <= x"38e2";
 		wait for TC_BREAK;
 		
 		-- TC8
@@ -237,18 +204,16 @@ stimulus: process begin
 		X2 <= x"aaaa";
 		X3 <= x"5555";
 		X4 <= x"2492";
-		--
 		Z1 <= x"db6d";
 		Z2 <= x"1c71";
 		Z3 <= x"cccc";
 		Z4 <= x"0000";
 		Z5 <= x"0000";
 		Z6 <= x"0000";
-		--
-		y1 <= x"07bd";
-		y2 <= x"6cb4";
-		y3 <= x"2496";
-		y4 <= x"38e3";
+		y1e <= x"07bd";
+		y2e <= x"6cb4";
+		y3e <= x"2496";
+		y4e <= x"38e2";
 		wait for TC_BREAK;
 		
 		-- TC9
@@ -256,7 +221,6 @@ stimulus: process begin
 		X2 <= x"aaaa";
 		X3 <= x"5555";
 		X4 <= x"2492";
-		--
 		Z1 <= x"db6d";
 		Z2 <= x"1c71";
 		Z3 <= x"cccc";
@@ -264,10 +228,10 @@ stimulus: process begin
 		Z5 <= x"0000";
 		Z6 <= x"0000";
 		--
-		y1 <= x"95e2";
-		y2 <= x"feeb";
-		y3 <= x"b6d9";
-		y4 <= x"38e6";
+		y1e <= x"95e2";
+		y2e <= x"feeb";
+		y3e <= x"b6d9";
+		y4e <= x"38e6";
 		wait for TC_BREAK;
 		
 		-- TC10
@@ -275,7 +239,6 @@ stimulus: process begin
 		X2 <= x"aaaa";
 		X3 <= x"5555";
 		X4 <= x"2492";
-		--
 		Z1 <= x"db6d";
 		Z2 <= x"1c71";
 		Z3 <= x"cccc";
@@ -283,10 +246,10 @@ stimulus: process begin
 		Z5 <= x"eeee";
 		Z6 <= x"0000";
 		--
-		y1 <= x"bc61";
-		y2 <= x"d768";
-		y3 <= x"b6d9";
-		y4 <= x"38e6";
+		y1e <= x"bc61";
+		y2e <= x"d768";
+		y3e <= x"b6d9";
+		y4e <= x"38e6";
 		wait for TC_BREAK;
 		
 		-- TC11
@@ -300,10 +263,11 @@ stimulus: process begin
 		Z4 <= x"0002";
 		Z5 <= x"eeee";
 		Z6 <= x"8888";
-		y1 <= x"2521";
-		y2 <= x"4e28";
-		y3 <= x"2f99";
-		y4 <= x"a1a6";
+		--
+		y1e <= x"2521";
+		y2e <= x"4e28";
+		y3e <= x"2f99";
+		y4e <= x"a1a6";
 		wait for TC_BREAK;		
 		
 		wait;
@@ -311,7 +275,7 @@ stimulus: process begin
 	
  	compare: process begin
 		for I in 0 to 11 loop
-			if O = O_EXPECTED  then 
+			if (y1 = y1e) and (y2 = y2e) and (y3 = y3e) and (y4 = y4e) then 
 				tc_pass <= '1';
 				report "Test " & natural'image(I) & "/11 passed";
 			else

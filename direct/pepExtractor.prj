@@ -1,1 +1,5 @@
 work	"addop.vhd"
+work	"mulop.vhd"
+work	"round.vhd"
+work	"tb_round.vhd"
+work	"xorop.vhd"
