@@ -48,7 +48,7 @@ ARCHITECTURE behavior OF tb_round IS
    
 	-- Signals
    signal x1, x2, x3, x4, z1, z2, z3, z4, z5, z6, y1, y1e, y2, y2e, y3, y3e, y4, y4e
-		: std_logic_vector(15 downto 0);
+		: std_logic_vector(15 downto 0); -- Warning caused 
 	signal tc_pass : std_logic := '0';
 	constant TC_BREAK : time := 10 ns;
 

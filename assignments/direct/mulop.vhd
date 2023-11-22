@@ -49,8 +49,8 @@ architecture Behavioral of mulop is
 		variable base2_power16 : std_logic_vector(16 downto 0) := b"10000000000000000";
 		variable sum : std_logic_vector(31 downto 0) := (others=>'0') ;
 		constant zeros : std_logic_vector(15 downto 0) := (others=>'0');
-		variable i1var : std_logic_vector(16 downto 0);
-		variable i2var : std_logic_vector(16 downto 0); -- initializations 
+		variable i1var : std_logic_vector(16 downto 0) := (others=>'0'); 
+		variable i2var : std_logic_vector(16 downto 0) := (others=>'0'); -- initializations 
 		variable modu : std_logic_vector(16 downto 0) := (others=>'0'); -- 16 LSB
 		variable divi : std_logic_vector(16 downto 0) := (others=>'0'); -- 16 MSB without 33 bit
 		variable tmp : std_logic_vector(33 downto 0) := (others=>'0'); -- worst case 33 bit
@@ -77,7 +77,6 @@ architecture Behavioral of mulop is
 		end if;
 		O_1 <= sum(15 downto 0);
 	
-		
 	end process;
 	
 end Behavioral;

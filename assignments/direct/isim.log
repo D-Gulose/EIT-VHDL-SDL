@@ -26,3 +26,4 @@ at 80 ns: Note: Test 8/11 passed (/tb_round/).
 at 90 ns: Note: Test 9/11 passed (/tb_round/).
 at 100 ns: Note: Test 10/11 passed (/tb_round/).
 at 110 ns: Note: Test 11/11 passed (/tb_round/).
+# exit 0
