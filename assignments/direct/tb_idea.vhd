@@ -102,13 +102,27 @@ BEGIN
 		y3e <= x"c0c9";
 		y4e <= x"56f6";
 		wait for TC_BREAK;
+		
+		--tc3
+		key <= x"0AD79FDFA07DFA0F0AFD7DAF079DF770";
+		x1 <= x"1F1F";
+		x2 <= x"2E2E";
+		x3 <= x"3D3D";
+		x4 <= x"4A4A";
+		y1e <= x"57e3";
+		y2e <= x"a28b";
+		y3e <= x"cd0b";
+		y4e <= x"1ff9";
+		wait for TC_BREAK;
+		
+		
 		wait;
    end process;
  
 
  	compare: process begin
 		wait for 1 ns;
-		for I in 0 to 1 loop
+		for I in 1 to 3 loop
 			if (Y1 = y1e) and (Y2 = y2e) and (Y3 = y3e) and (Y4 = y4e) then 
 				tc_pass <= '1';
 				report "Test " & natural'image(I) & " passed";

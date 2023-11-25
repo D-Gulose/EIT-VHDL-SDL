@@ -1,4 +1,0 @@
-vhdl work "xorop.vhd"
-vhdl work "mulop.vhd"
-vhdl work "addop.vhd"
-vhdl work "round.vhd"

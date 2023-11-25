@@ -108,6 +108,7 @@ BEGIN
 	end process;
 	
  	compare: process begin
+		wait for 1 ns;
 		for I in 0 to 6 loop
 			if O = O_EXPECTED  then 
 				tc_pass <= '1';

@@ -40,13 +40,13 @@ entity addop is
 end addop;
 
 architecture Behavioral of addop is
-	signal sum : std_logic_vector(16 downto 0);
+
+	signal sum : std_logic_vector(16 downto 0) := (others=>'0');
 
 begin	
 	
 	process(I1, I2, sum)
 		begin
-		sum <= (others => '0');
 		sum <= ('0' & I1) + ('0' + I2);
 		O <= sum(15 downto 0);
 	 

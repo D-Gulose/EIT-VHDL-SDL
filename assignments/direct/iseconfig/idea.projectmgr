@@ -7,17 +7,25 @@
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/idea - Structural |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|idea.vhd/r1 - round - Behavioral</ClosedNode>
+         <ClosedNode>/idea - Structural |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|idea.vhd/r2 - round - Behavioral</ClosedNode>
+         <ClosedNode>/idea - Structural |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|idea.vhd/r3 - round - Behavioral</ClosedNode>
+         <ClosedNode>/idea - Structural |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|idea.vhd/r4 - round - Behavioral</ClosedNode>
+         <ClosedNode>/idea - Structural |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|idea.vhd/r5 - round - Behavioral</ClosedNode>
+         <ClosedNode>/idea - Structural |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|idea.vhd/r6 - round - Behavioral</ClosedNode>
+         <ClosedNode>/idea - Structural |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|idea.vhd/r7 - round - Behavioral</ClosedNode>
+         <ClosedNode>/idea - Structural |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|idea.vhd/r8 - round - Behavioral</ClosedNode>
+         <ClosedNode>/idea - Structural |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|idea.vhd/t - trafo - Behavioral</ClosedNode>
          <ClosedNode>/tb_round - behavior |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|direct|tb_round.vhd/uut - round - Behavioral</ClosedNode>
-         <ClosedNode>/trafo - Behavioral |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|trafo.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>lv4_add_r - addop - Behavioral (/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/assignments/direct/addop.vhd)</SelectedItem>
+         <SelectedItem>idea - Structural (/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/assignments/direct/idea.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000178000000020000000000000000000000000200000064ffffffff000000810000000300000002000001780000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000139000000020000000000000000000000000200000064ffffffff000000810000000300000002000001390000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>lv4_add_r - addop - Behavioral (/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/assignments/direct/addop.vhd)</CurrentItem>
+      <CurrentItem>idea - Structural (/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/assignments/direct/idea.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
@@ -27,13 +35,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Check Syntax</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000156000000010000000100000000000000000000000064ffffffff000000810000000000000001000001560000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f7000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f70000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Check Syntax</CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -42,7 +50,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000025e000000040101000100000000000000000000000064ffffffff0000008100000000000000040000006100000001000000000000005d00000001000000000000008400000001000000000000011c0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000000000000000100000000000000000000000000000000000002ca000000040101000100000000000000000000000064ffffffff0000008100000000000000040000006100000001000000000000005d0000000100000000000000840000000100000000000001880000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>idea.vhd</CurrentItem>
    </ItemView>
@@ -61,40 +69,52 @@
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Update All Schematic Files</SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000156000000010000000100000000000000000000000064ffffffff000000810000000000000001000001560000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000015e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000015e0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Update All Schematic Files</CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <SourceProcessView>000000ff00000000000000020000014c0000011d01000000060100000002</SourceProcessView>
    <CurrentView>Behavioral Simulation</CurrentView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/idea - Structural |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|idea.vhd/r1 - round - Behavioral</ClosedNode>
+         <ClosedNode>/idea - Structural |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|idea.vhd/r2 - round - Behavioral</ClosedNode>
+         <ClosedNode>/idea - Structural |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|idea.vhd/r3 - round - Behavioral</ClosedNode>
+         <ClosedNode>/idea - Structural |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|idea.vhd/r4 - round - Behavioral</ClosedNode>
+         <ClosedNode>/idea - Structural |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|idea.vhd/r5 - round - Behavioral</ClosedNode>
+         <ClosedNode>/idea - Structural |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|idea.vhd/r6 - round - Behavioral</ClosedNode>
+         <ClosedNode>/idea - Structural |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|idea.vhd/r7 - round - Behavioral</ClosedNode>
+         <ClosedNode>/idea - Structural |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|idea.vhd/r8 - round - Behavioral</ClosedNode>
+         <ClosedNode>/idea - Structural |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|idea.vhd/t - trafo - Behavioral</ClosedNode>
          <ClosedNode>/round - Behavioral |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|direct|round.vhd</ClosedNode>
-         <ClosedNode>/tb_addop - behavior |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|tb_addop.vhd</ClosedNode>
-         <ClosedNode>/tb_mulop - behavior |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|tb_mulop.vhd</ClosedNode>
+         <ClosedNode>/tb_idea - behavior |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|tb_idea.vhd/uut - idea - Structural</ClosedNode>
          <ClosedNode>/tb_mulop - behavior |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|direct|tb_mulop.vhd</ClosedNode>
+         <ClosedNode>/tb_round - behavior |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|tb_round.vhd/uut - round - Behavioral</ClosedNode>
          <ClosedNode>/tb_round - behavior |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|direct|tb_round.vhd/uut - round - Behavioral</ClosedNode>
          <ClosedNode>/tb_round - behavior |nas|lrz|home|ge74men|f4|Rep-EIT-VHDL-SDL|assignments|direct|tb_round.vhd</ClosedNode>
-         <ClosedNode>/tb_trafo - behavior |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|tb_trafo.vhd</ClosedNode>
+         <ClosedNode>/tb_trafo - behavior |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|tb_trafo.vhd/uut - trafo - Behavioral</ClosedNode>
          <ClosedNode>/tb_xorop - behavior |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|tb_xorop.vhd</ClosedNode>
          <ClosedNode>/tb_xorop - behavior |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|direct|tb_xorop.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>lv5_mod_r - mulop - Behavioral (/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/assignments/direct/mulop.vhd)</SelectedItem>
+         <SelectedItem>tb_xorop - behavior (/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/assignments/direct/tb_xorop.vhd)</SelectedItem>
       </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >6</ScrollbarPosition>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000018c000000020000000000000000000000000200000064ffffffff0000008100000003000000020000018c0000000100000003000000000000000100000003</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001bb000000020000000000000000000000000200000064ffffffff000000810000000300000002000001bb0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>lv5_mod_r - mulop - Behavioral (/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/assignments/direct/mulop.vhd)</CurrentItem>
+      <CurrentItem>tb_xorop - behavior (/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/assignments/direct/tb_xorop.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -102,13 +122,13 @@
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Update All Schematic Files</SelectedItem>
+         <SelectedItem/>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000156000000010000000100000000000000000000000064ffffffff000000810000000000000001000001560000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000015e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000015e0000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Update All Schematic Files</CurrentItem>
+      <CurrentItem/>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
@@ -116,26 +136,26 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem></SelectedItem>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f2000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f20000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f7000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f70000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem></CurrentItem>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="ManualCompile" >
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>xorop.vhd (/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/xorop.vhd)</SelectedItem>
+         <SelectedItem>trafo.vhd (/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/assignments/direct/trafo.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000132000000020000000000000000000000000000000064ffffffff000000810000000000000002000000a00000000100000000000000920000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>xorop.vhd (/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/xorop.vhd)</CurrentItem>
+      <CurrentItem>trafo.vhd (/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/assignments/direct/trafo.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" guiview="Source" compilemode="ManualCompile" >
       <ClosedNodes>
@@ -149,5 +169,101 @@
       <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000142000000020000000000000000000000000000000064ffffffff000000810000000000000002000000b00000000100000000000000920000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>mulop.vhd (/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/mulop.vhd)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="PostTransSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/tb_idea - behavior |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|tb_idea.vhd</ClosedNode>
+         <ClosedNode>/tb_mulop - behavior |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|tb_mulop.vhd</ClosedNode>
+         <ClosedNode>/tb_round - behavior |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|tb_round.vhd</ClosedNode>
+         <ClosedNode>/tb_trafo - behavior |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|tb_trafo.vhd</ClosedNode>
+         <ClosedNode>/tb_xorop - behavior |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|tb_xorop.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Unassigned User Library Modules</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000012e000000020000000000000000000000000200000064ffffffff0000008100000003000000020000012e0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Unassigned User Library Modules</CurrentItem>
+   </ItemView>
+   <ItemView engineview="PostTransSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000015e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000015e0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="PostMapSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/tb_idea - behavior |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|tb_idea.vhd</ClosedNode>
+         <ClosedNode>/tb_mulop - behavior |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|tb_mulop.vhd</ClosedNode>
+         <ClosedNode>/tb_round - behavior |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|tb_round.vhd</ClosedNode>
+         <ClosedNode>/tb_trafo - behavior |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|tb_trafo.vhd</ClosedNode>
+         <ClosedNode>/tb_xorop - behavior |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|tb_xorop.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Unassigned User Library Modules</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000012e000000020000000000000000000000000200000064ffffffff0000008100000003000000020000012e0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Unassigned User Library Modules</CurrentItem>
+   </ItemView>
+   <ItemView engineview="PostMapSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000015e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000015e0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="PostRouteSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/tb_idea - behavior |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|tb_idea.vhd</ClosedNode>
+         <ClosedNode>/tb_mulop - behavior |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|tb_mulop.vhd</ClosedNode>
+         <ClosedNode>/tb_round - behavior |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|tb_round.vhd</ClosedNode>
+         <ClosedNode>/tb_trafo - behavior |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|tb_trafo.vhd</ClosedNode>
+         <ClosedNode>/tb_xorop - behavior |home|ise|my_shared_folder|Rep-EIT-VHDL-SDL|assignments|direct|tb_xorop.vhd</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Unassigned User Library Modules</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000012e000000020000000000000000000000000200000064ffffffff0000008100000003000000020000012e0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Unassigned User Library Modules</CurrentItem>
+   </ItemView>
+   <ItemView engineview="PostRouteSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000015e000000010000000100000000000000000000000064ffffffff0000008100000000000000010000015e0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
    </ItemView>
 </Project>

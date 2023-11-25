@@ -94,8 +94,9 @@ architecture Structural of idea is
 --	end loop trafokey;
 --end process;
 
+	
 	type matrix is array(51 downto 0) of std_logic_vector(15 downto 0);
-	signal subkeys : matrix; 
+	signal subkeys : matrix := (others => (others => '0')); 
 	
 begin
 
@@ -103,24 +104,22 @@ begin
 			constant shifts : integer := 6;
 			constant partitions : integer := 7;
 			constant key_sz : integer:= 16;
-			variable key_shifted : std_logic_vector(127 downto 0); -- := key;
-		variable ctr : integer;
+			variable key_shifted : std_logic_vector(127 downto 0); 
+			variable ctr : integer;
 				
 		begin
 		-- VARIABLES/SIGNALS ONLY DECLARE BEFORE 'BEGIN' AND ASSIGN AFTER 'BEGIN' !!!
 		ctr := 0;
 		key_shifted := KEY;		
 	
-		cycleshift: for shift_i in 0 to shifts loop 
-			partition: for sub_i in 0 to partitions loop 
-				subkeys(ctr) <= key_shifted((key_sz*8-1)-key_sz*sub_i downto (key_sz*8)-key_sz*(sub_i+1));
+		for shift in 0 to shifts loop 
+			for part in 0 to partitions loop 
+				subkeys(ctr) <= key_shifted((key_sz*8-1)-key_sz*part downto (key_sz*8)-key_sz*(part+1));
 				ctr := ctr + 1;
-				if ctr > 51 
-					then exit cycleshift; end if;
+				exit when ctr > 51 ;
 			end loop;
 			key_shifted := key_shifted(102 downto 0) & key_shifted(127 downto 103);
 		end loop;
-		
 		
 	end process;
 
