@@ -1,0 +1,5 @@
+set -tmpdir "/nas/lrz/home/ge74men/f4/Rep-EIT-VHDL-SDL/assignments/direct/xst/projnav.tmp"
+set -xsthdpdir "/nas/lrz/home/ge74men/f4/Rep-EIT-VHDL-SDL/assignments/direct/xst"
+elaborate
+-ifn round.prj
+-ifmt mixed

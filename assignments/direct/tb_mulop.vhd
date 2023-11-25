@@ -131,13 +131,12 @@ begin
 		I_2 <= x"8000";
 		O_EXPECTED <= x"c001";
 		wait for TC_BREAK;
-
 		
 		wait;
 	end process;
 	
 	compare: process begin
-		
+		wait for 1 ns; -- start after test process
 		for I in 0 to 10 loop
 			if O_1 = O_EXPECTED  then 
 				tc_pass <= '1';

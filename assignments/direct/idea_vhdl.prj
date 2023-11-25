@@ -1,1 +1,6 @@
-vhdl work "/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/idea.vhd"
+vhdl work "/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/assignments/direct/xorop.vhd"
+vhdl work "/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/assignments/direct/mulop.vhd"
+vhdl work "/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/assignments/direct/addop.vhd"
+vhdl work "/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/assignments/direct/trafo.vhd"
+vhdl work "/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/assignments/direct/round.vhd"
+vhdl work "/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/assignments/direct/idea.vhd"
