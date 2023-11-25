@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
 -- Company: 
--- Engineer: 
+-- Engineer: Markus Gulo
 -- 
 -- Create Date:     
 -- Design Name: 
@@ -28,7 +28,6 @@ use IEEE.STD_LOGIC_1164.ALL;
 -- any Xilinx primitives in this code.
 --library UNISIM;
 --use UNISIM.VComponents.all;
-
 
 -- delete all *.wdb files for upload
 
@@ -64,35 +63,6 @@ architecture Structural of idea is
 	y3r1, y3r2, y3r3, y3r4, y3r5, y3r6, y3r7, y3r8, 
 	y4r1, y4r2, y4r3, y4r4, y4r5, y4r6, y4r7, y4r8
 	: STD_LOGIC_VECTOR (15 downto 0);
-
-
---type keychain is array(51 downto 0) of std_logic_vector(15 downto 0);
---signal subkeys : keychain;
---
-----signal Y1_1, Y1_2, Y1_3, Y1_4, Y2_1, Y2_2, Y2_3, Y2_4, Y3_1, Y3_2, Y3_3, Y3_4, Y4_1, Y4_2, Y4_3, Y4_4, Y5_1, Y5_2, Y5_3, Y5_4, Y6_1, Y6_2, Y6_3, Y6_4, Y7_1, Y7_2, Y7_3, Y7_4, Y8_1, Y8_2, Y8_3, Y8_4: std_logic_vector(15 downto 0);
---	
---begin
---
---keygeneration : process(KEY)
---
---variable keyinput : std_logic_vector(127 downto 0) ;--why using signal is not working here
---variable position: integer range 0 to 51;-- doubt if the assignement with 0 can be done here or inside begin
---begin
-----KEY=> keyinput;
---position :=0;
---keyinput := KEY;
---cyclic_rotation: for i in 0 to 5 loop
---	keyform: for j in 0 to 7 loop
---			subkeys(position) <= keyinput(127-(j*16) downto 127-((j+1)*16-1));
---			position := position + 1;
---		end loop keyform;
---		keyinput := keyinput(102 downto 0) & keyinput(127 downto 103);
---	end loop cyclic_rotation;
---trafokey : for i in 0 to 3 loop
---	subkeys(position) <= keyinput(127-(i*16) downto 127-((i+1)*16-1));
---	position := position + 1;
---	end loop trafokey;
---end process;
 
 	
 	type matrix is array(51 downto 0) of std_logic_vector(15 downto 0);

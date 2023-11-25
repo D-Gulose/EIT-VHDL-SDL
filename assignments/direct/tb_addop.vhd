@@ -1,6 +1,6 @@
 --------------------------------------------------------------------------------
 -- Company: 
--- Engineer:
+-- Engineer: Markus Gulo
 --
 -- Create Date:   22:38:33 11/20/2023
 -- Design Name:   
@@ -50,8 +50,6 @@ ARCHITECTURE behavior OF tb_addop IS
     
 
    --Inputs
---   signal I1 : std_logic_vector(15 downto 0) := (others => '0');
---   signal I2 : std_logic_vector(15 downto 0) := (others => '0');
 
    signal I1, I2, O, O_EXPECTED : std_logic_vector(15 downto 0);
 	signal tc_pass : std_logic := '0';

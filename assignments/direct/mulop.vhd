@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
 -- Company: 
--- Engineer: 
+-- Engineer: Markus Gulo
 -- 
 -- Create Date:     
 -- Design Name: 
@@ -19,8 +19,6 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
---use ieee.std_logic_signed.all;
---use ieee.std_logic_arith.all;
 use ieee.std_logic_unsigned.all;
 
 -- Uncomment the folmoduing library declaration if using

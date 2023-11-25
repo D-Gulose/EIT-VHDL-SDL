@@ -1,5 +1,5 @@
 ISim log file
-Running: /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/assignments/direct/tb_xorop_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/assignments/direct/tb_xorop_isim_beh.wdb 
+Running: /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/assignments/direct/tb_idea_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/assignments/direct/tb_idea_isim_beh.wdb 
 ISim P.20131013 (signature 0xfbc00daa)
 ----------------------------------------------------------------------
 WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
@@ -12,9 +12,9 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-at 0 ps: Note: Test passed (/tb_xorop/).
+at 0 ps, Instance /tb_idea/uut/r1/lv1_mod_l/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 Finished circuit initialization process.
-at 10 ns: Note: Test passed (/tb_xorop/).
-at 20 ns: Note: Test passed (/tb_xorop/).
-at 30 ns: Note: Test passed (/tb_xorop/).
+at 1 ns: Note: Test 1 passed (/tb_idea/).
+at 31 ns: Note: Test 2 passed (/tb_idea/).
+at 61 ns: Note: Test 3 passed (/tb_idea/).
 # exit 0
