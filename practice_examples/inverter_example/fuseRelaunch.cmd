@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/practice_examples/inverter_example/tb_inverter_isim_beh.exe" -prj "/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/practice_examples/inverter_example/tb_inverter_beh.prj" "work.tb_inverter" 

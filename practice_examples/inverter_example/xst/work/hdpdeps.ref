@@ -1,0 +1,8 @@
+V3 3
+FL /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/practice_examples/inverter_example/inverter.vhd 2023/11/18.20:46:13 P.20131013
+EN work/inverter 1700341421 \
+      FL /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/practice_examples/inverter_example/inverter.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/inverter/Behavioral 1700341422 \
+      FL /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/practice_examples/inverter_example/inverter.vhd \
+      EN work/inverter 1700341421

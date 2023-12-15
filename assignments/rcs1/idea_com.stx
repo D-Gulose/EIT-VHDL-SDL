@@ -1,0 +1,66 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.01 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.01 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/idea_com is now defined in a different file.  It was defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/idea_com.vhd", and is now defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/idea_com.vhd".
+WARNING:HDLParsers:3607 - Unit work/idea_com/Behavioral is now defined in a different file.  It was defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/idea_com.vhd", and is now defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/idea_com.vhd".
+WARNING:HDLParsers:3607 - Unit work/clk_div is now defined in a different file.  It was defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/clk_div.vhd", and is now defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/clk_div.vhd".
+WARNING:HDLParsers:3607 - Unit work/clk_div/Behavioral is now defined in a different file.  It was defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/clk_div.vhd", and is now defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/clk_div.vhd".
+WARNING:HDLParsers:3607 - Unit work/idea_com_inner is now defined in a different file.  It was defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/idea_com_inner.vhd", and is now defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/idea_com_inner.vhd".
+WARNING:HDLParsers:3607 - Unit work/idea_com_inner/Behavioral is now defined in a different file.  It was defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/idea_com_inner.vhd", and is now defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/idea_com_inner.vhd".
+WARNING:HDLParsers:3607 - Unit work/idea_single is now defined in a different file.  It was defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/idea_single.vhd", and is now defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/idea_single.vhd".
+WARNING:HDLParsers:3607 - Unit work/idea_single/Structural is now defined in a different file.  It was defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/idea_single.vhd", and is now defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/idea_single.vhd".
+WARNING:HDLParsers:3607 - Unit work/uart is now defined in a different file.  It was defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/uart.vhd", and is now defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/uart.vhd".
+WARNING:HDLParsers:3607 - Unit work/uart/behavior is now defined in a different file.  It was defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/uart.vhd", and is now defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/uart.vhd".
+WARNING:HDLParsers:3607 - Unit work/rxcver is now defined in a different file.  It was defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/rxcver.vhd", and is now defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/rxcver.vhd".
+WARNING:HDLParsers:3607 - Unit work/rxcver/behavior is now defined in a different file.  It was defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/rxcver.vhd", and is now defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/rxcver.vhd".
+WARNING:HDLParsers:3607 - Unit work/txmit is now defined in a different file.  It was defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/txmit.vhd", and is now defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/txmit.vhd".
+WARNING:HDLParsers:3607 - Unit work/txmit/behavior is now defined in a different file.  It was defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/txmit.vhd", and is now defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/txmit.vhd".
+Compiling vhdl file "/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/txmit.vhd" in Library work.
+Architecture behavior of Entity txmit is up to date.
+Compiling vhdl file "/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/rxcver.vhd" in Library work.
+Architecture behavior of Entity rxcver is up to date.
+Compiling vhdl file "/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/uart.vhd" in Library work.
+Architecture behavior of Entity uart is up to date.
+Compiling vhdl file "/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/idea_single.vhd" in Library work.
+Architecture structural of Entity idea_single is up to date.
+Compiling vhdl file "/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/mux2x1.vhd" in Library work.
+Architecture behavioral of Entity mux2x1 is up to date.
+Compiling vhdl file "/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/clk_div.vhd" in Library work.
+Architecture behavioral of Entity clk_div is up to date.
+Compiling vhdl file "/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/idea_com_inner.vhd" in Library work.
+Architecture behavioral of Entity idea_com_inner is up to date.
+Compiling vhdl file "/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/idea_com.vhd" in Library work.
+Architecture behavioral of Entity idea_com is up to date.
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.01 secs
+ 
+--> 
+
+
+Total memory usage is 568912 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

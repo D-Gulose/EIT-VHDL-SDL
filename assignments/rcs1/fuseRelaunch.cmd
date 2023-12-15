@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/tb_register_16b_isim_beh.exe" -prj "/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/tb_register_16b_beh.prj" "work.tb_register_16b" 

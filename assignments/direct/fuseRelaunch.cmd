@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/assignments/direct/tb_idea_isim_beh.exe" -prj "/home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/assignments/direct/tb_idea_beh.prj" "work.tb_idea" 

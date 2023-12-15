@@ -1,0 +1,41 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.00 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.00 secs
+ 
+--> 
+WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+WARNING:HDLParsers:3607 - Unit work/register_16b is now defined in a different file.  It was defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/register_16b.vhd", and is now defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/register_16b.vhd".
+WARNING:HDLParsers:3607 - Unit work/register_16b/Behavioral is now defined in a different file.  It was defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/register_16b.vhd", and is now defined in "/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/register_16b.vhd".
+Compiling vhdl file "/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/register_16b.vhd" in Library work.
+Entity <register_16b> compiled.
+Entity <register_16b> (Architecture <behavioral>) compiled.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.00 secs
+ 
+--> 
+
+
+Total memory usage is 566676 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
