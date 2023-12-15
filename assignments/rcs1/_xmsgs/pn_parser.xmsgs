@@ -8,34 +8,34 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/clk_div.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/clk_div.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/control.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/control.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/idea_com.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/idea_com.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/idea_com_inner.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/idea_com_inner.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/idea_single.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/idea_single.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/mux2x1.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/mux2x1.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/register_16b.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/register_16b.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/rxcver.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/rxcver.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/txmit.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/txmit.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/uart.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/uart.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

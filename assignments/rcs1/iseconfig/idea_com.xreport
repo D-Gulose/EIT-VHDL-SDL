@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2023-12-15T08:05:53</DateModified>
+  <DateModified>2023-12-15T13:06:40</DateModified>
   <ModuleName>idea_com</ModuleName>
-  <SummaryTimeStamp>2023-12-14T19:08:49</SummaryTimeStamp>
-  <SavedFilePath>/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/iseconfig/idea_com.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>/home/ise/my_shared_folder/EIT-VHDL-SDL_backup/assignments/rcs1/</ImplementationReportsDirectory>
-  <DateInitialized>2023-12-13T09:45:49</DateInitialized>
+  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SavedFilePath>/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/iseconfig/idea_com.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/</ImplementationReportsDirectory>
+  <DateInitialized>2023-12-14T14:59:11</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
  <body>

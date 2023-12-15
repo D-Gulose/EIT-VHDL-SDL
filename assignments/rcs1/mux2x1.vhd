@@ -37,20 +37,16 @@ entity mux2x1 is
 end mux2x1;
 
 architecture Behavioral of mux2x1 is
-
 	begin
-	
-	-- process(s)
-	process(s) -- instant, no clk
-	
+	process(s, d0, d1) -- instant, no clk
 		begin
-			
 			case S is
-				
-				when '0' => o <= d0;
-				when '1' => o <= d1;
-				when others => o <= (others=>'X'); -- undefined 'U' case
-					
+				when '0' 
+					=> o <= d0;
+				when '1' 
+					=> o <= d1;
+				when others 
+					=> o <= (others=>'X'); -- undefined 'U' case
 			end case; 
 	end process;
 
