@@ -1,1 +1,0 @@
-vhdtdtfi -lib work addop.vhd -prj idea -o addop.spl -module addop -template /nas/ei/share/tools/xilinx/ise/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 

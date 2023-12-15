@@ -1,2 +1,0 @@
-vhdtdtfi -lib work xorop.vhd -lib work mulop.vhd -lib work addop.vhd -lib work round.vhd -lib work tb_round.vhd -prj idea -o tb_round.spl -module tb_round -template /opt/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
-spl2sym -intstyle ise -family spartan3e tb_round.spl /home/ise/my_shared_folder/Rep-EIT-VHDL-SDL/direct/tb_round.sym 
