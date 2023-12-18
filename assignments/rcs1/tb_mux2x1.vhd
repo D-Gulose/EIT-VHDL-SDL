@@ -97,9 +97,8 @@ BEGIN
 	
 	process(s, d01, d2)
 		
-		
 		begin
-		wait for period;
+--		wait for period;
 		
 		for tc in 1 to 4 loop
 			if	(s='0' and o=d0) or

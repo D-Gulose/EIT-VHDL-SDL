@@ -43,12 +43,12 @@ ARCHITECTURE behavior OF tb_keygen IS
     PORT(
          inputkey : IN  std_logic_vector(127 downto 0);
          lap : IN  std_logic_vector(3 downto 0);
-         key1 : IN  std_logic_vector(15 downto 0);
-         key2 : IN  std_logic_vector(15 downto 0);
-         key3 : IN  std_logic_vector(15 downto 0);
-         key4 : IN  std_logic_vector(15 downto 0);
-         key5 : IN  std_logic_vector(15 downto 0);
-         key6 : IN  std_logic_vector(15 downto 0)
+         key1 : out  std_logic_vector(15 downto 0);
+         key2 : out  std_logic_vector(15 downto 0);
+         key3 : out  std_logic_vector(15 downto 0);
+         key4 : out  std_logic_vector(15 downto 0);
+         key5 : out  std_logic_vector(15 downto 0);
+         key6 : out  std_logic_vector(15 downto 0)
         );
     END COMPONENT;
     
@@ -56,16 +56,9 @@ ARCHITECTURE behavior OF tb_keygen IS
    --Inputs
    signal inputkey : std_logic_vector(127 downto 0) := (others => '0');
    signal lap : std_logic_vector(3 downto 0) := (others => '0');
-   signal key1 : std_logic_vector(15 downto 0) := (others => '0');
-   signal key2 : std_logic_vector(15 downto 0) := (others => '0');
-   signal key3 : std_logic_vector(15 downto 0) := (others => '0');
-   signal key4 : std_logic_vector(15 downto 0) := (others => '0');
-   signal key5 : std_logic_vector(15 downto 0) := (others => '0');
-   signal key6 : std_logic_vector(15 downto 0) := (others => '0');
-   -- No clocks detected in port list. Replace <clock> below with 
-   -- appropriate port name 
- 
-   constant <clock>_period : time := 10 ns;
+   signal key1, key1e, key2, key2e, key3, key3e, key4, key4e, key5, key5e, key6, key6e: std_logic_vector(15 downto 0) := (others => '0');
+	signal pass : std_logic := '0';
+	constant period : time := 10 ns;
  
 BEGIN
  
@@ -80,28 +73,46 @@ BEGIN
           key5 => key5,
           key6 => key6
         );
+	
+	process 
+		begin
+			
+			
+			-- tc1
+			inputkey <= x"00010002000300040005000600070008";
+			lap <= b"0000";
+			key1e <= x"0001";
+			key2e <= x"0002";
+			key3e <= x"0003";
+			key4e <= x"0004";
+			key5e <= x"0005";
+			key6e <= x"0006";
+			wait for period;
+			 
+--			lap <= b"0001";
+--			wait for period;
+--
+--			lap <= b"0010";
+--			wait for period;
+--
+--			lap <= b"0011"; 
+--			wait for period;
+--			
+--			lap <= b"0100"; 
+--			wait for period;
+--
+--			lap <= b"0101"; 
+--			wait for period;
+--
+--			lap <= b"0110";
+--			wait for period;		
+--			
+--			lap <= b"0111"; 
+--			wait for period;
+--			
+--			lap <= b"1000"; 
 
-   -- Clock process definitions
-   <clock>_process :process
-   begin
-		<clock> <= '0';
-		wait for <clock>_period/2;
-		<clock> <= '1';
-		wait for <clock>_period/2;
-   end process;
- 
-
-   -- Stimulus process
-   stim_proc: process
-   begin		
-      -- hold reset state for 100 ns.
-      wait for 100 ns;	
-
-      wait for <clock>_period*10;
-
-      -- insert stimulus here 
-
-      wait;
-   end process;
+			wait;
+	end process;
 
 END;
