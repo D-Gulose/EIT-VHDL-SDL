@@ -8,13 +8,22 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/keygen.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/keygen.vhd&quot; into library work</arg>
 </msg>
 
-<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/keygen.vhd</arg>&quot; Line <arg fmt="%d" index="2">53</arg>. <arg fmt="%s" index="3">Syntax error near &quot;case&quot;.</arg>
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/keygen.vhd</arg>&quot; Line <arg fmt="%d" index="2">49</arg>. <arg fmt="%s" index="3">Syntax error near &quot;&apos;&quot;.</arg>
 </msg>
 
-<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/keygen.vhd</arg>&quot; Line <arg fmt="%d" index="2">100</arg>. <arg fmt="%s" index="3">Syntax error near &quot;Behavioral&quot;.</arg>
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/keygen.vhd</arg>&quot; Line <arg fmt="%d" index="2">87</arg>. <arg fmt="%s" index="3">Syntax error near &quot;end&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/keygen.vhd</arg>&quot; Line <arg fmt="%d" index="2">110</arg>. <arg fmt="%s" index="3">Syntax error near &quot;loop&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/keygen.vhd</arg>&quot; Line <arg fmt="%d" index="2">114</arg>. <arg fmt="%s" index="3">Syntax error near &quot;process&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/keygen.vhd</arg>&quot; Line <arg fmt="%d" index="2">118</arg>. <arg fmt="%s" index="3">Syntax error near &quot;begin&quot;.</arg>
 </msg>
 
 </messages>
