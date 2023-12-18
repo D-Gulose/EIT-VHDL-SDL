@@ -19,6 +19,7 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use ieee.std_logic_arith.all;
 
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
@@ -43,9 +44,26 @@ end keygen;
 architecture Behavioral of keygen is
 
 	type matrix is array(51 downto 0) of std_logic_vector(15 downto 0);
-	signal subkeys : matrix := (others => (others => '0')); 
+	signal subkeys : matrix := (others => (others => '0'));
+	signal shift_a, shift_b : std_logic;
+	signal keys_a, keys_b : std_logic_vector(1 downto 0);
 	
 	begin
+	
+		case lap is
+			when b"0000" => -- lap 1
+			when b"0001" => -- lap 2
+			when b"0010" => -- lap 3
+			when b"0011" => -- lap 4
+			when b"0100" => -- lap 5
+			when b"0101" => -- lap 6
+			when b"0110" => -- lap 7
+			when b"0111" => -- lap 8
+			when b"1000" => -- output trafo
+			when others => -- undefined
+		end case;
+	
+	
 
 		process(KEY)
 			constant shifts : integer := 6;
@@ -74,17 +92,7 @@ architecture Behavioral of keygen is
 	
 		begin
 		
-		case lap is
-			when x"0000" => -- lap 1
-			when x"0001" => -- lap 2
-			when x"0010" => -- lap 3
-			when x"0011" => -- lap 4
-			when x"0100" => -- lap 5
-			when x"0101" => -- lap 6
-			when x"0110" => -- lap 7
-			when x"0111" => -- lap 8
-			when x"1000" => -- output trafo
-			when others => -- undefined
+
 		
 
 
