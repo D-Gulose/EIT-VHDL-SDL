@@ -56,7 +56,7 @@ ARCHITECTURE behavior OF tb_keygen IS
    --Inputs
    signal inputkey : std_logic_vector(127 downto 0) := (others => '0');
    signal lap : std_logic_vector(3 downto 0) := (others => '0');
-   signal key1, key1e, key2, key2e, key3, key3e, key4, key4e, key5, key5e, key6, key6e: std_logic_vector(15 downto 0) := (others => '0');
+   signal key1, key1e, key2, key2e, key3, key3e, key4, key4e, key5, key5e, key6, key6e: std_logic_vector(15 downto 0); -- := (others => '0');
 	signal pass : std_logic := '0';
 	constant period : time := 10 ns;
  

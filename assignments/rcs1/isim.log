@@ -53,4 +53,44 @@ at 0 ps: Note: 47 (/tb_keygen/uut/).
 at 0 ps: Note: 32 (/tb_keygen/uut/).
 at 0 ps: Note: 0 (/tb_keygen/uut/).
 Finished circuit initialization process.
+at 0 ps: Note: Case shift1 = 0 (/tb_keygen/uut/).
+at 0 ps: Note: Case subkey1 = 1 (/tb_keygen/uut/).
+at 0 ps: Note: Test loop: l_shift 0 (/tb_keygen/uut/).
+at 0 ps: Note: fall 1 (/tb_keygen/uut/).
+at 0 ps: Note: test l_pos: 1/8 (/tb_keygen/uut/).
+at 0 ps: Note: 95 (/tb_keygen/uut/).
+at 0 ps: Note: 80 (/tb_keygen/uut/).
+at 0 ps: Note: 127 (/tb_keygen/uut/).
+at 0 ps: Note: 112 (/tb_keygen/uut/).
+at 0 ps: Note: 5 (/tb_keygen/uut/).
+at 0 ps: Note: test l_pos: 2/8 (/tb_keygen/uut/).
+at 0 ps: Note: 79 (/tb_keygen/uut/).
+at 0 ps: Note: 64 (/tb_keygen/uut/).
+at 0 ps: Note: 111 (/tb_keygen/uut/).
+at 0 ps: Note: 96 (/tb_keygen/uut/).
+at 0 ps: Note: 4 (/tb_keygen/uut/).
+at 0 ps: Note: test l_pos: 3/8 (/tb_keygen/uut/).
+at 0 ps: Note: 63 (/tb_keygen/uut/).
+at 0 ps: Note: 48 (/tb_keygen/uut/).
+at 0 ps: Note: 95 (/tb_keygen/uut/).
+at 0 ps: Note: 80 (/tb_keygen/uut/).
+at 0 ps: Note: 3 (/tb_keygen/uut/).
+at 0 ps: Note: test l_pos: 4/8 (/tb_keygen/uut/).
+at 0 ps: Note: 47 (/tb_keygen/uut/).
+at 0 ps: Note: 32 (/tb_keygen/uut/).
+at 0 ps: Note: 79 (/tb_keygen/uut/).
+at 0 ps: Note: 64 (/tb_keygen/uut/).
+at 0 ps: Note: 2 (/tb_keygen/uut/).
+at 0 ps: Note: test l_pos: 5/8 (/tb_keygen/uut/).
+at 0 ps: Note: 31 (/tb_keygen/uut/).
+at 0 ps: Note: 16 (/tb_keygen/uut/).
+at 0 ps: Note: 63 (/tb_keygen/uut/).
+at 0 ps: Note: 48 (/tb_keygen/uut/).
+at 0 ps: Note: 1 (/tb_keygen/uut/).
+at 0 ps: Note: test l_pos: 6/8 (/tb_keygen/uut/).
+at 0 ps: Note: 15 (/tb_keygen/uut/).
+at 0 ps: Note: 0 (/tb_keygen/uut/).
+at 0 ps: Note: 47 (/tb_keygen/uut/).
+at 0 ps: Note: 32 (/tb_keygen/uut/).
+at 0 ps: Note: 0 (/tb_keygen/uut/).
 # exit 0

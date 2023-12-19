@@ -33,10 +33,16 @@ entity keygen is
 end keygen;
 
 architecture Behavioral of keygen is
+--	signal fullkey_out : std_logic_vector(95 downto 0) := (others=>'X');
+	signal check : std_logic_vector(95 downto 0) := (others=>'0');
+	
 	
 	begin
 		
-		process(lap)
+		
+		
+		process(inputkey)
+			
 			-- VARIABLES/SIGNALS ONLY DECLARE BEFORE 'BEGIN' AND ASSIGN AFTER 'BEGIN' !!!
 			-- More readable to use bit numbers:
 			-- * 128 or 127 .. fullkey size or size-1 
@@ -49,6 +55,7 @@ architecture Behavioral of keygen is
 			
 
 			begin
+--				fullkey_out <= (others=>'1');
 				case lap is -- lap = round
 					when b"0000" => -- lap 1
 						shift1 := 0; subkey1 := 1; 
@@ -111,6 +118,7 @@ architecture Behavioral of keygen is
 						report integer'image(127-16*pos+1);
 						fullkey_out(key_ctr*16-1 downto 16*(key_ctr-1)) := 
 							fullkey_tmp(127-16*(pos-1) downto 127-16*pos+1);
+						check <= fullkey_out;
 						key_ctr := key_ctr - 1;
 						report integer'image(key_ctr);
 						if key_ctr < 1 then 
