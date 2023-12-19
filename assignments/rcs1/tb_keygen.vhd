@@ -77,9 +77,9 @@ BEGIN
 	process 
 		begin
 			
+			inputkey <= x"00010002000300040005000600070008";
 			
 			-- tc1
-			inputkey <= x"00010002000300040005000600070008";
 			lap <= b"0000";
 			key1e <= x"0001";
 			key2e <= x"0002";
@@ -89,28 +89,34 @@ BEGIN
 			key6e <= x"0006";
 			wait for period;
 			 
---			lap <= b"0001";
---			wait for period;
+			lap <= b"0001";
+			key1e <= x"0007";
+			key2e <= x"0008";
+--			key3e <= x"0003";
+--			key4e <= x"0004";
+--			key5e <= x"0005";
+--			key6e <= x"0006";
+			wait for period;
 --
---			lap <= b"0010";
---			wait for period;
+			lap <= b"0010";
+			wait for period;
 --
---			lap <= b"0011"; 
---			wait for period;
---			
---			lap <= b"0100"; 
---			wait for period;
---
---			lap <= b"0101"; 
---			wait for period;
---
---			lap <= b"0110";
---			wait for period;		
---			
---			lap <= b"0111"; 
---			wait for period;
---			
---			lap <= b"1000"; 
+			lap <= b"0011"; 
+			wait for period;
+			
+			lap <= b"0100"; 
+			wait for period;
+
+			lap <= b"0101"; 
+			wait for period;
+
+			lap <= b"0110";
+			wait for period;		
+			
+			lap <= b"0111"; 
+			wait for period;
+			
+			lap <= b"1000"; 
 
 			wait;
 	end process;

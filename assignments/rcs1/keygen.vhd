@@ -36,13 +36,9 @@ architecture Behavioral of keygen is
 --	signal fullkey_out : std_logic_vector(95 downto 0) := (others=>'X');
 	signal check : std_logic_vector(95 downto 0) := (others=>'0');
 	
-	
 	begin
-		
-		
-		
-		process(inputkey)
 			
+		process(inputkey, lap)		
 			-- VARIABLES/SIGNALS ONLY DECLARE BEFORE 'BEGIN' AND ASSIGN AFTER 'BEGIN' !!!
 			-- More readable to use bit numbers:
 			-- * 128 or 127 .. fullkey size or size-1 
@@ -111,11 +107,13 @@ architecture Behavioral of keygen is
 					end if;
 					
 					l_pos: for pos in pos1 to loop_end loop
+						
 						report "test l_pos: " & integer'image(pos) & "/" & integer'image(loop_end);
 						report integer'image(key_ctr*16-1);
 						report integer'image(16*(key_ctr-1));
 						report integer'image(127-16*(pos-1));
 						report integer'image(127-16*pos+1);
+						
 						fullkey_out(key_ctr*16-1 downto 16*(key_ctr-1)) := 
 							fullkey_tmp(127-16*(pos-1) downto 127-16*pos+1);
 						check <= fullkey_out;
