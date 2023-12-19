@@ -41,23 +41,63 @@ end control;
 architecture Behavioral of control is
 	
 	
+	signal state : std_logic_vector(3 downto 0) := "1000"; 
+	-- rounds / states 1 to 9 are decoaded as "0000" to "1000".
 	
 	begin 
-
-	statemachine: process(clk, start) 
+	
+	state_machine: process(clk, start) 
 	
 		begin
-		
-			-- Encryption start
-			if rising_edge(clk) and start = 1 then
-				ready <= '0';
+			if rising_edge(clk) then
+			
+				if state = "1000" and start = '1' then 
+					-- Encryption start
+					state <= "0000";
+					round <= "0000";
+					ready <= '0';
+					s <= '0';
+					en <= '1';
+					
+				elsif state = "0000" then
+					state <= "0001";
+					round <= "0001";
+					s <= '1';
+					
+				elsif state = "0001" then 
+					state <= "0010";
+					round <= "0010";
+					
+				elsif state = "0010" then 
+					state  <= "0011"; 
+					round <= "0011";
 				
+				elsif state = "0011" then 
+					state <= "0100";
+					round <= "0100";
+					
+				elsif state = "0100" then 
+					state <= "0101";
+					round <= "0101";
+					
+				elsif state = "0101" then 
+					state <= "0111";
+					round <= "0111";
 				
-			-- Encryption finish
-			ready <= '1';
-		
-	
-	
+				elsif state = "0111" then
+					-- Encryption finish
+					state <= "1000";
+					round <= "1000";
+					ready <= '1';
+					en <= '0';
+				
+				else
+					state <= "XXXX";
+					report "ERROR: UNDEFINED CASE";
+				end if;
+				
+			end if; 
+			
 	end process;
 
 end Behavioral;

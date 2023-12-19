@@ -1,0 +1,8 @@
+V3 3
+FL /home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/control.vhd 2023/12/19.21:19:25 P.20131013
+EN work/control 0 \
+      FL /home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/control.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/control/Behavioral 0 \
+      FL /home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/control.vhd \
+      EN work/control 0

@@ -34,7 +34,7 @@ end keygen;
 
 architecture Behavioral of keygen is
 --	signal fullkey_out : std_logic_vector(95 downto 0) := (others=>'X');
-	signal check : std_logic_vector(95 downto 0) := (others=>'0');
+--	signal check : std_logic_vector(95 downto 0) := (others=>'0');
 	
 	begin
 		process(inputkey, lap)			

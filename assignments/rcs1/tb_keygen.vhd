@@ -42,7 +42,7 @@ ARCHITECTURE behavior OF tb_keygen IS
     COMPONENT keygen
     PORT(
          inputkey : IN  std_logic_vector(127 downto 0);
-         lap : IN  std_logic_vector(3 downto 0);
+         lap  : IN   std_logic_vector(3 downto 0);
          key1 : out  std_logic_vector(15 downto 0);
          key2 : out  std_logic_vector(15 downto 0);
          key3 : out  std_logic_vector(15 downto 0);
