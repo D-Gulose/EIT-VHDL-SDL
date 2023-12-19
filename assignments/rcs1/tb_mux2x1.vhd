@@ -70,9 +70,7 @@ BEGIN
    -- Stimulus process
    stim_proc: process
    begin	
-	
-		wait for period;
-		
+			
 		-- tc1
 		d0 <= x"11d0";
 		d1 <= x"11d1";
@@ -93,12 +91,12 @@ BEGIN
 		wait for period;
 		
       wait;
+		
    end process;
 	
-	process(s, d01, d2)
-		
+	process
 		begin
---		wait for period;
+		wait for 1 ns;
 		
 		for tc in 1 to 4 loop
 			if	(s='0' and o=d0) or

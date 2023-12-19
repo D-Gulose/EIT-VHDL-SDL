@@ -10,13 +10,13 @@
          <ClosedNode>/idea_com - Behavioral |home|ise|my_shared_folder|EIT-VHDL-SDL|assignments|rcs1|idea_com.vhd/idea_1 - idea_com_inner - Behavioral/uart1 - uart - behavior</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>idea_com - Behavioral (/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/idea_com.vhd)</SelectedItem>
+         <SelectedItem>control - Behavioral (/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/control.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001bd000000020000000000000000000000000200000064ffffffff000000810000000300000002000001bd0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>idea_com - Behavioral (/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/idea_com.vhd)</CurrentItem>
+      <CurrentItem>control - Behavioral (/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/control.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
@@ -28,13 +28,13 @@
          <ClosedNode>User Constraints</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>Check Syntax</SelectedItem>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001e5000000010000000100000000000000000000000064ffffffff000000810000000000000001000001e50000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001b8000000010000000100000000000000000000000064ffffffff000000810000000000000001000001b80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>Check Syntax</CurrentItem>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -82,13 +82,13 @@
          <ClosedNode>/testbench - behavior |home|ise|my_shared_folder|EIT-VHDL-SDL|assignments|rcs1|tb_mux2x1.vhd</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>tb_keygen - behavior (/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/tb_keygen.vhd)</SelectedItem>
+         <SelectedItem>tb_mux2x1 - behavior (/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/tb_mux2x1.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000202000000010000000100000064000001bd000000020000000000000000000000000200000064ffffffff000000810000000300000002000001bd0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>tb_keygen - behavior (/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/tb_keygen.vhd)</CurrentItem>
+      <CurrentItem>tb_mux2x1 - behavior (/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/tb_mux2x1.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -109,13 +109,13 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>ISim Simulator</SelectedItem>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001f5000000010000000100000000000000000000000064ffffffff000000810000000000000001000001f50000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem>ISim Simulator</CurrentItem>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="ManualCompile" >
       <ClosedNodes>
@@ -145,5 +145,5 @@
       <CurrentItem/>
    </ItemView>
    <SourceProcessView>000000ff000000000000000200000141000000ec01000000060100000002</SourceProcessView>
-   <CurrentView>Behavioral Simulation</CurrentView>
+   <CurrentView>Implementation</CurrentView>
 </Project>

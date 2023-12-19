@@ -39,15 +39,26 @@ entity control is
 end control;
 
 architecture Behavioral of control is
+	
+	
+	
+	begin 
 
-begin 
-
-process(clk) 
+	statemachine: process(clk, start) 
 	
-	begin
+		begin
+		
+			-- Encryption start
+			if rising_edge(clk) and start = 1 then
+				ready <= '0';
+				
+				
+			-- Encryption finish
+			ready <= '1';
+		
 	
 	
-end process;
+	end process;
 
 end Behavioral;
 
