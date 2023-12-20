@@ -113,16 +113,17 @@ BEGIN
    -- Stimulus process
    stim_proc: process
 		
-		begin	
-			
-			-- reset
+		begin
 			wait for CLK_period/2;
 			
 			-- tc1 
 			start <= '0'; -- no next state, start is missing
 			wait for CLK_period;
 			if round = "1000" and
-				start = '0'
+				start = '0' and
+				ready = '1' and
+				s = '1' and
+				en = '0'
 			then
 				report "TC1 PASS";
 				pass <= '1';
@@ -281,18 +282,36 @@ BEGIN
 			start <= '1';
 			wait for CLK_period;
 			if 
-				round = "1000" and 
-				start = '0' and
-				ready = '1' and 
-				s = '1' and
-				en = '0' 
+				round = "0000" and 
+				start = '1' and
+				ready = '0' and 
+				s = '0' and
+				en = '1'
 			then
-				report "TC9 PASS";
+				report "TC10 PASS";
 				pass <= '1';
 			else
 				pass <= '0';
-				report "TC9 FAIL";
+				report "TC10 FAIL";
 			end if;
+			
+			-- tc11
+			start <= '0';
+			wait for CLK_period;
+			if 
+				round = "0001" and 
+				start = '0' and
+				ready = '0' and 
+				s = '1' and
+				en = '1' 
+			then
+				report "TC11 PASS";
+				pass <= '1';
+			else
+				pass <= '0';
+				report "TC11 FAIL";
+			end if;
+
 
 			wait;
    end process;

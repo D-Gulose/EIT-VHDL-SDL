@@ -21,7 +21,7 @@
 -- Notes: 
 -- This testbench has been automatically generated using types std_logic and
 -- std_logic_vector for the ports of the unit under test.  Xilinx recommends
--- that these types always be used for the top-level I/O of a design in order
+-- that these types always be used for the top-level d/q of a design in order
 -- to guarantee that the testbench will bind correctly to the post-implementation 
 -- simulation model.
 --------------------------------------------------------------------------------
@@ -44,8 +44,8 @@ ARCHITECTURE behavior OF tb_register_16b IS
     PORT(
          CLK : IN  std_logic;
          ENABLE : IN  std_logic;
-         I : IN  std_logic_vector(15 downto 0);
-         O : OUT  std_logic_vector(15 downto 0)
+         D : IN  std_logic_vector(15 downto 0);
+         Q : OUT  std_logic_vector(15 downto 0)
         );
     END COMPONENT;
     
@@ -53,10 +53,10 @@ ARCHITECTURE behavior OF tb_register_16b IS
    --Inputs
    signal CLK : std_logic := '0';
    signal ENABLE : std_logic := '0';
-   signal I : std_logic_vector(15 downto 0) := (others=>'0');
+   signal d : std_logic_vector(15 downto 0) := (others=>'0');
 
  	--Outputs
-   signal O : std_logic_vector(15 downto 0) := (others=>'0');
+   signal q : std_logic_vector(15 downto 0) := (others=>'0');
 
    -- Clock period definitions
    constant CLK_period : time := 10 ns;
@@ -67,8 +67,8 @@ BEGIN
    uut: register_16b PORT MAP (
           CLK => CLK,
           ENABLE => ENABLE,
-          I => I,
-          O => O
+          D => d,
+          Q => q
         );
 
    -- Clock process definitions
@@ -106,14 +106,14 @@ BEGIN
 		
 		for l in 2 to 4 loop
 			wait for CLK_period*l;
-			i <= x"1fff";
-			if (enable = '1' and i = o) or 
-				(enable = '0' and i /= o) then
+			d <= x"1fff";
+			if (enable = '1' and d = q) or 
+				(enable = '0' and d /= q) then
 				report "pass";
 			else
 				report "fail";
 			end if;
-			i <= x"0000";
+			d <= x"0000";
 		end loop;
 		wait;
 	end process;

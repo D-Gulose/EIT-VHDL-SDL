@@ -1,8 +1,16 @@
-V3 3
+V3 8
 FL /home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/control.vhd 2023/12/19.21:19:25 P.20131013
-EN work/control 0 \
-      FL /home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/control.vhd \
+FL /nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/control.vhd 2023/12/20.14:52:29 P.20131013
+EN work/control 1703083350 \
+      FL /nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/control.vhd \
       PB ieee/std_logic_1164 1381692176
-AR work/control/Behavioral 0 \
-      FL /home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/control.vhd \
-      EN work/control 0
+AR work/control/Behavioral 1703083351 \
+      FL /nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/control.vhd \
+      EN work/control 1703083350
+FL /nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/idea_single.vhd 2023/12/20.15:42:26 P.20131013
+EN work/idea_single 0 \
+      FL /nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/idea_single.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/idea_single/Structural 0 \
+      FL /nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/idea_single.vhd \
+      EN work/idea_single 0 CP control

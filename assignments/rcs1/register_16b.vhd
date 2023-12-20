@@ -32,8 +32,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 entity register_16b is
     Port ( CLK : in  STD_LOGIC;
            ENABLE : in  STD_LOGIC;
-           I : in  STD_LOGIC_VECTOR(15 downto 0);
-           O : out  STD_LOGIC_VECTOR(15 downto 0)); 
+           D : in  STD_LOGIC_VECTOR(15 downto 0); -- input
+           q : out  STD_LOGIC_VECTOR(15 downto 0)); -- output
 		end register_16b;
 
 architecture Behavioral of register_16b is
@@ -45,7 +45,7 @@ architecture Behavioral of register_16b is
 		begin 
 
 		if (clk='1' and clk'EVENT and enable='1') then -- or rising_edge(clk)
-			o <= i ;
+			q <= d ;
 		end if;
 	
 end process;

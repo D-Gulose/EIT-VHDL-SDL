@@ -54,7 +54,9 @@ architecture Behavioral of control is
 				if state = "1000" then 
 										
 					-- Encryption start
-					if start = '1' then 					
+					if start = '1' then 	
+						-- Assignment plot: Setting start = '1' during rising edge. Only the next reaching rising edge (1 cycle wait) trigger "0000".
+						-- Simulation: Setting start = '1' during rising edge simultaneously triggers "0000". No full cycle wait needed
 						state <= "0000";
 						round <= "0000";
 						ready <= '0';
@@ -124,12 +126,17 @@ architecture Behavioral of control is
 					-- Encryption finish
 					state <= "1000";
 					round <= "1000";
-					ready <= '0';
+					ready <= '1';
 					s <= '1';
 					en <= '0';
 				
 				-- Undefined
 				else
+					state <= "1000";
+					round <= "1000";
+					ready <= '1';
+					s <= '1';
+					en <= '0';
 					report "ERROR: UNDEFINED CASE";
 				end if;
 				

@@ -21,6 +21,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use ieee.numeric_std.all;
 
+-- port names can be choosen arbitrarily
 entity keygen is
     Port ( inputkey : in STD_LOGIC_VECTOR (127 downto 0);
            lap  : in STD_LOGIC_VECTOR (3 downto 0);
