@@ -51,48 +51,85 @@ architecture Behavioral of control is
 		begin
 			if rising_edge(clk) then
 			
-				if state = "1000" and start = '1' then 
+				if state = "1000" then 
+										
 					-- Encryption start
-					state <= "0000";
-					round <= "0000";
-					ready <= '0';
-					s <= '0';
-					en <= '1';
+					if start = '1' then 					
+						state <= "0000";
+						round <= "0000";
+						ready <= '0';
+						s <= '0';
+						en <= '1';
 					
+					-- Idle
+					else -- start = '0' 
+						state <= "1000";
+						round <= "1000";
+						ready <= '1';
+						s <= '1';
+						en <= '0';
+				
+					end if;
+						
 				elsif state = "0000" then
 					state <= "0001";
 					round <= "0001";
+					ready <= '0';
 					s <= '1';
+					en <= '1';
 					
 				elsif state = "0001" then 
 					state <= "0010";
 					round <= "0010";
+					ready <= '0';
+					s <= '1';
+					en <= '1';
 					
 				elsif state = "0010" then 
 					state  <= "0011"; 
 					round <= "0011";
-				
+					ready <= '0';
+					s <= '1';
+					en <= '1';
+					
 				elsif state = "0011" then 
 					state <= "0100";
 					round <= "0100";
+					ready <= '0';
+					s <= '1';
+					en <= '1';
 					
 				elsif state = "0100" then 
 					state <= "0101";
 					round <= "0101";
+					ready <= '0';
+					s <= '1';
+					en <= '1';
 					
 				elsif state = "0101" then 
+					state <= "0110";
+					round <= "0110";
+					ready <= '0';
+					s <= '1';
+					en <= '1';
+				
+				elsif state = "0110" then 
 					state <= "0111";
 					round <= "0111";
+					ready <= '0';
+					s <= '1';
+					en <= '1';
 				
 				elsif state = "0111" then
 					-- Encryption finish
 					state <= "1000";
 					round <= "1000";
-					ready <= '1';
+					ready <= '0';
+					s <= '1';
 					en <= '0';
 				
+				-- Undefined
 				else
-					state <= "XXXX";
 					report "ERROR: UNDEFINED CASE";
 				end if;
 				

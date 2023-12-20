@@ -1,5 +1,5 @@
 ISim log file
-Running: /home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/tb_keygen_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/tb_keygen_isim_beh.wdb 
+Running: /home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/tb_control_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/tb_control_isim_beh.wdb 
 ISim P.20131013 (signature 0xfbc00daa)
 ----------------------------------------------------------------------
 WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
@@ -12,98 +12,15 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-at 0 ps: Note: key_ctr: 5 (/tb_keygen/uut/).
-at 0 ps: Note: key_ctr: 4 (/tb_keygen/uut/).
-at 0 ps: Note: key_ctr: 3 (/tb_keygen/uut/).
-at 0 ps: Note: key_ctr: 2 (/tb_keygen/uut/).
-at 0 ps: Note: key_ctr: 1 (/tb_keygen/uut/).
-at 0 ps: Note: key_ctr: 0 (/tb_keygen/uut/).
 Finished circuit initialization process.
-at 0 ps: Note: key_ctr: 5 (/tb_keygen/uut/).
-at 0 ps: Note: key_ctr: 4 (/tb_keygen/uut/).
-at 0 ps: Note: key_ctr: 3 (/tb_keygen/uut/).
-at 0 ps: Note: key_ctr: 2 (/tb_keygen/uut/).
-at 0 ps: Note: key_ctr: 1 (/tb_keygen/uut/).
-at 0 ps: Note: key_ctr: 0 (/tb_keygen/uut/).
-at 1 ns: Note: TC PASS: 1------------------------------------------------- (/tb_keygen/).
-at 50 ns(1): Note: key_ctr: 5 (/tb_keygen/uut/).
-at 50 ns(1): Note: key_ctr: 4 (/tb_keygen/uut/).
-at 50 ns(1): Note: key_ctr: 3 (/tb_keygen/uut/).
-at 50 ns(1): Note: key_ctr: 2 (/tb_keygen/uut/).
-at 50 ns(1): Note: key_ctr: 1 (/tb_keygen/uut/).
-at 50 ns(1): Note: key_ctr: 0 (/tb_keygen/uut/).
-at 51 ns: Note: TC PASS: 2------------------------------------------------- (/tb_keygen/).
-at 100 ns(1): Note: If 4 (/tb_keygen/uut/).
-at 100 ns(1): Note: key_ctr: 5 (/tb_keygen/uut/).
-at 100 ns(1): Note: key_ctr: 4 (/tb_keygen/uut/).
-at 100 ns(1): Note: key_ctr: 3 (/tb_keygen/uut/).
-at 100 ns(1): Note: key_ctr: 2 (/tb_keygen/uut/).
-at 100 ns(1): Note: key_ctr: 1 (/tb_keygen/uut/).
-at 100 ns(1): Note: key_ctr: 0 (/tb_keygen/uut/).
-at 101 ns: Note: TC PASS: 3------------------------------------------------- (/tb_keygen/).
-at 150 ns(1): Note: If 4 (/tb_keygen/uut/).
-at 150 ns(1): Note: If 4 (/tb_keygen/uut/).
-at 150 ns(1): Note: key_ctr: 5 (/tb_keygen/uut/).
-at 150 ns(1): Note: key_ctr: 4 (/tb_keygen/uut/).
-at 150 ns(1): Note: key_ctr: 3 (/tb_keygen/uut/).
-at 150 ns(1): Note: key_ctr: 2 (/tb_keygen/uut/).
-at 150 ns(1): Note: key_ctr: 1 (/tb_keygen/uut/).
-at 150 ns(1): Note: key_ctr: 0 (/tb_keygen/uut/).
-at 151 ns: Note: TC PASS: 4------------------------------------------------- (/tb_keygen/).
-at 200 ns(1): Note: If 4 (/tb_keygen/uut/).
-at 200 ns(1): Note: If 4 (/tb_keygen/uut/).
-at 200 ns(1): Note: If 4 (/tb_keygen/uut/).
-at 200 ns(1): Note: key_ctr: 5 (/tb_keygen/uut/).
-at 200 ns(1): Note: key_ctr: 4 (/tb_keygen/uut/).
-at 200 ns(1): Note: key_ctr: 3 (/tb_keygen/uut/).
-at 200 ns(1): Note: key_ctr: 2 (/tb_keygen/uut/).
-at 200 ns(1): Note: key_ctr: 1 (/tb_keygen/uut/).
-at 200 ns(1): Note: key_ctr: 0 (/tb_keygen/uut/).
-at 201 ns: Note: TC PASS: 5------------------------------------------------- (/tb_keygen/).
-at 250 ns(1): Note: If 4 (/tb_keygen/uut/).
-at 250 ns(1): Note: If 4 (/tb_keygen/uut/).
-at 250 ns(1): Note: If 4 (/tb_keygen/uut/).
-at 250 ns(1): Note: key_ctr: 5 (/tb_keygen/uut/).
-at 250 ns(1): Note: key_ctr: 4 (/tb_keygen/uut/).
-at 250 ns(1): Note: key_ctr: 3 (/tb_keygen/uut/).
-at 250 ns(1): Note: key_ctr: 2 (/tb_keygen/uut/).
-at 250 ns(1): Note: key_ctr: 1 (/tb_keygen/uut/).
-at 250 ns(1): Note: key_ctr: 0 (/tb_keygen/uut/).
-at 251 ns: Note: TC PASS: 6------------------------------------------------- (/tb_keygen/).
-at 300 ns(1): Note: If 4 (/tb_keygen/uut/).
-at 300 ns(1): Note: If 4 (/tb_keygen/uut/).
-at 300 ns(1): Note: If 4 (/tb_keygen/uut/).
-at 300 ns(1): Note: If 4 (/tb_keygen/uut/).
-at 300 ns(1): Note: key_ctr: 5 (/tb_keygen/uut/).
-at 300 ns(1): Note: key_ctr: 4 (/tb_keygen/uut/).
-at 300 ns(1): Note: key_ctr: 3 (/tb_keygen/uut/).
-at 300 ns(1): Note: key_ctr: 2 (/tb_keygen/uut/).
-at 300 ns(1): Note: key_ctr: 1 (/tb_keygen/uut/).
-at 300 ns(1): Note: key_ctr: 0 (/tb_keygen/uut/).
-at 301 ns: Note: TC PASS: 7------------------------------------------------- (/tb_keygen/).
-at 350 ns(1): Note: If 4 (/tb_keygen/uut/).
-at 350 ns(1): Note: If 4 (/tb_keygen/uut/).
-at 350 ns(1): Note: If 4 (/tb_keygen/uut/).
-at 350 ns(1): Note: If 4 (/tb_keygen/uut/).
-at 350 ns(1): Note: If 4 (/tb_keygen/uut/).
-at 350 ns(1): Note: key_ctr: 5 (/tb_keygen/uut/).
-at 350 ns(1): Note: key_ctr: 4 (/tb_keygen/uut/).
-at 350 ns(1): Note: key_ctr: 3 (/tb_keygen/uut/).
-at 350 ns(1): Note: key_ctr: 2 (/tb_keygen/uut/).
-at 350 ns(1): Note: key_ctr: 1 (/tb_keygen/uut/).
-at 350 ns(1): Note: key_ctr: 0 (/tb_keygen/uut/).
-at 351 ns: Note: TC PASS: 8------------------------------------------------- (/tb_keygen/).
-at 400 ns(1): Note: If 4 (/tb_keygen/uut/).
-at 400 ns(1): Note: If 4 (/tb_keygen/uut/).
-at 400 ns(1): Note: If 4 (/tb_keygen/uut/).
-at 400 ns(1): Note: If 4 (/tb_keygen/uut/).
-at 400 ns(1): Note: If 4 (/tb_keygen/uut/).
-at 400 ns(1): Note: If 4 (/tb_keygen/uut/).
-at 400 ns(1): Note: key_ctr: 5 (/tb_keygen/uut/).
-at 400 ns(1): Note: key_ctr: 4 (/tb_keygen/uut/).
-at 400 ns(1): Note: key_ctr: 3 (/tb_keygen/uut/).
-at 400 ns(1): Note: key_ctr: 2 (/tb_keygen/uut/).
-at 400 ns(1): Note: key_ctr: 1 (/tb_keygen/uut/).
-at 400 ns(1): Note: key_ctr: 0 (/tb_keygen/uut/).
-at 401 ns: Note: TC PASS: 9------------------------------------------------- (/tb_keygen/).
-at 451 ns: Note: ALL PASS! (/tb_keygen/).
+at 15 ns: Note: TC1 PASS (/tb_control/).
+at 25 ns: Note: TC2 PASS (/tb_control/).
+at 35 ns: Note: TC3 PASS (/tb_control/).
+at 45 ns: Note: TC3b PASS (/tb_control/).
+at 55 ns: Note: TC4 PASS (/tb_control/).
+at 65 ns: Note: TC5 PASS (/tb_control/).
+at 75 ns: Note: TC6 PASS (/tb_control/).
+at 85 ns: Note: TC7 FAIL (/tb_control/).
+at 95 ns: Note: TC8 FAIL (/tb_control/).
+at 105 ns: Note: TC9 PASS (/tb_control/).
+at 115 ns: Note: TC9 FAIL (/tb_control/).

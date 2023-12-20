@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "/home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/tb_keygen_isim_beh.exe" -prj "/home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/tb_keygen_beh.prj" "work.tb_keygen" 
+-intstyle "ise" -incremental -o "/home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/tb_control_isim_beh.exe" -prj "/home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/tb_control_beh.prj" "work.tb_control" 
