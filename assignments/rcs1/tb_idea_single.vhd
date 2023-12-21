@@ -138,12 +138,6 @@ BEGIN
 			wait for clock_period;
 		end loop;
 		
---		if y_1 = y1e and y_2 = y2e and 
---			y_3 = y3e and y_4 = y4e 
---		then 
---			report "TC PASS";
---		end if;
-		
 		-- tc2
 		key <= x"00000000000000000000000000000000";
 		x_1 <= x"0000";
@@ -160,12 +154,6 @@ BEGIN
       while ready = '0' loop
 			wait for clock_period;
 		end loop;
-
---		if y_1 = y1e and y_2 = y2e and 
---			y_3 = y3e and y_4 = y4e 
---		then 
---			report "TC PASS";
---		end if;
 		
 		-- tc3		
 		key <= x"0AD79FDFA07DFA0F0AFD7DAF079DF770";
@@ -184,12 +172,6 @@ BEGIN
 		while ready = '0' loop
 			wait for clock_period;
 		end loop;
-		
---		if y_1 = y1e and y_2 = y2e and 
---			y_3 = y3e and y_4 = y4e 
---		then 
---			report "TC PASS";
---		end if;
 
       wait;
    end process;

@@ -133,7 +133,7 @@ architecture Behavioral of control is
 					en <= '0';
 				
 				else
-					report "ERROR: UNDEFINED CASE";
+--					report "ERROR: UNDEFINED CASE";
 				end if;
 				
 			end if; 
