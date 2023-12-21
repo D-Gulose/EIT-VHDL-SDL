@@ -41,8 +41,6 @@ ARCHITECTURE behavior OF tb_keygen IS
  
     COMPONENT keygen
     PORT(
---			key : IN  std_logic_vector(127 downto 0);
---         round  : IN   std_logic_vector(3 downto 0);
          fullkey : IN  std_logic_vector(127 downto 0);
          lap  : IN   std_logic_vector(3 downto 0);
          key1 : out  std_logic_vector(15 downto 0);
@@ -51,14 +49,6 @@ ARCHITECTURE behavior OF tb_keygen IS
          key4 : out  std_logic_vector(15 downto 0);
          key5 : out  std_logic_vector(15 downto 0);
          key6 : out  std_logic_vector(15 downto 0)
---         round_counter  : IN   std_logic_vector(3 downto 0);
---			key : IN  std_logic_vector(127 downto 0);
---         z1 : out  std_logic_vector(15 downto 0);
---         z2 : out  std_logic_vector(15 downto 0);
---         z3 : out  std_logic_vector(15 downto 0);
---         z4 : out  std_logic_vector(15 downto 0);
---         z5 : out  std_logic_vector(15 downto 0);
---         z6 : out  std_logic_vector(15 downto 0)
         );
     END COMPONENT;
     
@@ -75,8 +65,6 @@ BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
    uut: keygen PORT MAP (
---          key => fullkey,
---          round => lap,
 			 fullkey => fullkey,
 			 lap => lap,
           key1 => key1,
@@ -85,14 +73,6 @@ BEGIN
           key4 => key4,
           key5 => key5,
           key6 => key6
---			 round_counter => lap,
---			 key => fullkey,
---			 z1 => key1,
---          z2 => key2,
---          z3 => key3,
---          z4 => key4,
---          z5 => key5,
---          z6 => key6
         );
 	
 	process 

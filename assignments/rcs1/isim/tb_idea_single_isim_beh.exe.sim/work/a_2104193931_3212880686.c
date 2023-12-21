@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/addop.vhd";
+static const char *ng0 = "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/addop.vhd";
 extern char *IEEE_P_3620187407;
 extern char *IEEE_P_2592010699;
 
@@ -57,11 +57,11 @@ LAB0:    xsi_set_current_line(50, ng0);
     t2 = (t0 + 1032U);
     t3 = *((char **)t2);
     t5 = ((IEEE_P_2592010699) + 4000);
-    t6 = (t0 + 4872U);
+    t6 = (t0 + 4832U);
     t2 = xsi_base_array_concat(t2, t4, t5, (char)99, (unsigned char)2, (char)97, t3, t6, (char)101);
     t8 = (t0 + 1192U);
     t9 = *((char **)t8);
-    t8 = (t0 + 4888U);
+    t8 = (t0 + 4848U);
     t10 = ieee_p_3620187407_sub_17314940489608042223_3965413181(IEEE_P_3620187407, t7, (unsigned char)2, t9, t8);
     t11 = ieee_p_3620187407_sub_1496620905533649268_3965413181(IEEE_P_3620187407, t1, t2, t4, t10, t7);
     t12 = (t1 + 12U);

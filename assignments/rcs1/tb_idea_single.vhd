@@ -66,7 +66,6 @@ ARCHITECTURE behavior OF tb_idea_single IS
 
    -- Clock period definitions
    constant CLOCK_period : time := 5 ns;
-	signal tc_ctr :integer := 0;
 	signal tc_pass :std_logic;
  
 BEGIN
@@ -96,29 +95,30 @@ BEGIN
 		wait for CLOCK_period/2;
    end process;
  
---	-- Check results
---	process(start)
---		begin
---			if rising_edge(start) then
---				tc_ctr <= tc_ctr + 1;
---				if y_1 = y1e and y_2 = y2e and 
---					y_3 = y3e and y_4 = y4e 
---				then 
---					tc_pass <= '1';
---					report "TC" & natural'image(tc_ctr) & " PASS";
---				else
---					tc_pass <= '0';
---					report "TC" & natural'image(tc_ctr) & " FAIL";
---				end if;
---
---			end if;
---			
---	end process;
+	-- Check results
+	process
+		begin
+			for i in 1 to 3 loop
+				while ready = '0' or y4e = "UUUU" loop
+					wait for clock_period;
+				end loop;
+				if y_1 = y1e and y_2 = y2e and 
+					y_3 = y3e and y_4 = y4e 
+				then 
+					report "TC PASS: " & integer'image(i);	
+				else 
+					report "TC FAIL: " & integer'image(i);	
+				end if;
+				
+			end loop;
+			wait;		
+	end process;
 
    -- Stimulus process
    stim_proc: process
    begin		   
 		start <= '0';
+		wait for clock_period;
 		
 		-- tc1
 		key <= x"00010002000300040005000600070008";
@@ -134,16 +134,15 @@ BEGIN
 		start <= '1';
 		wait for clock_period;
 		start <= '0';
-      
 		while ready = '0' loop
 			wait for clock_period;
 		end loop;
 		
-		if y_1 = y1e and y_2 = y2e and 
-			y_3 = y3e and y_4 = y4e 
-		then 
-			report "TC PASS";
-		end if;
+--		if y_1 = y1e and y_2 = y2e and 
+--			y_3 = y3e and y_4 = y4e 
+--		then 
+--			report "TC PASS";
+--		end if;
 		
 		-- tc2
 		key <= x"00000000000000000000000000000000";
@@ -158,18 +157,15 @@ BEGIN
 		start <= '1';
 		wait for clock_period;
 		start <= '0';
-		
-		-- Error hier: kann nicht mehr den state ndern
-
-      while ready /= '0' loop
+      while ready = '0' loop
 			wait for clock_period;
 		end loop;
 
-		if y_1 = y1e and y_2 = y2e and 
-			y_3 = y3e and y_4 = y4e 
-		then 
-			report "TC PASS";
-		end if;
+--		if y_1 = y1e and y_2 = y2e and 
+--			y_3 = y3e and y_4 = y4e 
+--		then 
+--			report "TC PASS";
+--		end if;
 		
 		-- tc3		
 		key <= x"0AD79FDFA07DFA0F0AFD7DAF079DF770";
@@ -181,19 +177,19 @@ BEGIN
 		y2e <= x"a28b";
 		y3e <= x"cd0b";
 		y4e <= x"1ff9";
+		
 		start <= '1';
 		wait for clock_period*2;
 		start <= '0';
-      
-		while ready /= '0' loop
+		while ready = '0' loop
 			wait for clock_period;
 		end loop;
 		
-		if y_1 = y1e and y_2 = y2e and 
-			y_3 = y3e and y_4 = y4e 
-		then 
-			report "TC PASS";
-		end if;
+--		if y_1 = y1e and y_2 = y2e and 
+--			y_3 = y3e and y_4 = y4e 
+--		then 
+--			report "TC PASS";
+--		end if;
 
       wait;
    end process;

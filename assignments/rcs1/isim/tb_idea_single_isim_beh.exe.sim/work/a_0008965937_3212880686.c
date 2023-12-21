@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "/home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/register_16b.vhd";
+static const char *ng0 = "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/register_16b.vhd";
 
 
 

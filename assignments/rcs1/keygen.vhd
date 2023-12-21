@@ -1,213 +1,3 @@
---library IEEE;
---use IEEE.STD_LOGIC_1164.ALL;
---
---entity keygen is
---    Port ( round_counter : in  STD_LOGIC_VECTOR (3 downto 0);
---           Key : in  STD_LOGIC_VECTOR (127 downto 0);
---           Z1 : out  STD_LOGIC_VECTOR (15 downto 0);
---           Z2 : out  STD_LOGIC_VECTOR (15 downto 0);
---           Z3 : out  STD_LOGIC_VECTOR (15 downto 0);
---           Z4 : out  STD_LOGIC_VECTOR (15 downto 0);
---           Z5 : out  STD_LOGIC_VECTOR (15 downto 0);
---           Z6 : out  STD_LOGIC_VECTOR (15 downto 0));
---end keygen;
---
---architecture Behavioral of keygen is
---
---begin
---	process(Key,round_counter)
---	
---	variable temp_key : std_logic_vector(127 downto 0);
---	
---	begin
---	
---	temp_key := Key;
---	
---	case round_counter is
---	
---	when "0000" =>
---		
---		temp_key := Key;
---		Z1 <= temp_key(127 downto 112);
---		Z2 <= temp_key(111 downto 96);
---		Z3 <= temp_key(95 downto 80);
---		Z4 <= temp_key(79 downto 64);
---		Z5 <= temp_key(63 downto 48);
---		Z6 <= temp_key(47 downto 32);
---		
---	when "0001" =>
---		
---		Z1 <= temp_key(31 downto 16);
---		Z2 <= temp_key(15 downto 0);
---		temp_key := Key(102 downto 0) & Key(127 downto 103);
---		Z3 <= temp_key(127 downto 112);
---		Z4 <= temp_key(111 downto 96);
---		Z5 <= temp_key(95 downto 80);
---		Z6 <= temp_key(79 downto 64);
---		
---	when "0010" =>
---		
---		temp_key := Key(102 downto 0) & Key(127 downto 103);
---		Z1 <= temp_key(63 downto 48);
---		Z2 <= temp_key(47 downto 32);
---		Z3 <= temp_key(31 downto 16);
---		Z4 <= temp_key(15 downto 0);
---		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
---		Z5 <= temp_key(127 downto 112);
---		Z6 <= temp_key(111 downto 96);	
---		
---	when "0011" =>
---		
---		temp_key := Key(102 downto 0) & Key(127 downto 103);
---		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
---		Z1 <= temp_key(95 downto 80);
---		Z2 <= temp_key(79 downto 64);
---		Z3 <= temp_key(63 downto 48);
---		Z4 <= temp_key(47 downto 32);
---		Z5 <= temp_key(31 downto 16);
---		Z6 <= temp_key(15 downto 0);
---	
---	when "0100" =>
---		
---		temp_key := Key(102 downto 0) & Key(127 downto 103);
---		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
---		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
---		Z1 <= temp_key(127 downto 112);
---		Z2 <= temp_key(111 downto 96);
---		Z3 <= temp_key(95 downto 80);
---		Z4 <= temp_key(79 downto 64);
---		Z5 <= temp_key(63 downto 48);
---		Z6 <= temp_key(47 downto 32);
---		
---	when "0101" =>
---		
---		temp_key := Key(102 downto 0) & Key(127 downto 103);
---		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
---		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
---		Z1 <= temp_key(31 downto 16);
---		Z2 <= temp_key(15 downto 0);
---		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
---		Z3 <= temp_key(127 downto 112);
---		Z4 <= temp_key(111 downto 96);
---		Z5 <= temp_key(95 downto 80);
---		Z6 <= temp_key(79 downto 64);
---		
---	when "0110" =>
---		
---		temp_key := Key(102 downto 0) & Key(127 downto 103);
---		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
---		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
---		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
---		Z1 <= temp_key(63 downto 48);
---		Z2 <= temp_key(47 downto 32);
---		Z3 <= temp_key(31 downto 16);
---		Z4 <= temp_key(15 downto 0);
---		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
---		Z5 <= temp_key(127 downto 112);
---		Z6 <= temp_key(111 downto 96);
---	
---	when "0111" =>
---		
---		temp_key := Key(102 downto 0) & Key(127 downto 103);
---		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
---		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
---		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
---		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
---		Z1 <= temp_key(95 downto 80);
---		Z2 <= temp_key(79 downto 64);
---		Z3 <= temp_key(63 downto 48);
---		Z4 <= temp_key(47 downto 32);
---		Z5 <= temp_key(31 downto 16);
---		Z6 <= temp_key(15 downto 0);
---		
---	when "1000" =>
---		
---		temp_key := Key(102 downto 0) & Key(127 downto 103);
---		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
---		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
---		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
---		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
---		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
---		Z1 <= temp_key(127 downto 112);
---		Z2 <= temp_key(111 downto 96);
---		Z3 <= temp_key(95 downto 80);
---		Z4 <= temp_key(79 downto 64);
---		Z5 <= temp_key(63 downto 48);
---		Z6 <= temp_key(47 downto 32);
---		
---	when others =>
---		temp_key:= Key;
---		Z1 <= "0000000000000000";
---		Z2 <= "0000000000000000";
---		Z3 <= "0000000000000000";
---		Z4 <= "0000000000000000";
---		Z5 <= "0000000000000000";
---		Z6 <= "0000000000000000";
---	
---	end case;
---	end process;
---
---end Behavioral;
-
---library IEEE;
---use IEEE.STD_LOGIC_1164.ALL;
---
----- Uncomment the following library declaration if using
----- arithmetic functions with Signed or Unsigned values
-----use IEEE.NUMERIC_STD.ALL;
---
----- Uncomment the following library declaration if instantiating
----- any Xilinx primitives in this code.
-----library UNISIM;
-----use UNISIM.VComponents.all;
---
---entity keygen is
---    Port ( KEY : in  STD_LOGIC_VECTOR (127 downto 0);
---           ROUND : in  STD_LOGIC_VECTOR (3 downto 0);
---           KEY1 : out  STD_LOGIC_VECTOR (15 downto 0);
---           KEY2 : out  STD_LOGIC_VECTOR (15 downto 0);
---           KEY3 : out  STD_LOGIC_VECTOR (15 downto 0);
---           KEY4 : out  STD_LOGIC_VECTOR (15 downto 0);
---           KEY5 : out  STD_LOGIC_VECTOR (15 downto 0);
---           KEY6 : out  STD_LOGIC_VECTOR (15 downto 0));
---end keygen;
---
---architecture Behavioral of keygen is
---
---signal SELECTED_KEY: std_logic_vector (95 downto 0);
---
---begin
---
---	process (ROUND)
---	begin
---		case ROUND is
---			when "0000" => SELECTED_KEY <= KEY(127 downto 32);
---			when "0001" => SELECTED_KEY <= KEY(31 downto 0) & KEY(102 downto 39);
---			when "0010" => SELECTED_KEY <= KEY(38 downto 0) & KEY(127 downto 103) & KEY(77 downto 46);
---			when "0011" => SELECTED_KEY <= KEY(45 downto 0) & KEY(127 downto 78);
---			when "0100" => SELECTED_KEY <= KEY(52 downto 0) & KEY(127 downto 85);
---			when "0101" => SELECTED_KEY <= KEY(84 downto 53) & KEY(27 downto 0) & KEY(127 downto 92);
---			when "0110" => SELECTED_KEY <= KEY(91 downto 28) & KEY(2 downto 0) & KEY(127 downto 99);
---			when "0111" => SELECTED_KEY <= KEY(98 downto 3);
---			when "1000" => SELECTED_KEY <= KEY(105 downto 42) & x"00000000"; --64 bits + 8*4 bits= 96 bits key to maintain no error
---			when others => SELECTED_KEY <= x"000000000000000000000000";
---		end case;
---			KEY1 <= SELECTED_KEY(95 downto 80); -- these are the 6 keys of total 96 bits, seperate keys for operations
---			
---	end process;
---
---	KEY1 <= SELECTED_KEY(95 downto 80); -- these are the 6 keys of total 96 bits, seperate keys for operations
---	KEY2 <= SELECTED_KEY(79 downto 64);
---	KEY3 <= SELECTED_KEY(63 downto 48);
---	KEY4 <= SELECTED_KEY(47 downto 32);
---	KEY5 <= SELECTED_KEY(31 downto 16);
---	KEY6 <= SELECTED_KEY(15 downto 0);
---
---
---
---end Behavioral;
-
-
 ----------------------------------------------------------------------------------
 -- Company: 
 -- Engineer: 
@@ -231,7 +21,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 use ieee.numeric_std.all;
 
--- port names can be choosen arbitrarily
+-- Arbitrary port names
 entity keygen is
     Port ( fullkey : in STD_LOGIC_VECTOR (127 downto 0);
            lap  : in STD_LOGIC_VECTOR (3 downto 0);
@@ -243,10 +33,7 @@ entity keygen is
            key6 : out STD_LOGIC_VECTOR (15 downto 0));
 end keygen;
 
-architecture Behavioral of keygen is
---	signal fullkey_out : std_logic_vector(95 downto 0) := (others=>'X');
---	signal check : std_logic_vector(95 downto 0) := (others=>'0');
-	
+architecture Behavioral of keygen is	
 	begin
 
 		process(fullkey, lap)			
@@ -256,9 +43,7 @@ architecture Behavioral of keygen is
 		-- 	where finished initialization is needed.
 		
 			-- VARIABLES/SIGNALS ONLY DECLARE BEFORE 'BEGIN' AND ASSIGN AFTER 'BEGIN' !!!
-			-- More readable to use bit numbers:
-			-- * 128 or 127 .. fullkey size or size-1 
-			-- * 16 or 15.. subkey size or size-1
+			-- 128 or 127 .. fullkey size; 16 or 15.. subkey size
 			
 			variable fullkey_tmp : std_logic_vector(127 downto 0);
 			variable fullkey_out : std_logic_vector(95 downto 0);
@@ -269,7 +54,6 @@ architecture Behavioral of keygen is
 			begin
 				key_ctr := 6;
 				fullkey_tmp := fullkey;
-				
 				
 				case lap is -- lap = round
 					when b"0000" => -- lap 1
@@ -290,37 +74,38 @@ architecture Behavioral of keygen is
 						shift1 := 5; subkey1 := 3;
 					when b"1000" => -- output trafo
 						shift1 := 6; subkey1 := 1; 
-					when others => -- undefined
+					when others => -- 
+						-- "lap" input port initially undefined, bc "control" 
+						-- outputs its lap state during the first clock.
 						shift1 := -1;
 						subkey1 := 1;
-						report "ERROR CASE in keygen";
 				end case;
 				
-				report "Case shift1 = " & integer'image(shift1);
-				report "Case subkey1 = " & integer'image(subkey1);				
+--				report "Case shift1 = " & integer'image(shift1);
+--				report "Case subkey1 = " & integer'image(subkey1);				
 
 				l_shift: for shift in 0 to 6 loop
 --					report "Test loop: l_shift " & integer'image(shift);
 					if (shift = shift1) then
-						report "If 1";
+--						report "1st shift of round";
 						pos1 := subkey1;
 						loop_end := 8;
 					elsif (shift = shift1+1) and (key_ctr > 0) then
-						report "If 2";
+--						report "2nd rshift for round";
 						pos1 := 1;
 						loop_end := key_ctr;
-					else -- skip
-						report "If 3";
+					else 
+--						report "Skip this shift value";
 						fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
 						next l_shift;
 					end if;
 					
 					l_pos: for pos in pos1 to loop_end loop
 						
-						report "test l_pos: " & integer'image(pos) & "/" & integer'image(loop_end);
+--						report "test l_pos: " & integer'image(pos) & "/" & integer'image(loop_end);
 --						report integer'image(key_ctr*16-1);
 --						report integer'image(16*(key_ctr-1));
-						report integer'image(127-16*(pos-1));
+--						report integer'image(127-16*(pos-1));
 --						report integer'image(127-16*pos+1);
 					
 						fullkey_out(key_ctr*16-1 downto 16*(key_ctr-1)) := 
