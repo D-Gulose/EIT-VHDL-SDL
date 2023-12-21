@@ -5,7 +5,7 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.06 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> 
 Parameter xsthdpdir set to xst
@@ -107,101 +107,86 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/mulop.vhd" in Library work.
-Entity <mulop> compiled.
-Entity <mulop> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/addop.vhd" in Library work.
-Entity <addop> compiled.
-Entity <addop> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/xorop.vhd" in Library work.
-Entity <xorop> compiled.
-Entity <xorop> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/control.vhd" in Library work.
-Entity <control> compiled.
-Entity <control> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/mux2x1.vhd" in Library work.
-Entity <mux2x1> compiled.
-Entity <mux2x1> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/keygen.vhd" in Library work.
+Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/mulop.vhd" in Library work.
+Architecture behavioral of Entity mulop is up to date.
+Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/addop.vhd" in Library work.
+Architecture behavioral of Entity addop is up to date.
+Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/xorop.vhd" in Library work.
+Architecture behavioral of Entity xorop is up to date.
+Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/control.vhd" in Library work.
+Architecture behavioral of Entity control is up to date.
+Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/mux2x1.vhd" in Library work.
+Architecture behavioral of Entity mux2x1 is up to date.
+Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/keygen.vhd" in Library work.
 Entity <keygen> compiled.
-Entity <keygen> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/round.vhd" in Library work.
-Entity <round> compiled.
-Entity <round> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/register_16b.vhd" in Library work.
-Entity <register_16b> compiled.
-Entity <register_16b> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/trafo.vhd" in Library work.
-Entity <trafo> compiled.
-Entity <trafo> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/txmit.vhd" in Library work.
-Entity <txmit> compiled.
-Entity <txmit> (Architecture <behavior>) compiled.
-Compiling vhdl file "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/rxcver.vhd" in Library work.
-Entity <rxcver> compiled.
-Entity <rxcver> (Architecture <behavior>) compiled.
-Compiling vhdl file "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/uart.vhd" in Library work.
-Entity <uart> compiled.
-Entity <uart> (Architecture <behavior>) compiled.
-Compiling vhdl file "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/idea_single.vhd" in Library work.
-Entity <idea_single> compiled.
-Entity <idea_single> (Architecture <Structural>) compiled.
-Compiling vhdl file "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/clk_div.vhd" in Library work.
-Entity <clk_div> compiled.
-Entity <clk_div> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/idea_com_inner.vhd" in Library work.
-Entity <idea_com_inner> compiled.
-Entity <idea_com_inner> (Architecture <Behavioral>) compiled.
-Compiling vhdl file "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/idea_com.vhd" in Library work.
-Entity <idea_com> compiled.
-Entity <idea_com> (Architecture <Behavioral>) compiled.
+Entity <keygen> (Architecture <behavioral>) compiled.
+Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/round.vhd" in Library work.
+Architecture behavioral of Entity round is up to date.
+Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/register_16b.vhd" in Library work.
+Architecture behavioral of Entity register_16b is up to date.
+Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/trafo.vhd" in Library work.
+Architecture behavioral of Entity trafo is up to date.
+Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/txmit.vhd" in Library work.
+Architecture behavior of Entity txmit is up to date.
+Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/rxcver.vhd" in Library work.
+Architecture behavior of Entity rxcver is up to date.
+Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/uart.vhd" in Library work.
+Architecture behavior of Entity uart is up to date.
+Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/idea_single.vhd" in Library work.
+Architecture structural of Entity idea_single is up to date.
+Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/clk_div.vhd" in Library work.
+Architecture behavioral of Entity clk_div is up to date.
+Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/idea_com_inner.vhd" in Library work.
+Architecture behavioral of Entity idea_com_inner is up to date.
+Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/idea_com.vhd" in Library work.
+Architecture behavioral of Entity idea_com is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <idea_com> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <idea_com> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <clk_div> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <clk_div> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <idea_com_inner> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <idea_com_inner> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <uart> in library <work> (architecture <behavior>).
 
-Analyzing hierarchy for entity <idea_single> in library <work> (architecture <Structural>).
+Analyzing hierarchy for entity <idea_single> in library <work> (architecture <structural>).
 
-Analyzing hierarchy for entity <mux2x1> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <mux2x1> in library <work> (architecture <behavioral>).
 
 Analyzing hierarchy for entity <txmit> in library <work> (architecture <behavior>).
 
 Analyzing hierarchy for entity <rxcver> in library <work> (architecture <behavior>).
 
-Analyzing hierarchy for entity <control> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <control> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <keygen> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <keygen> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <round> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <round> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <register_16b> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <register_16b> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <trafo> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <trafo> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <mulop> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <mulop> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <addop> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <addop> in library <work> (architecture <behavioral>).
 
-Analyzing hierarchy for entity <xorop> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <xorop> in library <work> (architecture <behavioral>).
 
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <idea_com> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <idea_com> in library <work> (Architecture <behavioral>).
 Entity <idea_com> analyzed. Unit <idea_com> generated.
 
-Analyzing Entity <clk_div> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <clk_div> in library <work> (Architecture <behavioral>).
 Entity <clk_div> analyzed. Unit <clk_div> generated.
 
-Analyzing Entity <idea_com_inner> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <idea_com_inner> in library <work> (Architecture <behavioral>).
 INFO:Xst:2679 - Register <LEDs<7>> in unit <idea_com_inner> has a constant value of 0 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <LEDs<6>> in unit <idea_com_inner> has a constant value of 0 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <LEDs<5>> in unit <idea_com_inner> has a constant value of 0 during circuit operation. The register is replaced by logic.
@@ -217,35 +202,35 @@ Entity <txmit> analyzed. Unit <txmit> generated.
 Analyzing Entity <rxcver> in library <work> (Architecture <behavior>).
 Entity <rxcver> analyzed. Unit <rxcver> generated.
 
-Analyzing Entity <idea_single> in library <work> (Architecture <Structural>).
+Analyzing Entity <idea_single> in library <work> (Architecture <structural>).
 Entity <idea_single> analyzed. Unit <idea_single> generated.
 
-Analyzing Entity <control> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <control> in library <work> (Architecture <behavioral>).
 Entity <control> analyzed. Unit <control> generated.
 
-Analyzing Entity <keygen> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <keygen> in library <work> (Architecture <behavioral>).
 Entity <keygen> analyzed. Unit <keygen> generated.
 
-Analyzing Entity <round> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <round> in library <work> (Architecture <behavioral>).
 Entity <round> analyzed. Unit <round> generated.
 
-Analyzing Entity <mulop> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <mulop> in library <work> (Architecture <behavioral>).
 Entity <mulop> analyzed. Unit <mulop> generated.
 
-Analyzing Entity <addop> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <addop> in library <work> (Architecture <behavioral>).
 Entity <addop> analyzed. Unit <addop> generated.
 
-Analyzing Entity <xorop> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <xorop> in library <work> (Architecture <behavioral>).
 Entity <xorop> analyzed. Unit <xorop> generated.
 
-Analyzing Entity <register_16b> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <register_16b> in library <work> (Architecture <behavioral>).
 Entity <register_16b> analyzed. Unit <register_16b> generated.
 
-Analyzing Entity <trafo> in library <work> (Architecture <Behavioral>).
+Analyzing Entity <trafo> in library <work> (Architecture <behavioral>).
 Entity <trafo> analyzed. Unit <trafo> generated.
 
-Analyzing Entity <mux2x1> in library <work> (Architecture <Behavioral>).
-INFO:Xst:1561 - "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/mux2x1.vhd" line 47: Mux is complete : default of case is discarded
+Analyzing Entity <mux2x1> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/mux2x1.vhd" line 47: Mux is complete : default of case is discarded
 Entity <mux2x1> analyzed. Unit <mux2x1> generated.
 
 
@@ -256,7 +241,7 @@ Entity <mux2x1> analyzed. Unit <mux2x1> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <clk_div>.
-    Related source file is "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/clk_div.vhd".
+    Related source file is "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/clk_div.vhd".
     Found 1-bit register for signal <CLK_OUT>.
     Found 32-bit comparator less for signal <CLK_OUT$cmp_lt0000> created at line 38.
     Found 32-bit comparator less for signal <CLK_OUT$cmp_lt0001> created at line 39.
@@ -269,12 +254,12 @@ Unit <clk_div> synthesized.
 
 
 Synthesizing Unit <mux2x1>.
-    Related source file is "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/mux2x1.vhd".
+    Related source file is "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/mux2x1.vhd".
 Unit <mux2x1> synthesized.
 
 
 Synthesizing Unit <txmit>.
-    Related source file is "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/txmit.vhd".
+    Related source file is "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/txmit.vhd".
     Found 1-bit register for signal <sout>.
     Found 3-bit up counter for signal <cnt>.
     Found 1-bit register for signal <tag1>.
@@ -294,7 +279,7 @@ Unit <txmit> synthesized.
 
 
 Synthesizing Unit <rxcver>.
-    Related source file is "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/rxcver.vhd".
+    Related source file is "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/rxcver.vhd".
     Found 1-bit register for signal <parity_error>.
     Found 1-bit register for signal <framing_error>.
     Found 1-bit register for signal <overrun>.
@@ -320,7 +305,7 @@ Unit <rxcver> synthesized.
 
 
 Synthesizing Unit <control>.
-    Related source file is "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/control.vhd".
+    Related source file is "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/control.vhd".
     Found finite state machine <FSM_0> for signal <state>.
     -----------------------------------------------------------------------
     | States             | 9                                              |
@@ -343,12 +328,12 @@ Unit <control> synthesized.
 
 
 Synthesizing Unit <keygen>.
-    Related source file is "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/keygen.vhd".
+    Related source file is "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/keygen.vhd".
 Unit <keygen> synthesized.
 
 
 Synthesizing Unit <register_16b>.
-    Related source file is "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/register_16b.vhd".
+    Related source file is "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/register_16b.vhd".
     Found 16-bit register for signal <q>.
     Summary:
 	inferred  16 D-type flip-flop(s).
@@ -356,7 +341,7 @@ Unit <register_16b> synthesized.
 
 
 Synthesizing Unit <mulop>.
-    Related source file is "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/mulop.vhd".
+    Related source file is "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/mulop.vhd".
 WARNING:Xst:653 - Signal <base2_power16> is used but never assigned. This sourceless signal will be automatically connected to value 10000000000000000.
     Found 32-bit subtractor for signal <sum$addsub0000> created at line 72.
     Found 32-bit adder for signal <sum$addsub0001> created at line 74.
@@ -371,7 +356,7 @@ Unit <mulop> synthesized.
 
 
 Synthesizing Unit <addop>.
-    Related source file is "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/addop.vhd".
+    Related source file is "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/addop.vhd".
 WARNING:Xst:646 - Signal <sum<16>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
     Found 17-bit adder for signal <sum>.
     Summary:
@@ -380,33 +365,33 @@ Unit <addop> synthesized.
 
 
 Synthesizing Unit <xorop>.
-    Related source file is "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/xorop.vhd".
+    Related source file is "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/xorop.vhd".
     Found 16-bit xor2 for signal <O>.
 Unit <xorop> synthesized.
 
 
 Synthesizing Unit <uart>.
-    Related source file is "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/uart.vhd".
+    Related source file is "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/uart.vhd".
 Unit <uart> synthesized.
 
 
 Synthesizing Unit <round>.
-    Related source file is "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/round.vhd".
+    Related source file is "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/round.vhd".
 Unit <round> synthesized.
 
 
 Synthesizing Unit <trafo>.
-    Related source file is "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/trafo.vhd".
+    Related source file is "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/trafo.vhd".
 Unit <trafo> synthesized.
 
 
 Synthesizing Unit <idea_single>.
-    Related source file is "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/idea_single.vhd".
+    Related source file is "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/idea_single.vhd".
 Unit <idea_single> synthesized.
 
 
 Synthesizing Unit <idea_com_inner>.
-    Related source file is "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/idea_com_inner.vhd".
+    Related source file is "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/idea_com_inner.vhd".
     Found finite state machine <FSM_1> for signal <state>.
     -----------------------------------------------------------------------
     | States             | 12                                             |
@@ -444,7 +429,7 @@ Unit <idea_com_inner> synthesized.
 
 
 Synthesizing Unit <idea_com>.
-    Related source file is "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/idea_com.vhd".
+    Related source file is "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/idea_com.vhd".
 Unit <idea_com> synthesized.
 
 INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
@@ -753,7 +738,7 @@ Delay:               7.013ns (Levels of Logic = 14)
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_div_1/CLK_OUT1'
   Clock period: 59.742ns (frequency: 16.739MHz)
-  Total number of paths / destination ports: 302371856196190464 / 639
+  Total number of paths / destination ports: 302371856196190336 / 639
 -------------------------------------------------------------------------
 Delay:               59.742ns (Levels of Logic = 111)
   Source:            idea_1/idea1/c/ROUND_3 (FF)
@@ -1010,13 +995,13 @@ Offset:              4.310ns (Levels of Logic = 1)
 =========================================================================
 
 
-Total REAL time to Xst completion: 12.00 secs
-Total CPU time to Xst completion: 9.20 secs
+Total REAL time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 9.00 secs
  
 --> 
 
 
-Total memory usage is 560324 kilobytes
+Total memory usage is 560384 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    2 (   0 filtered)

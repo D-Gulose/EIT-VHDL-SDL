@@ -164,8 +164,8 @@ BEGIN
 			key2e <= x"00c0";
 			key3e <= x"0100";
 			key4e <= x"0140";
-			key5e <= x"0000"; -- place holder results
-			key6e <= x"0000";
+			key5e <= "----------------"; -- place holder results
+			key6e <= "----------------";
 			wait for period;
 
 			wait;

@@ -1,4 +1,4 @@
-----------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
 -- Company: 
 -- Engineer: 
 -- 
@@ -19,212 +19,172 @@
 ----------------------------------------------------------------------------------
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+use ieee.numeric_std.all;
 
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---use IEEE.NUMERIC_STD.ALL;
-
--- Uncomment the following library declaration if instantiating
--- any Xilinx primitives in this code.
---library UNISIM;
---use UNISIM.VComponents.all;
-
+-- Arbitrary port names
 entity keygen is
-    Port ( fullkey : in  STD_LOGIC_VECTOR (127 downto 0);
-				lap : in  STD_LOGIC_VECTOR (3 downto 0);
-           
-           key1 : out  STD_LOGIC_VECTOR (15 downto 0);
-           key2 : out  STD_LOGIC_VECTOR (15 downto 0);
-           key3 : out  STD_LOGIC_VECTOR (15 downto 0);
-           key4 : out  STD_LOGIC_VECTOR (15 downto 0);
-           key5 : out  STD_LOGIC_VECTOR (15 downto 0);
-           key6 : out  STD_LOGIC_VECTOR (15 downto 0));
+    Port ( fullkey : in STD_LOGIC_VECTOR (127 downto 0);
+           lap : in STD_LOGIC_VECTOR (3 downto 0);
+           key1,key2,key3,key4,key5,key6 : out STD_LOGIC_VECTOR (15 downto 0));
 end keygen;
 
-architecture Behavioral of keygen is
-
-begin
-	process(fullkey,lap)
-	
-	variable temp_key : std_logic_vector(127 downto 0);
-	
+architecture Behavioral of keygen is	
 	begin
+		process(fullkey, lap)
+		-- Laps unchanged, keys changes -> fullkey must be in sensitivity list
+		-- Simulation initialization: Programm output contineous before finishing initialization, 
+		--		but consol repeats output after initialization once it reached programm position, 
+		-- 	where finished initialization is needed.
+		
+			-- VARIABLES/SIGNALS ONLY DECLARE BEFORE 'BEGIN' AND ASSIGN AFTER 'BEGIN' !!!
+			-- 128 or 127 .. fullkey size; 16 or 15.. subkey size
+		
+			variable fullkey_tmp : std_logic_vector(127 downto 0);
+			variable fullkey_out : std_logic_vector(95 downto 0);
+--			variable nocare : std_logic_vector := "----------------";
+		
+			begin
+				fullkey_tmp := fullkey;
+				fullkey_out := (others => '-');
+				case lap is	
+					-- lap1 
+					when "0000" =>
+						fullkey_out := fullkey_tmp(127 downto 32);
+--						key1 <= fullkey_tmp(127 downto 112);
+--						key2 <= fullkey_tmp(111 downto 96);
+--						key3 <= fullkey_tmp(95 downto 80);
+--						key4 <= fullkey_tmp(79 downto 64);
+--						key5 <= fullkey_tmp(63 downto 48);
+--						key6 <= fullkey_tmp(47 downto 32);
+					-- lap2
+					when "0001" =>
+						fullkey_out(95 downto 64) := fullkey_tmp(31 downto 0);
+						fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
+						fullkey_out(63 downto 0) := fullkey_tmp(127 downto 64);
+						
+--						key2 <= fullkey_tmp(15 downto 0);
+--						fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
+--						key3 <= fullkey_tmp(127 downto 112);
+--						key4 <= fullkey_tmp(111 downto 96);
+--						key5 <= fullkey_tmp(95 downto 80);
+--						key6 <= fullkey_tmp(79 downto 64);
+					-- lap3
+					when "0010" =>
+						fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
+						fullkey_out(95 downto 32) := fullkey_tmp(63 downto 0);
+						fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
+						fullkey_out(31 downto 0) := fullkey_tmp(127 downto 96);
+
+--						fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
+--						key1 <= fullkey_tmp(63 downto 48);
+--						key2 <= fullkey_tmp(47 downto 32);
+--						key3 <= fullkey_tmp(31 downto 16);
+--						key4 <= fullkey_tmp(15 downto 0);
+--						fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
+--						key5 <= fullkey_tmp(127 downto 112);
+--						key6 <= fullkey_tmp(111 downto 96);	
+					-- lap4	
+					when "0011" =>
+						for i in 1 to 2 loop
+							fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
+						end loop;
+						fullkey_out := fullkey_tmp(95 downto 0);
+						
+--						key1 <= fullkey_tmp(95 downto 80);
+--						key2 <= fullkey_tmp(79 downto 64);
+--						key3 <= fullkey_tmp(63 downto 48);
+--						key4 <= fullkey_tmp(47 downto 32);
+--						key5 <= fullkey_tmp(31 downto 16);
+--						key6 <= fullkey_tmp(15 downto 0);	
+					-- lap5
+					when "0100" =>
+						for i in 1 to 3 loop
+							fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
+						end loop;
+						fullkey_out := fullkey_tmp(127 downto 32);
+--						key1 <= fullkey_tmp(127 downto 112);
+--						key2 <= fullkey_tmp(111 downto 96);
+--						key3 <= fullkey_tmp(95 downto 80);
+--						key4 <= fullkey_tmp(79 downto 64);
+--						key5 <= fullkey_tmp(63 downto 48);
+--						key6 <= fullkey_tmp(47 downto 32);
+					-- lap6
+					when "0101" =>
+						for i in 1 to 3 loop
+							fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
+						end loop;
+						fullkey_out(95 downto 64) := fullkey_tmp(31 downto 0);
+						fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
+						fullkey_out(63 downto 0) := fullkey_tmp(127 downto 64);
+						
+--						key1 <= fullkey_tmp(31 downto 16);
+--						key2 <= fullkey_tmp(15 downto 0);
+--						fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
+--						key3 <= fullkey_tmp(127 downto 112);
+--						key4 <= fullkey_tmp(111 downto 96);
+--						key5 <= fullkey_tmp(95 downto 80);
+--						key6 <= fullkey_tmp(79 downto 64);
+					-- lap7
+					when "0110" =>
+						for i in 1 to 4 loop
+							fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
+						end loop;
+						fullkey_out(95 downto 32) := fullkey_tmp(63 downto 0);
+						fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
+						fullkey_out(31 downto 0) := fullkey_tmp(127 downto 96);
+						
+--						key1 <= fullkey_tmp(63 downto 48);
+--						key2 <= fullkey_tmp(47 downto 32);
+--						key3 <= fullkey_tmp(31 downto 16);
+--						key4 <= fullkey_tmp(15 downto 0);
+--						fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
+--						key5 <= fullkey_tmp(127 downto 112);
+--						key6 <= fullkey_tmp(111 downto 96);
+					-- lap8
+					when "0111" =>
+						for i in 1 to 5 loop
+							fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
+						end loop;
+						fullkey_out(95 downto 0) := fullkey_tmp(95  downto 0);
+--						key1 <= fullkey_tmp(95 downto 80);
+--						key2 <= fullkey_tmp(79 downto 64);
+--						key3 <= fullkey_tmp(63 downto 48);
+--						key4 <= fullkey_tmp(47 downto 32);
+--						key5 <= fullkey_tmp(31 downto 16);
+--						key6 <= fullkey_tmp(15 downto 0);
+					-- lap9: Output transformation OR wait
+					when "1000" =>
+						for i in 1 to 6 loop
+							fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
+						end loop;
+						fullkey_out(95 downto 32) := fullkey_tmp(127 downto 64);
+--						key1 <= fullkey_tmp(127 downto 112);
+--						key2 <= fullkey_tmp(111 downto 96);
+--						key3 <= fullkey_tmp(95 downto 80);
+--						key4 <= fullkey_tmp(79 downto 64);
+--						key5 <= nocare;
+--						key6 <= nocare;
+					-- Uninitalized lap
+					when others =>
+						-- nocare initalization apply
+--						key1 <= nocare;
+--						key2 <= nocare;
+--						key3 <= nocare;
+--						key4 <= nocare;
+--						key5 <= nocare;
+--						key6 <= nocare;	
+				end case;
+				key1 <= fullkey_out(95 downto 80);
+				key2 <= fullkey_out(79 downto 64);
+				key3 <= fullkey_out(63 downto 48);
+				key4 <= fullkey_out(47 downto 32);
+				key5 <= fullkey_out(31 downto 16);
+				key6 <= fullkey_out(15 downto 0);
 	
-	temp_key := fullkey;
-	
-	case lap is
-	
-	when "0000" =>
-		
-		temp_key := fullkey;
-		key1 <= temp_key(127 downto 112);
-		key2 <= temp_key(111 downto 96);
-		key3 <= temp_key(95 downto 80);
-		key4 <= temp_key(79 downto 64);
-		key5 <= temp_key(63 downto 48);
-		key6 <= temp_key(47 downto 32);
-		
-	when "0001" =>
-		
-		key1 <= temp_key(31 downto 16);
-		key2 <= temp_key(15 downto 0);
-		temp_key := fullkey(102 downto 0) & fullkey(127 downto 103);
-		key3 <= temp_key(127 downto 112);
-		key4 <= temp_key(111 downto 96);
-		key5 <= temp_key(95 downto 80);
-		key6 <= temp_key(79 downto 64);
-		
-	when "0010" =>
-		
-		temp_key := fullkey(102 downto 0) & fullkey(127 downto 103);
-		key1 <= temp_key(63 downto 48);
-		key2 <= temp_key(47 downto 32);
-		key3 <= temp_key(31 downto 16);
-		key4 <= temp_key(15 downto 0);
-		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
-		key5 <= temp_key(127 downto 112);
-		key6 <= temp_key(111 downto 96);	
-		
-	when "0011" =>
-		
-		temp_key := fullkey(102 downto 0) & fullkey(127 downto 103);
-		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
-		key1 <= temp_key(95 downto 80);
-		key2 <= temp_key(79 downto 64);
-		key3 <= temp_key(63 downto 48);
-		key4 <= temp_key(47 downto 32);
-		key5 <= temp_key(31 downto 16);
-		key6 <= temp_key(15 downto 0);
-	
-	when "0100" =>
-		
-		temp_key := fullkey(102 downto 0) & fullkey(127 downto 103);
-		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
-		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
-		key1 <= temp_key(127 downto 112);
-		key2 <= temp_key(111 downto 96);
-		key3 <= temp_key(95 downto 80);
-		key4 <= temp_key(79 downto 64);
-		key5 <= temp_key(63 downto 48);
-		key6 <= temp_key(47 downto 32);
-		
-	when "0101" =>
-		
-		temp_key := fullkey(102 downto 0) & fullkey(127 downto 103);
-		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
-		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
-		key1 <= temp_key(31 downto 16);
-		key2 <= temp_key(15 downto 0);
-		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
-		key3 <= temp_key(127 downto 112);
-		key4 <= temp_key(111 downto 96);
-		key5 <= temp_key(95 downto 80);
-		key6 <= temp_key(79 downto 64);
-		
-	when "0110" =>
-		
-		temp_key := fullkey(102 downto 0) & fullkey(127 downto 103);
-		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
-		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
-		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
-		key1 <= temp_key(63 downto 48);
-		key2 <= temp_key(47 downto 32);
-		key3 <= temp_key(31 downto 16);
-		key4 <= temp_key(15 downto 0);
-		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
-		key5 <= temp_key(127 downto 112);
-		key6 <= temp_key(111 downto 96);
-	
-	when "0111" =>
-		
-		temp_key := fullkey(102 downto 0) & fullkey(127 downto 103);
-		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
-		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
-		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
-		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
-		key1 <= temp_key(95 downto 80);
-		key2 <= temp_key(79 downto 64);
-		key3 <= temp_key(63 downto 48);
-		key4 <= temp_key(47 downto 32);
-		key5 <= temp_key(31 downto 16);
-		key6 <= temp_key(15 downto 0);
-		
-	when "1000" =>
-		
-		temp_key := fullkey(102 downto 0) & fullkey(127 downto 103);
-		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
-		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
-		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
-		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
-		temp_key := temp_key(102 downto 0) & temp_key(127 downto 103);
-		key1 <= temp_key(127 downto 112);
-		key2 <= temp_key(111 downto 96);
-		key3 <= temp_key(95 downto 80);
-		key4 <= temp_key(79 downto 64);
-		key5 <= temp_key(63 downto 48);
-		key6 <= temp_key(47 downto 32);
-		
-	when others =>
-		temp_key:= fullkey;
-		key1 <= "0000000000000000";
-		key2 <= "0000000000000000";
-		key3 <= "0000000000000000";
-		key4 <= "0000000000000000";
-		key5 <= "0000000000000000";
-		key6 <= "0000000000000000";
-	
-	end case;
 	end process;
 
 end Behavioral;
 
-------------------------------------------------------------------------------------
----- Company: 
----- Engineer: 
----- 
----- Create Date:    16:17:54 12/15/2023 
----- Design Name: 
----- Module Name:    keygen - Behavioral 
----- Project Name: 
----- Target Devices: 
----- Tool versions: 
----- Description: 
-----
----- Dependencies: 
-----
----- Revision: 
----- Revision 0.01 - File Created
----- Additional Comments: 
-----
---------------------------------------------------------------------------------------
---library IEEE;
---use IEEE.STD_LOGIC_1164.ALL;
---use ieee.numeric_std.all;
---
----- Arbitrary port names
---entity keygen is
---    Port ( fullkey : in STD_LOGIC_VECTOR (127 downto 0);
---           lap  : in STD_LOGIC_VECTOR (3 downto 0);
---           key1 : out STD_LOGIC_VECTOR (15 downto 0);
---           key2 : out STD_LOGIC_VECTOR (15 downto 0);
---           key3 : out STD_LOGIC_VECTOR (15 downto 0);
---           key4 : out STD_LOGIC_VECTOR (15 downto 0);
---           key5 : out STD_LOGIC_VECTOR (15 downto 0);
---           key6 : out STD_LOGIC_VECTOR (15 downto 0));
---end keygen;
---
---architecture Behavioral of keygen is	
---	begin
---
---		process(fullkey, lap)			
---		-- Laps unchanged, keys changes -> fullkey must be in sensitivity list
---		-- Simulation initialization: Programm output contineous before finishing initialization, 
---		--		but consol repeats output after initialization once it reached programm position, 
---		-- 	where finished initialization is needed.
---		
---			-- VARIABLES/SIGNALS ONLY DECLARE BEFORE 'BEGIN' AND ASSIGN AFTER 'BEGIN' !!!
---			-- 128 or 127 .. fullkey size; 16 or 15.. subkey size
---			
 --			variable fullkey_tmp : std_logic_vector(127 downto 0);
 --			variable fullkey_out : std_logic_vector(95 downto 0);
 --	
@@ -279,7 +239,6 @@ end Behavioral;
 --					end if;
 --					
 --					l_pos: for pos in 1 to 8 loop
---						
 --						
 ----						report "test l_pos: " & integer'image(pos) & "/" & integer'image(loop_end);
 ----						report integer'image(key_ctr*16-1);

@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/tb_idea_single_isim_beh.exe" -prj "/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/tb_idea_single_beh.prj" "work.tb_idea_single" 
+-intstyle "ise" -incremental -o "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/tb_idea_single_isim_beh.exe" -prj "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/tb_idea_single_beh.prj" "work.tb_idea_single" 

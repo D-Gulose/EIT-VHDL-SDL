@@ -9,7 +9,7 @@ Target Device  : xc3s500e
 Target Package : fg320
 Target Speed   : -4
 Mapper Version : spartan3e -- $Revision: 1.55 $
-Mapped Date    : Thu Dec 21 13:15:21 2023
+Mapped Date    : Thu Dec 21 13:36:03 2023
 
 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv
 INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable is not set.
@@ -81,13 +81,6 @@ NOTES:
    and FFs are occupied.  Depending on your timing budget, increased levels of
    unrelated logic packing may adversely affect the overall timing performance
    of your design.
-FATAL_ERROR:MapHelpers:basmpreport.c:214:1.18 - Not able to add errors to file
-   'idea_com_map.mrp'.
 
-     For technical support on this issue, please visit
-   http://www.xilinx.com/support.
-
-Design Summary
---------------
-Number of errors   :   1
-Number of warnings :   0
+Mapping completed.
+See MAP report file "idea_com_map.mrp" for details.

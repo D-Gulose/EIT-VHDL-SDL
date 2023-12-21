@@ -7,7 +7,7 @@ Command Line:
 idea_com.ngc idea_com.ngd
 
 Reading NGO file
-"/nas/lrz/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/idea_com.ngc" ...
+"/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/idea_com.ngc" ...
 Gathering constraint information from source properties...
 Done.
 
@@ -33,7 +33,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 395552 kilobytes
+Total memory usage is 395628 kilobytes
 
 Writing NGD file "idea_com.ngd" ...
 Total REAL time to NGDBUILD completion:  2 sec
