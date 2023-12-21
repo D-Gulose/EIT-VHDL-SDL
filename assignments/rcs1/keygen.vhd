@@ -50,64 +50,29 @@ architecture Behavioral of keygen is
 					-- lap1 
 					when "0000" =>
 						fullkey_out := fullkey_tmp(127 downto 32);
---						key1 <= fullkey_tmp(127 downto 112);
---						key2 <= fullkey_tmp(111 downto 96);
---						key3 <= fullkey_tmp(95 downto 80);
---						key4 <= fullkey_tmp(79 downto 64);
---						key5 <= fullkey_tmp(63 downto 48);
---						key6 <= fullkey_tmp(47 downto 32);
 					-- lap2
 					when "0001" =>
 						fullkey_out(95 downto 64) := fullkey_tmp(31 downto 0);
 						fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
 						fullkey_out(63 downto 0) := fullkey_tmp(127 downto 64);
-						
---						key2 <= fullkey_tmp(15 downto 0);
---						fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
---						key3 <= fullkey_tmp(127 downto 112);
---						key4 <= fullkey_tmp(111 downto 96);
---						key5 <= fullkey_tmp(95 downto 80);
---						key6 <= fullkey_tmp(79 downto 64);
 					-- lap3
 					when "0010" =>
 						fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
 						fullkey_out(95 downto 32) := fullkey_tmp(63 downto 0);
 						fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
 						fullkey_out(31 downto 0) := fullkey_tmp(127 downto 96);
-
---						fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
---						key1 <= fullkey_tmp(63 downto 48);
---						key2 <= fullkey_tmp(47 downto 32);
---						key3 <= fullkey_tmp(31 downto 16);
---						key4 <= fullkey_tmp(15 downto 0);
---						fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
---						key5 <= fullkey_tmp(127 downto 112);
---						key6 <= fullkey_tmp(111 downto 96);	
 					-- lap4	
 					when "0011" =>
 						for i in 1 to 2 loop
 							fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
 						end loop;
 						fullkey_out := fullkey_tmp(95 downto 0);
-						
---						key1 <= fullkey_tmp(95 downto 80);
---						key2 <= fullkey_tmp(79 downto 64);
---						key3 <= fullkey_tmp(63 downto 48);
---						key4 <= fullkey_tmp(47 downto 32);
---						key5 <= fullkey_tmp(31 downto 16);
---						key6 <= fullkey_tmp(15 downto 0);	
 					-- lap5
 					when "0100" =>
 						for i in 1 to 3 loop
 							fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
 						end loop;
 						fullkey_out := fullkey_tmp(127 downto 32);
---						key1 <= fullkey_tmp(127 downto 112);
---						key2 <= fullkey_tmp(111 downto 96);
---						key3 <= fullkey_tmp(95 downto 80);
---						key4 <= fullkey_tmp(79 downto 64);
---						key5 <= fullkey_tmp(63 downto 48);
---						key6 <= fullkey_tmp(47 downto 32);
 					-- lap6
 					when "0101" =>
 						for i in 1 to 3 loop
@@ -116,15 +81,7 @@ architecture Behavioral of keygen is
 						fullkey_out(95 downto 64) := fullkey_tmp(31 downto 0);
 						fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
 						fullkey_out(63 downto 0) := fullkey_tmp(127 downto 64);
-						
---						key1 <= fullkey_tmp(31 downto 16);
---						key2 <= fullkey_tmp(15 downto 0);
---						fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
---						key3 <= fullkey_tmp(127 downto 112);
---						key4 <= fullkey_tmp(111 downto 96);
---						key5 <= fullkey_tmp(95 downto 80);
---						key6 <= fullkey_tmp(79 downto 64);
-					-- lap7
+											-- lap7
 					when "0110" =>
 						for i in 1 to 4 loop
 							fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
@@ -132,47 +89,21 @@ architecture Behavioral of keygen is
 						fullkey_out(95 downto 32) := fullkey_tmp(63 downto 0);
 						fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
 						fullkey_out(31 downto 0) := fullkey_tmp(127 downto 96);
-						
---						key1 <= fullkey_tmp(63 downto 48);
---						key2 <= fullkey_tmp(47 downto 32);
---						key3 <= fullkey_tmp(31 downto 16);
---						key4 <= fullkey_tmp(15 downto 0);
---						fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
---						key5 <= fullkey_tmp(127 downto 112);
---						key6 <= fullkey_tmp(111 downto 96);
 					-- lap8
 					when "0111" =>
 						for i in 1 to 5 loop
 							fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
 						end loop;
 						fullkey_out(95 downto 0) := fullkey_tmp(95  downto 0);
---						key1 <= fullkey_tmp(95 downto 80);
---						key2 <= fullkey_tmp(79 downto 64);
---						key3 <= fullkey_tmp(63 downto 48);
---						key4 <= fullkey_tmp(47 downto 32);
---						key5 <= fullkey_tmp(31 downto 16);
---						key6 <= fullkey_tmp(15 downto 0);
 					-- lap9: Output transformation OR wait
 					when "1000" =>
 						for i in 1 to 6 loop
 							fullkey_tmp := fullkey_tmp(102 downto 0) & fullkey_tmp(127 downto 103);
 						end loop;
 						fullkey_out(95 downto 32) := fullkey_tmp(127 downto 64);
---						key1 <= fullkey_tmp(127 downto 112);
---						key2 <= fullkey_tmp(111 downto 96);
---						key3 <= fullkey_tmp(95 downto 80);
---						key4 <= fullkey_tmp(79 downto 64);
---						key5 <= nocare;
---						key6 <= nocare;
 					-- Uninitalized lap
 					when others =>
-						-- nocare initalization apply
---						key1 <= nocare;
---						key2 <= nocare;
---						key3 <= nocare;
---						key4 <= nocare;
---						key5 <= nocare;
---						key6 <= nocare;	
+						-- fullkey_out is (others=>'-')
 				end case;
 				key1 <= fullkey_out(95 downto 80);
 				key2 <= fullkey_out(79 downto 64);
