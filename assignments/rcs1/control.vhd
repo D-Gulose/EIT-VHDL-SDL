@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
 -- Company: 
--- Engineer: 
+-- Engineer:  Markus Gulo
 -- 
 -- Create Date:     
 -- Design Name: 
@@ -50,7 +50,6 @@ architecture Behavioral of control is
 	state_machine: process(clk, start) 
 	
 		begin
---			state <= "1000";
 			if rising_edge(clk) then
 			
 				if state = "1000" then 

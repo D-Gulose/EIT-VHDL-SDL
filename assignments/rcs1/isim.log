@@ -1,6 +1,5 @@
 ISim log file
 Running: /nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/tb_idea_single_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/tb_idea_single_isim_beh.wdb 
-INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
 ISim P.20131013 (signature 0xfbc00daa)
 ----------------------------------------------------------------------
 INFO:Security:51 - The XILINXD_LICENSE_FILE environment variable is not set.
@@ -25,3 +24,4 @@ at 0 ps: Note: TC PASS: 2 (/tb_idea_single/).
 at 0 ps: Note: TC PASS: 3 (/tb_idea_single/).
 at 0 ps, Instance /tb_idea_single/uut/r/lv1_mod_l/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 Finished circuit initialization process.
+# exit 0

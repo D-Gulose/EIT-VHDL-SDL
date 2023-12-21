@@ -5,14 +5,14 @@ Parameter TMPDIR set to xst/projnav.tmp
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.07 secs
+Total CPU time to Xst completion: 0.06 secs
  
 --> 
 Reading design: idea_com.prj
@@ -108,85 +108,100 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/mulop.vhd" in Library work.
-Architecture behavioral of Entity mulop is up to date.
+Entity <mulop> compiled.
+Entity <mulop> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/addop.vhd" in Library work.
-Architecture behavioral of Entity addop is up to date.
+Entity <addop> compiled.
+Entity <addop> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/xorop.vhd" in Library work.
-Architecture behavioral of Entity xorop is up to date.
+Entity <xorop> compiled.
+Entity <xorop> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/control.vhd" in Library work.
-Architecture behavioral of Entity control is up to date.
+Entity <control> compiled.
+Entity <control> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/mux2x1.vhd" in Library work.
-Architecture behavioral of Entity mux2x1 is up to date.
+Entity <mux2x1> compiled.
+Entity <mux2x1> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/keygen.vhd" in Library work.
 Entity <keygen> compiled.
-Entity <keygen> (Architecture <behavioral>) compiled.
+Entity <keygen> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/round.vhd" in Library work.
-Architecture behavioral of Entity round is up to date.
+Entity <round> compiled.
+Entity <round> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/register_16b.vhd" in Library work.
-Architecture behavioral of Entity register_16b is up to date.
+Entity <register_16b> compiled.
+Entity <register_16b> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/trafo.vhd" in Library work.
-Architecture behavioral of Entity trafo is up to date.
+Entity <trafo> compiled.
+Entity <trafo> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/txmit.vhd" in Library work.
-Architecture behavior of Entity txmit is up to date.
+Entity <txmit> compiled.
+Entity <txmit> (Architecture <behavior>) compiled.
 Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/rxcver.vhd" in Library work.
-Architecture behavior of Entity rxcver is up to date.
+Entity <rxcver> compiled.
+Entity <rxcver> (Architecture <behavior>) compiled.
 Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/uart.vhd" in Library work.
-Architecture behavior of Entity uart is up to date.
+Entity <uart> compiled.
+Entity <uart> (Architecture <behavior>) compiled.
 Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/idea_single.vhd" in Library work.
-Architecture structural of Entity idea_single is up to date.
+Entity <idea_single> compiled.
+Entity <idea_single> (Architecture <Structural>) compiled.
 Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/clk_div.vhd" in Library work.
-Architecture behavioral of Entity clk_div is up to date.
+Entity <clk_div> compiled.
+Entity <clk_div> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/idea_com_inner.vhd" in Library work.
-Architecture behavioral of Entity idea_com_inner is up to date.
+Entity <idea_com_inner> compiled.
+Entity <idea_com_inner> (Architecture <Behavioral>) compiled.
 Compiling vhdl file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/idea_com.vhd" in Library work.
-Architecture behavioral of Entity idea_com is up to date.
+Entity <idea_com> compiled.
+Entity <idea_com> (Architecture <Behavioral>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <idea_com> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <idea_com> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <clk_div> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <clk_div> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <idea_com_inner> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <idea_com_inner> in library <work> (architecture <Behavioral>).
 
 Analyzing hierarchy for entity <uart> in library <work> (architecture <behavior>).
 
-Analyzing hierarchy for entity <idea_single> in library <work> (architecture <structural>).
+Analyzing hierarchy for entity <idea_single> in library <work> (architecture <Structural>).
 
-Analyzing hierarchy for entity <mux2x1> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <mux2x1> in library <work> (architecture <Behavioral>).
 
 Analyzing hierarchy for entity <txmit> in library <work> (architecture <behavior>).
 
 Analyzing hierarchy for entity <rxcver> in library <work> (architecture <behavior>).
 
-Analyzing hierarchy for entity <control> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <control> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <keygen> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <keygen> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <round> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <round> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <register_16b> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <register_16b> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <trafo> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <trafo> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <mulop> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <mulop> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <addop> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <addop> in library <work> (architecture <Behavioral>).
 
-Analyzing hierarchy for entity <xorop> in library <work> (architecture <behavioral>).
+Analyzing hierarchy for entity <xorop> in library <work> (architecture <Behavioral>).
 
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <idea_com> in library <work> (Architecture <behavioral>).
+Analyzing Entity <idea_com> in library <work> (Architecture <Behavioral>).
 Entity <idea_com> analyzed. Unit <idea_com> generated.
 
-Analyzing Entity <clk_div> in library <work> (Architecture <behavioral>).
+Analyzing Entity <clk_div> in library <work> (Architecture <Behavioral>).
 Entity <clk_div> analyzed. Unit <clk_div> generated.
 
-Analyzing Entity <idea_com_inner> in library <work> (Architecture <behavioral>).
+Analyzing Entity <idea_com_inner> in library <work> (Architecture <Behavioral>).
 INFO:Xst:2679 - Register <LEDs<7>> in unit <idea_com_inner> has a constant value of 0 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <LEDs<6>> in unit <idea_com_inner> has a constant value of 0 during circuit operation. The register is replaced by logic.
 INFO:Xst:2679 - Register <LEDs<5>> in unit <idea_com_inner> has a constant value of 0 during circuit operation. The register is replaced by logic.
@@ -202,34 +217,34 @@ Entity <txmit> analyzed. Unit <txmit> generated.
 Analyzing Entity <rxcver> in library <work> (Architecture <behavior>).
 Entity <rxcver> analyzed. Unit <rxcver> generated.
 
-Analyzing Entity <idea_single> in library <work> (Architecture <structural>).
+Analyzing Entity <idea_single> in library <work> (Architecture <Structural>).
 Entity <idea_single> analyzed. Unit <idea_single> generated.
 
-Analyzing Entity <control> in library <work> (Architecture <behavioral>).
+Analyzing Entity <control> in library <work> (Architecture <Behavioral>).
 Entity <control> analyzed. Unit <control> generated.
 
-Analyzing Entity <keygen> in library <work> (Architecture <behavioral>).
+Analyzing Entity <keygen> in library <work> (Architecture <Behavioral>).
 Entity <keygen> analyzed. Unit <keygen> generated.
 
-Analyzing Entity <round> in library <work> (Architecture <behavioral>).
+Analyzing Entity <round> in library <work> (Architecture <Behavioral>).
 Entity <round> analyzed. Unit <round> generated.
 
-Analyzing Entity <mulop> in library <work> (Architecture <behavioral>).
+Analyzing Entity <mulop> in library <work> (Architecture <Behavioral>).
 Entity <mulop> analyzed. Unit <mulop> generated.
 
-Analyzing Entity <addop> in library <work> (Architecture <behavioral>).
+Analyzing Entity <addop> in library <work> (Architecture <Behavioral>).
 Entity <addop> analyzed. Unit <addop> generated.
 
-Analyzing Entity <xorop> in library <work> (Architecture <behavioral>).
+Analyzing Entity <xorop> in library <work> (Architecture <Behavioral>).
 Entity <xorop> analyzed. Unit <xorop> generated.
 
-Analyzing Entity <register_16b> in library <work> (Architecture <behavioral>).
+Analyzing Entity <register_16b> in library <work> (Architecture <Behavioral>).
 Entity <register_16b> analyzed. Unit <register_16b> generated.
 
-Analyzing Entity <trafo> in library <work> (Architecture <behavioral>).
+Analyzing Entity <trafo> in library <work> (Architecture <Behavioral>).
 Entity <trafo> analyzed. Unit <trafo> generated.
 
-Analyzing Entity <mux2x1> in library <work> (Architecture <behavioral>).
+Analyzing Entity <mux2x1> in library <work> (Architecture <Behavioral>).
 INFO:Xst:1561 - "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/mux2x1.vhd" line 47: Mux is complete : default of case is discarded
 Entity <mux2x1> analyzed. Unit <mux2x1> generated.
 
@@ -329,6 +344,104 @@ Unit <control> synthesized.
 
 Synthesizing Unit <keygen>.
     Related source file is "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/keygen.vhd".
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_0$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_1$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_10$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_11$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_12$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_13$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_14$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_15$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_16$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_17$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_18$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_19$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_2$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_20$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_21$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_22$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_23$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_24$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_25$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_26$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_27$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_28$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_29$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_3$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_30$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_31$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_32$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_33$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_34$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_35$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_36$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_37$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_38$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_39$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_4$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_40$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_41$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_42$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_43$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_44$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_45$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_46$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_47$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_48$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_49$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_5$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_50$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_51$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_52$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_53$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_54$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_55$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_56$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_57$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_58$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_59$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_6$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_60$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_61$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_62$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_63$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_64$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_65$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_66$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_67$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_68$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_69$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_7$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_70$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_71$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_72$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_73$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_74$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_75$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_76$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_77$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_78$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_79$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_8$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_80$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_81$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_82$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_83$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_84$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_85$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_86$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_87$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_88$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_89$mux0000> created at line 49.
+    Found 1-bit 8-to-1 multiplexer for signal <fullkey_out_9$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_90$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_91$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_92$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_93$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_94$mux0000> created at line 49.
+    Found 1-bit 9-to-1 multiplexer for signal <fullkey_out_95$mux0000> created at line 49.
+    Summary:
+	inferred  96 Multiplexer(s).
 Unit <keygen> synthesized.
 
 
@@ -460,6 +573,9 @@ Macro Statistics
  128-bit comparator equal                              : 1
  17-bit comparator less                                : 6
  32-bit comparator less                                : 2
+# Multiplexers                                         : 96
+ 1-bit 8-to-1 multiplexer                              : 32
+ 1-bit 9-to-1 multiplexer                              : 64
 # Xors                                                 : 8
  1-bit xor2                                            : 2
  16-bit xor2                                           : 6
@@ -527,6 +643,9 @@ Macro Statistics
  128-bit comparator equal                              : 1
  17-bit comparator less                                : 6
  32-bit comparator less                                : 2
+# Multiplexers                                         : 96
+ 1-bit 8-to-1 multiplexer                              : 32
+ 1-bit 9-to-1 multiplexer                              : 64
 # Xors                                                 : 8
  1-bit xor2                                            : 2
  16-bit xor2                                           : 6
@@ -539,13 +658,13 @@ Macro Statistics
 
 Optimizing unit <idea_com> ...
 
-Optimizing unit <keygen> ...
-
 Optimizing unit <txmit> ...
 
 Optimizing unit <rxcver> ...
 
 Optimizing unit <control> ...
+
+Optimizing unit <keygen> ...
 
 Optimizing unit <register_16b> ...
 
@@ -559,10 +678,11 @@ Optimizing unit <idea_com_inner> ...
 
 Mapping all equations...
 Building and optimizing final netlist ...
-Found area constraint ratio of 100 (+ 5) on block idea_com, actual ratio is 21.
-FlipFlop idea_1/idea1/c/ROUND_0 has been replicated 1 time(s)
-FlipFlop idea_1/idea1/c/ROUND_1 has been replicated 4 time(s)
-FlipFlop idea_1/idea1/c/ROUND_2 has been replicated 2 time(s)
+Found area constraint ratio of 100 (+ 5) on block idea_com, actual ratio is 18.
+FlipFlop idea_1/idea1/c/ROUND_0 has been replicated 4 time(s)
+FlipFlop idea_1/idea1/c/ROUND_1 has been replicated 2 time(s)
+FlipFlop idea_1/idea1/c/ROUND_2 has been replicated 1 time(s)
+FlipFlop idea_1/idea1/c/ROUND_3 has been replicated 1 time(s)
 FlipFlop idea_1/idea1/c/S has been replicated 1 time(s)
 
 Final Macro Processing ...
@@ -571,8 +691,8 @@ Final Macro Processing ...
 Final Register Report
 
 Macro Statistics
-# Registers                                            : 400
- Flip-Flops                                            : 400
+# Registers                                            : 401
+ Flip-Flops                                            : 401
 
 =========================================================================
 
@@ -601,23 +721,22 @@ Design Statistics
 # IOs                              : 12
 
 Cell Usage :
-# BELS                             : 2417
+# BELS                             : 2530
 #      GND                         : 1
 #      INV                         : 18
 #      LUT1                        : 37
-#      LUT2                        : 357
-#      LUT2_D                      : 2
+#      LUT2                        : 323
 #      LUT2_L                      : 2
-#      LUT3                        : 265
-#      LUT3_D                      : 4
-#      LUT3_L                      : 19
-#      LUT4                        : 819
-#      LUT4_L                      : 18
+#      LUT3                        : 635
+#      LUT3_L                      : 1
+#      LUT4                        : 420
+#      LUT4_L                      : 5
 #      MUXCY                       : 459
-#      MUXF5                       : 95
+#      MUXF5                       : 212
+#      MUXF6                       : 96
 #      VCC                         : 1
 #      XORCY                       : 320
-# FlipFlops/Latches                : 400
+# FlipFlops/Latches                : 401
 #      FD                          : 11
 #      FDC                         : 15
 #      FDCE                        : 14
@@ -627,7 +746,7 @@ Cell Usage :
 #      FDRE                        : 9
 #      FDRS                        : 4
 #      FDRSE                       : 2
-#      FDS                         : 19
+#      FDS                         : 20
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
@@ -643,9 +762,9 @@ Device utilization summary:
 
 Selected Device : 3s500efg320-4 
 
- Number of Slices:                      823  out of   4656    17%  
- Number of Slice Flip Flops:            400  out of   9312     4%  
- Number of 4 input LUTs:               1541  out of   9312    16%  
+ Number of Slices:                      754  out of   4656    16%  
+ Number of Slice Flip Flops:            401  out of   9312     4%  
+ Number of 4 input LUTs:               1441  out of   9312    15%  
  Number of IOs:                          12
  Number of bonded IOBs:                  12  out of    232     5%  
  Number of MULT18X18SIOs:                 6  out of     20    30%  
@@ -673,7 +792,7 @@ Clock Information:
 Clock Signal                       | Clock buffer(FF name)         | Load  |
 -----------------------------------+-------------------------------+-------+
 Clk                                | BUFGP                         | 33    |
-clk_div_1/CLK_OUT1                 | BUFG                          | 343   |
+clk_div_1/CLK_OUT1                 | BUFG                          | 344   |
 idea_1/uart1/rx/rxclk              | NONE(idea_1/uart1/rx/rxparity)| 12    |
 idea_1/uart1/tx/txclk              | NONE(idea_1/uart1/tx/tsr_7)   | 12    |
 -----------------------------------+-------------------------------+-------+
@@ -691,7 +810,7 @@ Timing Summary:
 ---------------
 Speed Grade: -4
 
-   Minimum period: 59.742ns (Maximum Frequency: 16.739MHz)
+   Minimum period: 59.017ns (Maximum Frequency: 16.944MHz)
    Minimum input arrival time before clock: 6.180ns
    Maximum output required time after clock: 4.310ns
    Maximum combinational path delay: No path found
@@ -737,25 +856,26 @@ Delay:               7.013ns (Levels of Logic = 14)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk_div_1/CLK_OUT1'
-  Clock period: 59.742ns (frequency: 16.739MHz)
-  Total number of paths / destination ports: 302371856196190336 / 639
+  Clock period: 59.017ns (frequency: 16.944MHz)
+  Total number of paths / destination ports: 230231311681939840 / 641
 -------------------------------------------------------------------------
-Delay:               59.742ns (Levels of Logic = 111)
-  Source:            idea_1/idea1/c/ROUND_3 (FF)
+Delay:               59.017ns (Levels of Logic = 112)
+  Source:            idea_1/idea1/c/ROUND_0_1 (FF)
   Destination:       idea_1/idea1/reg4/q_15 (FF)
   Source Clock:      clk_div_1/CLK_OUT1 rising
   Destination Clock: clk_div_1/CLK_OUT1 rising
 
-  Data Path: idea_1/idea1/c/ROUND_3 to idea_1/idea1/reg4/q_15
+  Data Path: idea_1/idea1/c/ROUND_0_1 to idea_1/idea1/reg4/q_15
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDS:C->Q              8   0.591   0.836  idea_1/idea1/c/ROUND_3 (idea_1/idea1/c/ROUND_3)
-     LUT2_D:I1->O         15   0.704   1.021  idea_1/idea1/k/key1<9>57_SW0 (N159)
-     LUT4:I3->O            1   0.704   0.455  idea_1/idea1/k/key1<3>57 (idea_1/idea1/k/key1<3>57)
-     LUT4:I2->O            3   0.704   0.706  idea_1/idea1/k/key1<3>65 (idea_1/idea1/key1_w<3>)
-     LUT4:I0->O            1   0.704   0.499  idea_1/idea1/t/mul_l/i2var_cmp_eq000025 (idea_1/idea1/r/lv1_mod_l/i2var_cmp_eq000012)
-     LUT4:I1->O            2   0.704   0.447  idea_1/idea1/t/mul_l/i2var_cmp_eq000076 (idea_1/idea1/r/lv1_mod_l/i2var_cmp_eq0000)
+     FDS:C->Q             16   0.591   1.069  idea_1/idea1/c/ROUND_0_1 (idea_1/idea1/c/ROUND_0_1)
+     LUT3:I2->O            1   0.704   0.000  idea_1/idea1/k/Mmux_fullkey_out_87_mux0000_8 (idea_1/idea1/k/Mmux_fullkey_out_87_mux0000_8)
+     MUXF5:I0->O           1   0.321   0.000  idea_1/idea1/k/Mmux_fullkey_out_87_mux0000_6_f5 (idea_1/idea1/k/Mmux_fullkey_out_87_mux0000_6_f5)
+     MUXF6:I1->O           1   0.521   0.455  idea_1/idea1/k/Mmux_fullkey_out_87_mux0000_5_f6 (idea_1/idea1/k/Mmux_fullkey_out_87_mux0000_5_f6)
+     LUT3:I2->O            3   0.704   0.706  idea_1/idea1/k/lap<3>551 (idea_1/idea1/key1_w<7>)
+     LUT4:I0->O            1   0.704   0.424  idea_1/idea1/t/mul_l/i2var_cmp_eq000012 (idea_1/idea1/r/lv1_mod_l/i2var_cmp_eq000025)
+     LUT4:I3->O            2   0.704   0.447  idea_1/idea1/t/mul_l/i2var_cmp_eq000076 (idea_1/idea1/r/lv1_mod_l/i2var_cmp_eq0000)
      MULT18X18SIO:B16->P16    3   4.860   0.610  idea_1/idea1/r/lv1_mod_l/Mmult_tmp_mult0000 (idea_1/idea1/r/lv1_mod_l/tmp_mult0000<16>)
      LUT2:I1->O            1   0.704   0.000  idea_1/idea1/r/lv1_mod_l/Mcompar_sum_cmp_lt0000_lut<0> (idea_1/idea1/r/lv1_mod_l/Mcompar_sum_cmp_lt0000_lut<0>)
      MUXCY:S->O            1   0.464   0.000  idea_1/idea1/r/lv1_mod_l/Mcompar_sum_cmp_lt0000_cy<0> (idea_1/idea1/r/lv1_mod_l/Mcompar_sum_cmp_lt0000_cy<0>)
@@ -790,7 +910,7 @@ Delay:               59.742ns (Levels of Logic = 111)
      MUXCY:CI->O           1   0.059   0.000  idea_1/idea1/r/lv1_mod_l/Maddsub_sum_mux0000_cy<10> (idea_1/idea1/r/lv1_mod_l/Maddsub_sum_mux0000_cy<10>)
      XORCY:CI->O           2   0.804   0.526  idea_1/idea1/r/lv1_mod_l/Maddsub_sum_mux0000_xor<11> (idea_1/idea1/r/o_lv1_mod_l<11>)
      LUT2:I1->O            2   0.704   0.482  idea_1/idea1/r/lv2_xor/Mxor_O_Result<11>1 (idea_1/idea1/r/o_lv2_xor<11>)
-     LUT4:I2->O            1   0.704   0.424  idea_1/idea1/r/lv4_mod_l/i1var_cmp_eq000022_SW1 (N221)
+     LUT4:I2->O            1   0.704   0.424  idea_1/idea1/r/lv4_mod_l/i1var_cmp_eq000022_SW1 (N29)
      LUT4:I3->O            1   0.704   0.420  idea_1/idea1/r/lv4_mod_l/i1var_cmp_eq000086 (idea_1/idea1/r/lv4_mod_l/i1var_cmp_eq0000)
      MULT18X18SIO:A16->P16    3   4.860   0.610  idea_1/idea1/r/lv4_mod_l/Mmult_tmp_mult0000 (idea_1/idea1/r/lv4_mod_l/tmp_mult0000<16>)
      LUT2:I1->O            1   0.704   0.000  idea_1/idea1/r/lv4_mod_l/Mcompar_sum_cmp_lt0000_lut<0> (idea_1/idea1/r/lv4_mod_l/Mcompar_sum_cmp_lt0000_lut<0>)
@@ -864,8 +984,8 @@ Delay:               59.742ns (Levels of Logic = 111)
      LUT2:I1->O            1   0.704   0.000  idea_1/idea1/r/lv7_xor_r/Mxor_O_Result<15>1 (idea_1/idea1/regi4_w<15>)
      FDE:D                     0.308          idea_1/idea1/reg4/q_15
     ----------------------------------------
-    Total                     59.742ns (43.651ns logic, 16.091ns route)
-                                       (73.1% logic, 26.9% route)
+    Total                     59.017ns (43.789ns logic, 15.228ns route)
+                                       (74.2% logic, 25.8% route)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'idea_1/uart1/rx/rxclk'
@@ -996,12 +1116,12 @@ Offset:              4.310ns (Levels of Logic = 1)
 
 
 Total REAL time to Xst completion: 9.00 secs
-Total CPU time to Xst completion: 9.00 secs
+Total CPU time to Xst completion: 8.29 secs
  
 --> 
 
 
-Total memory usage is 560384 kilobytes
+Total memory usage is 560504 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    2 (   0 filtered)

@@ -17,7 +17,7 @@ Parsing VHDL file "/nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/tb_idea_si
 Starting static elaboration
 Completed static elaboration
 Fuse Memory Usage: 93920 KB
-Fuse CPU Usage: 990 ms
+Fuse CPU Usage: 960 ms
 Compiling package standard
 Compiling package std_logic_1164
 Compiling package numeric_std
@@ -35,9 +35,9 @@ Compiling architecture behavioral of entity trafo [trafo_default]
 Compiling architecture structural of entity idea_single [idea_single_default]
 Compiling architecture behavior of entity tb_idea_single
 Time Resolution for simulation is 1ps.
-Waiting for 3 sub-compilation(s) to finish...
+Waiting for 5 sub-compilation(s) to finish...
 Compiled 26 VHDL Units
 Built simulation executable /nas/ei/home/ge74men/EIT-VHDL-SDL/assignments/rcs1/tb_idea_single_isim_beh.exe
 Fuse Memory Usage: 670012 KB
-Fuse CPU Usage: 1150 ms
-GCC CPU Usage: 1650 ms
+Fuse CPU Usage: 1090 ms
+GCC CPU Usage: 3010 ms
