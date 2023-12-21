@@ -76,40 +76,15 @@ BEGIN
           S => S
         );
 
---   CLK_process :process
---   begin
---		CLK <= '1';
---		wait for CLK_period/2;
---		CLK <= '0';
---		wait for CLK_period/2;
---   end process;
--- 
---
---   -- Stimulus process
---   stim_proc: process
---   begin		
---      -- hold reset state for 100 ns.
---		
---		START <= '1';
---		
---      wait for 100 ns;	
---		START <= '0';
---
---  
---   end process;
-
    -- Clock process definitions
    CLK_process: process
    begin
 		CLK <= '0';
---		report "(clk = 0)";
 		wait for CLK_period/2;
 		CLK <= '1';
---		report "(clk = 1)";
 		wait for CLK_period/2;
    end process;
  
-
    -- Stimulus process
    stim_proc: process
 		
@@ -117,7 +92,7 @@ BEGIN
 			wait for CLK_period/2;
 			
 			-- tc1 
-			start <= '0'; -- no next state, start is missing
+			start <= '0'; -- idle
 			wait for CLK_period;
 			if round = "1000" and
 				start = '0' and

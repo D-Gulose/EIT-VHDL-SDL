@@ -69,10 +69,13 @@ architecture Structural of idea_single is
 	); end component;
 	
 	component keygen Port (
-			key : in std_logic_vector(127 downto 0);
-		round : in std_logic_vector(3 downto 0);
---		inputkey : in std_logic_vector(127 downto 0);
---		lap : in std_logic_vector(3 downto 0);
+--		round_counter : in std_logic_vector(3 downto 0);
+--		key : in std_logic_vector(127 downto 0);
+--		z1, z2, z3, z4, z5, z6 : out std_logic_vector(15 downto 0)
+--		key : in std_logic_vector(127 downto 0);
+--		round : in std_logic_vector(3 downto 0);
+		fullkey : in std_logic_vector(127 downto 0);
+		lap : in std_logic_vector(3 downto 0);
 		key1, key2, key3, key4, key5, key6 : out std_logic_vector(15 downto 0)
 	); end component;
 	
@@ -94,7 +97,7 @@ architecture Structural of idea_single is
 	
 	begin
 
-	-- Connects between modules (see figure 5.3)
+	-- Module connects (figure 5.3)
 	
 		c: control port map(
 			clk=>CLOCK, 	start=>start, round=>lap_w, 
@@ -108,10 +111,13 @@ architecture Structural of idea_single is
 		
 		k: keygen port map
 		(
---			inputkey=>key, lap=>lap_w,
-			key=>key, round=>lap_w, 
+--			key=>key, round=>lap_w, 
+			fullkey=>key, lap=>lap_w,
 			key1=>key1_w, 	key2=>key2_w, 	key3=>key3_w, 
 			key4=>key4_w, 	key5=>key5_w, 	key6=>key6_w
+--			round_counter=>lap_w, key=>key, 
+--			z1=>key1_w, 	z2=>key2_w, 	z3=>key3_w, 
+--			z4=>key4_w, 	z5=>key5_w, 	z6=>key6_w
 		);
 		
 		r: round port map(

@@ -1,6 +1,6 @@
 ----------------------------------------------------------------------------------
 -- Company: 
--- Engineer: Saptarshi Mitra
+-- Engineer: 
 -- 
 -- Create Date:     
 -- Design Name: 
@@ -40,102 +40,58 @@ end control;
 
 architecture Behavioral of control is
 
-type STATE_TYPE is (init, R0, R1, R2, R3, R4, R5, R6, R7, R8);
-signal NEXT_STATE, CURRENT_STATE: STATE_TYPE;
-
+	signal state: std_logic_vector(3 downto 0);
 
 begin
 
-	state_reg: process(CLK, START)
-		 begin
-			if (rising_edge(CLK)) then
-				 CURRENT_STATE <= NEXT_STATE;
-			end if;
-	end process;						  
+	process (CLK, START)
 
-	comb_logic: process(CURRENT_STATE, START)
-		 begin
-
-		case CURRENT_STATE is
-
-			 when init =>	
-				ROUND <= "1000";
-				READY <= '1';
-				EN <= '0';
-				S <= '1';
-				if START='1' then
-					 NEXT_STATE <= R0;
-				elsif START='0' then
-					 NEXT_STATE <= init;
-				end if;
-				
-			 when R0 =>	
-				ROUND <= "0000";
-				READY <= '0';
-				EN <= '1';
-				S <= '0';
-				NEXT_STATE <= R1;
-
-			when R1 =>	
-				ROUND <= "0001";
-				READY <= '0';
-				EN <= '1';
-				S <= '1';
-				NEXT_STATE <= R2;
-
-			when R2 =>	
-				ROUND <= "0010";
-				READY <= '0';
-				EN <= '1';
-				S <= '1';
-				NEXT_STATE <= R3;
-
-			when R3 =>	
-				ROUND <= "0011";
-				READY <= '0';
-				EN <= '1';
-				S <= '1';
-				NEXT_STATE <= R4;
-
-			when R4 =>	
-				ROUND <= "0100";
-				READY <= '0';
-				EN <= '1';
-				S <= '1';
-				NEXT_STATE <= R5;
-
-			when R5 =>	
-				ROUND <= "0101";
-				READY <= '0';
-				EN <= '1';
-				S <= '1';
-				NEXT_STATE <= R6;
-				
-			when R6 =>	
-				ROUND <= "0110";
-				READY <= '0';
-				EN <= '1';
-				S <= '1';
-				NEXT_STATE <= R7;
+		type state_type is (ready_state, start_state, work_state);
 		
-			when R7 =>	
-				ROUND <= "0111";
-				READY <= '0';
-				EN <= '1';
-				S <= '1';
-				NEXT_STATE <= R8;
+		variable general_state : state_type;
 
-			when R8 =>	
-				ROUND <= "1000";
-				READY <= '1';
-				EN <= '0';
-				S <= '1';
-				NEXT_STATE <= init;
-				
-			when others =>
-		end case;
-
+	begin
+		if (rising_edge(CLK)) then 
+			case state is
+				when "0000" => state <= "0001";
+				when "0001" => state <= "0010";
+				when "0010" => state <= "0011";
+				when "0011" => state <= "0100";
+				when "0100" => state <= "0101";
+				when "0101" => state <= "0110";
+				when "0110" => state <= "0111";
+				when "0111" => state <= "1000";
+				when "1000" =>
+					if (START = '1') then			
+						general_state := start_state;
+					else
+						general_state := ready_state;
+					end if;
+				when others =>
+					state <= "1000";
+					general_state := ready_state;
+					
+			end case;
+			
+			
+			case general_state is
+				when ready_state =>
+					ROUND <= state;
+					READY <='1';
+					EN <='0';
+				when start_state => 
+					ROUND <= "0000";
+					READY <= '0';
+					EN <= '1';
+					S <= '0';
+					state <= "0001";
+					general_state := work_state;
+				when work_state => 
+					ROUND <= state;
+					S <= '1';
+			end case;
+		end if;
+		
 	end process;
 
 end Behavioral;
-

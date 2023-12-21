@@ -1,5 +1,6 @@
 ISim log file
 Running: /home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/tb_idea_single_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb /home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/tb_idea_single_isim_beh.wdb 
+INFO: There is another simulation running in the same directory. Using database file name isim1.wdb.
 ISim P.20131013 (signature 0xfbc00daa)
 ----------------------------------------------------------------------
 WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
@@ -12,11 +13,16 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
-at 0 ps, Instance /tb_idea_single/uut/r/lv1_mod_l/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-Finished circuit initialization process.
-at 45 ns: Note: TC PASS (/tb_idea_single/).
-at 45 ns: Note: before start 1 (/tb_idea_single/).
-at 45 ns: Note: after start 1 (/tb_idea_single/).
+at 0 ps: Note: ERROR CASE in keygen (/tb_idea_single/uut/k/).
+at 0 ps: Note: Case shift1 = 0 (/tb_idea_single/uut/k/).
+at 0 ps: Note: Case subkey1 = 0 (/tb_idea_single/uut/k/).
+at 0 ps: Note: test l_pos: 0/8 (/tb_idea_single/uut/k/).
+at 0 ps: Note: 143 (/tb_idea_single/uut/k/).
+ERROR: Index 143 out of bound 127 downto 0. 
+ERROR: In process keygen.vhd:252 
+ 
+INFO: Simulator is stopped.
+# exit 0
 ISim P.20131013 (signature 0xfbc00daa)
 ----------------------------------------------------------------------
 WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
@@ -26,32 +32,401 @@ WARNING:Security:42 - Your software subscription period has lapsed. Your current
 This is a Full version of ISim.
 # run 1000 ns
 Simulator is doing circuit initialization process.
+at 0 ps: Note: ERROR CASE in keygen (/tb_idea_single/uut/k/).
+at 0 ps: Note: Case shift1 = -1 (/tb_idea_single/uut/k/).
+at 0 ps: Note: Case subkey1 = 1 (/tb_idea_single/uut/k/).
+at 0 ps: Note: If 2 (/tb_idea_single/uut/k/).
+at 0 ps: Note: test l_pos: 1/6 (/tb_idea_single/uut/k/).
+at 0 ps: Note: 127 (/tb_idea_single/uut/k/).
+at 0 ps: Note: test l_pos: 2/6 (/tb_idea_single/uut/k/).
+at 0 ps: Note: 111 (/tb_idea_single/uut/k/).
+at 0 ps: Note: test l_pos: 3/6 (/tb_idea_single/uut/k/).
+at 0 ps: Note: 95 (/tb_idea_single/uut/k/).
+at 0 ps: Note: test l_pos: 4/6 (/tb_idea_single/uut/k/).
+at 0 ps: Note: 79 (/tb_idea_single/uut/k/).
+at 0 ps: Note: test l_pos: 5/6 (/tb_idea_single/uut/k/).
+at 0 ps: Note: 63 (/tb_idea_single/uut/k/).
+at 0 ps: Note: test l_pos: 6/6 (/tb_idea_single/uut/k/).
+at 0 ps: Note: 47 (/tb_idea_single/uut/k/).
 at 0 ps, Instance /tb_idea_single/uut/r/lv1_mod_l/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
 Finished circuit initialization process.
+at 0 ps: Note: ERROR CASE in keygen (/tb_idea_single/uut/k/).
+at 0 ps: Note: Case shift1 = -1 (/tb_idea_single/uut/k/).
+at 0 ps: Note: Case subkey1 = 1 (/tb_idea_single/uut/k/).
+at 0 ps: Note: If 2 (/tb_idea_single/uut/k/).
+at 0 ps: Note: test l_pos: 1/6 (/tb_idea_single/uut/k/).
+at 0 ps: Note: 127 (/tb_idea_single/uut/k/).
+at 0 ps: Note: test l_pos: 2/6 (/tb_idea_single/uut/k/).
+at 0 ps: Note: 111 (/tb_idea_single/uut/k/).
+at 0 ps: Note: test l_pos: 3/6 (/tb_idea_single/uut/k/).
+at 0 ps: Note: 95 (/tb_idea_single/uut/k/).
+at 0 ps: Note: test l_pos: 4/6 (/tb_idea_single/uut/k/).
+at 0 ps: Note: 79 (/tb_idea_single/uut/k/).
+at 0 ps: Note: test l_pos: 5/6 (/tb_idea_single/uut/k/).
+at 0 ps: Note: 63 (/tb_idea_single/uut/k/).
+at 0 ps: Note: test l_pos: 6/6 (/tb_idea_single/uut/k/).
+at 0 ps: Note: 47 (/tb_idea_single/uut/k/).
+at 2500 ps(2): Note: Case shift1 = 0 (/tb_idea_single/uut/k/).
+at 2500 ps(2): Note: Case subkey1 = 1 (/tb_idea_single/uut/k/).
+at 2500 ps(2): Note: If 1 (/tb_idea_single/uut/k/).
+at 2500 ps(2): Note: test l_pos: 1/8 (/tb_idea_single/uut/k/).
+at 2500 ps(2): Note: 127 (/tb_idea_single/uut/k/).
+at 2500 ps(2): Note: test l_pos: 2/8 (/tb_idea_single/uut/k/).
+at 2500 ps(2): Note: 111 (/tb_idea_single/uut/k/).
+at 2500 ps(2): Note: test l_pos: 3/8 (/tb_idea_single/uut/k/).
+at 2500 ps(2): Note: 95 (/tb_idea_single/uut/k/).
+at 2500 ps(2): Note: test l_pos: 4/8 (/tb_idea_single/uut/k/).
+at 2500 ps(2): Note: 79 (/tb_idea_single/uut/k/).
+at 2500 ps(2): Note: test l_pos: 5/8 (/tb_idea_single/uut/k/).
+at 2500 ps(2): Note: 63 (/tb_idea_single/uut/k/).
+at 2500 ps(2): Note: test l_pos: 6/8 (/tb_idea_single/uut/k/).
+at 2500 ps(2): Note: 47 (/tb_idea_single/uut/k/).
+at 7500 ps(2): Note: Case shift1 = 0 (/tb_idea_single/uut/k/).
+at 7500 ps(2): Note: Case subkey1 = 7 (/tb_idea_single/uut/k/).
+at 7500 ps(2): Note: If 1 (/tb_idea_single/uut/k/).
+at 7500 ps(2): Note: test l_pos: 7/8 (/tb_idea_single/uut/k/).
+at 7500 ps(2): Note: 31 (/tb_idea_single/uut/k/).
+at 7500 ps(2): Note: test l_pos: 8/8 (/tb_idea_single/uut/k/).
+at 7500 ps(2): Note: 15 (/tb_idea_single/uut/k/).
+at 7500 ps(2): Note: If 2 (/tb_idea_single/uut/k/).
+at 7500 ps(2): Note: test l_pos: 1/4 (/tb_idea_single/uut/k/).
+at 7500 ps(2): Note: 127 (/tb_idea_single/uut/k/).
+at 7500 ps(2): Note: test l_pos: 2/4 (/tb_idea_single/uut/k/).
+at 7500 ps(2): Note: 111 (/tb_idea_single/uut/k/).
+at 7500 ps(2): Note: test l_pos: 3/4 (/tb_idea_single/uut/k/).
+at 7500 ps(2): Note: 95 (/tb_idea_single/uut/k/).
+at 7500 ps(2): Note: test l_pos: 4/4 (/tb_idea_single/uut/k/).
+at 7500 ps(2): Note: 79 (/tb_idea_single/uut/k/).
+at 12500 ps(2): Note: Case shift1 = 1 (/tb_idea_single/uut/k/).
+at 12500 ps(2): Note: Case subkey1 = 5 (/tb_idea_single/uut/k/).
+at 12500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 12500 ps(2): Note: If 1 (/tb_idea_single/uut/k/).
+at 12500 ps(2): Note: test l_pos: 5/8 (/tb_idea_single/uut/k/).
+at 12500 ps(2): Note: 63 (/tb_idea_single/uut/k/).
+at 12500 ps(2): Note: test l_pos: 6/8 (/tb_idea_single/uut/k/).
+at 12500 ps(2): Note: 47 (/tb_idea_single/uut/k/).
+at 12500 ps(2): Note: test l_pos: 7/8 (/tb_idea_single/uut/k/).
+at 12500 ps(2): Note: 31 (/tb_idea_single/uut/k/).
+at 12500 ps(2): Note: test l_pos: 8/8 (/tb_idea_single/uut/k/).
+at 12500 ps(2): Note: 15 (/tb_idea_single/uut/k/).
+at 12500 ps(2): Note: If 2 (/tb_idea_single/uut/k/).
+at 12500 ps(2): Note: test l_pos: 1/2 (/tb_idea_single/uut/k/).
+at 12500 ps(2): Note: 127 (/tb_idea_single/uut/k/).
+at 12500 ps(2): Note: test l_pos: 2/2 (/tb_idea_single/uut/k/).
+at 12500 ps(2): Note: 111 (/tb_idea_single/uut/k/).
+at 17500 ps(2): Note: Case shift1 = 2 (/tb_idea_single/uut/k/).
+at 17500 ps(2): Note: Case subkey1 = 3 (/tb_idea_single/uut/k/).
+at 17500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 17500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 17500 ps(2): Note: If 1 (/tb_idea_single/uut/k/).
+at 17500 ps(2): Note: test l_pos: 3/8 (/tb_idea_single/uut/k/).
+at 17500 ps(2): Note: 95 (/tb_idea_single/uut/k/).
+at 17500 ps(2): Note: test l_pos: 4/8 (/tb_idea_single/uut/k/).
+at 17500 ps(2): Note: 79 (/tb_idea_single/uut/k/).
+at 17500 ps(2): Note: test l_pos: 5/8 (/tb_idea_single/uut/k/).
+at 17500 ps(2): Note: 63 (/tb_idea_single/uut/k/).
+at 17500 ps(2): Note: test l_pos: 6/8 (/tb_idea_single/uut/k/).
+at 17500 ps(2): Note: 47 (/tb_idea_single/uut/k/).
+at 17500 ps(2): Note: test l_pos: 7/8 (/tb_idea_single/uut/k/).
+at 17500 ps(2): Note: 31 (/tb_idea_single/uut/k/).
+at 17500 ps(2): Note: test l_pos: 8/8 (/tb_idea_single/uut/k/).
+at 17500 ps(2): Note: 15 (/tb_idea_single/uut/k/).
+at 22500 ps(2): Note: Case shift1 = 3 (/tb_idea_single/uut/k/).
+at 22500 ps(2): Note: Case subkey1 = 1 (/tb_idea_single/uut/k/).
+at 22500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 22500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 22500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 22500 ps(2): Note: If 1 (/tb_idea_single/uut/k/).
+at 22500 ps(2): Note: test l_pos: 1/8 (/tb_idea_single/uut/k/).
+at 22500 ps(2): Note: 127 (/tb_idea_single/uut/k/).
+at 22500 ps(2): Note: test l_pos: 2/8 (/tb_idea_single/uut/k/).
+at 22500 ps(2): Note: 111 (/tb_idea_single/uut/k/).
+at 22500 ps(2): Note: test l_pos: 3/8 (/tb_idea_single/uut/k/).
+at 22500 ps(2): Note: 95 (/tb_idea_single/uut/k/).
+at 22500 ps(2): Note: test l_pos: 4/8 (/tb_idea_single/uut/k/).
+at 22500 ps(2): Note: 79 (/tb_idea_single/uut/k/).
+at 22500 ps(2): Note: test l_pos: 5/8 (/tb_idea_single/uut/k/).
+at 22500 ps(2): Note: 63 (/tb_idea_single/uut/k/).
+at 22500 ps(2): Note: test l_pos: 6/8 (/tb_idea_single/uut/k/).
+at 22500 ps(2): Note: 47 (/tb_idea_single/uut/k/).
+at 27500 ps(2): Note: Case shift1 = 3 (/tb_idea_single/uut/k/).
+at 27500 ps(2): Note: Case subkey1 = 7 (/tb_idea_single/uut/k/).
+at 27500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 27500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 27500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 27500 ps(2): Note: If 1 (/tb_idea_single/uut/k/).
+at 27500 ps(2): Note: test l_pos: 7/8 (/tb_idea_single/uut/k/).
+at 27500 ps(2): Note: 31 (/tb_idea_single/uut/k/).
+at 27500 ps(2): Note: test l_pos: 8/8 (/tb_idea_single/uut/k/).
+at 27500 ps(2): Note: 15 (/tb_idea_single/uut/k/).
+at 27500 ps(2): Note: If 2 (/tb_idea_single/uut/k/).
+at 27500 ps(2): Note: test l_pos: 1/4 (/tb_idea_single/uut/k/).
+at 27500 ps(2): Note: 127 (/tb_idea_single/uut/k/).
+at 27500 ps(2): Note: test l_pos: 2/4 (/tb_idea_single/uut/k/).
+at 27500 ps(2): Note: 111 (/tb_idea_single/uut/k/).
+at 27500 ps(2): Note: test l_pos: 3/4 (/tb_idea_single/uut/k/).
+at 27500 ps(2): Note: 95 (/tb_idea_single/uut/k/).
+at 27500 ps(2): Note: test l_pos: 4/4 (/tb_idea_single/uut/k/).
+at 27500 ps(2): Note: 79 (/tb_idea_single/uut/k/).
+at 32500 ps(2): Note: Case shift1 = 4 (/tb_idea_single/uut/k/).
+at 32500 ps(2): Note: Case subkey1 = 5 (/tb_idea_single/uut/k/).
+at 32500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 32500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 32500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 32500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 32500 ps(2): Note: If 1 (/tb_idea_single/uut/k/).
+at 32500 ps(2): Note: test l_pos: 5/8 (/tb_idea_single/uut/k/).
+at 32500 ps(2): Note: 63 (/tb_idea_single/uut/k/).
+at 32500 ps(2): Note: test l_pos: 6/8 (/tb_idea_single/uut/k/).
+at 32500 ps(2): Note: 47 (/tb_idea_single/uut/k/).
+at 32500 ps(2): Note: test l_pos: 7/8 (/tb_idea_single/uut/k/).
+at 32500 ps(2): Note: 31 (/tb_idea_single/uut/k/).
+at 32500 ps(2): Note: test l_pos: 8/8 (/tb_idea_single/uut/k/).
+at 32500 ps(2): Note: 15 (/tb_idea_single/uut/k/).
+at 32500 ps(2): Note: If 2 (/tb_idea_single/uut/k/).
+at 32500 ps(2): Note: test l_pos: 1/2 (/tb_idea_single/uut/k/).
+at 32500 ps(2): Note: 127 (/tb_idea_single/uut/k/).
+at 32500 ps(2): Note: test l_pos: 2/2 (/tb_idea_single/uut/k/).
+at 32500 ps(2): Note: 111 (/tb_idea_single/uut/k/).
+at 37500 ps(2): Note: Case shift1 = 5 (/tb_idea_single/uut/k/).
+at 37500 ps(2): Note: Case subkey1 = 3 (/tb_idea_single/uut/k/).
+at 37500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 37500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 37500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 37500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 37500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 37500 ps(2): Note: If 1 (/tb_idea_single/uut/k/).
+at 37500 ps(2): Note: test l_pos: 3/8 (/tb_idea_single/uut/k/).
+at 37500 ps(2): Note: 95 (/tb_idea_single/uut/k/).
+at 37500 ps(2): Note: test l_pos: 4/8 (/tb_idea_single/uut/k/).
+at 37500 ps(2): Note: 79 (/tb_idea_single/uut/k/).
+at 37500 ps(2): Note: test l_pos: 5/8 (/tb_idea_single/uut/k/).
+at 37500 ps(2): Note: 63 (/tb_idea_single/uut/k/).
+at 37500 ps(2): Note: test l_pos: 6/8 (/tb_idea_single/uut/k/).
+at 37500 ps(2): Note: 47 (/tb_idea_single/uut/k/).
+at 37500 ps(2): Note: test l_pos: 7/8 (/tb_idea_single/uut/k/).
+at 37500 ps(2): Note: 31 (/tb_idea_single/uut/k/).
+at 37500 ps(2): Note: test l_pos: 8/8 (/tb_idea_single/uut/k/).
+at 37500 ps(2): Note: 15 (/tb_idea_single/uut/k/).
+at 42500 ps(2): Note: Case shift1 = 6 (/tb_idea_single/uut/k/).
+at 42500 ps(2): Note: Case subkey1 = 1 (/tb_idea_single/uut/k/).
+at 42500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 42500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 42500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 42500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 42500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 42500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 42500 ps(2): Note: If 1 (/tb_idea_single/uut/k/).
+at 42500 ps(2): Note: test l_pos: 1/8 (/tb_idea_single/uut/k/).
+at 42500 ps(2): Note: 127 (/tb_idea_single/uut/k/).
+at 42500 ps(2): Note: test l_pos: 2/8 (/tb_idea_single/uut/k/).
+at 42500 ps(2): Note: 111 (/tb_idea_single/uut/k/).
+at 42500 ps(2): Note: test l_pos: 3/8 (/tb_idea_single/uut/k/).
+at 42500 ps(2): Note: 95 (/tb_idea_single/uut/k/).
+at 42500 ps(2): Note: test l_pos: 4/8 (/tb_idea_single/uut/k/).
+at 42500 ps(2): Note: 79 (/tb_idea_single/uut/k/).
+at 42500 ps(2): Note: test l_pos: 5/8 (/tb_idea_single/uut/k/).
+at 42500 ps(2): Note: 63 (/tb_idea_single/uut/k/).
+at 42500 ps(2): Note: test l_pos: 6/8 (/tb_idea_single/uut/k/).
+at 42500 ps(2): Note: 47 (/tb_idea_single/uut/k/).
 at 45 ns: Note: TC PASS (/tb_idea_single/).
-at 45 ns: Note: before start 1 (/tb_idea_single/).
-at 45 ns: Note: after start 1 (/tb_idea_single/).
-ISim P.20131013 (signature 0xfbc00daa)
-----------------------------------------------------------------------
-WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
-
-
-----------------------------------------------------------------------
-This is a Full version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tb_idea_single/uut/r/lv1_mod_l/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-Finished circuit initialization process.
-at 45 ns: Note: TC PASS (/tb_idea_single/).
-ISim P.20131013 (signature 0xfbc00daa)
-----------------------------------------------------------------------
-WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
-
-
-----------------------------------------------------------------------
-This is a Full version of ISim.
-# run 1000 ns
-Simulator is doing circuit initialization process.
-at 0 ps, Instance /tb_idea_single/uut/r/lv1_mod_l/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-Finished circuit initialization process.
-at 45 ns: Note: TC PASS (/tb_idea_single/).
+at 45 ns(1): Note: Case shift1 = 6 (/tb_idea_single/uut/k/).
+at 45 ns(1): Note: Case subkey1 = 1 (/tb_idea_single/uut/k/).
+at 45 ns(1): Note: If 3 (/tb_idea_single/uut/k/).
+at 45 ns(1): Note: If 3 (/tb_idea_single/uut/k/).
+at 45 ns(1): Note: If 3 (/tb_idea_single/uut/k/).
+at 45 ns(1): Note: If 3 (/tb_idea_single/uut/k/).
+at 45 ns(1): Note: If 3 (/tb_idea_single/uut/k/).
+at 45 ns(1): Note: If 3 (/tb_idea_single/uut/k/).
+at 45 ns(1): Note: If 1 (/tb_idea_single/uut/k/).
+at 45 ns(1): Note: test l_pos: 1/8 (/tb_idea_single/uut/k/).
+at 45 ns(1): Note: 127 (/tb_idea_single/uut/k/).
+at 45 ns(1): Note: test l_pos: 2/8 (/tb_idea_single/uut/k/).
+at 45 ns(1): Note: 111 (/tb_idea_single/uut/k/).
+at 45 ns(1): Note: test l_pos: 3/8 (/tb_idea_single/uut/k/).
+at 45 ns(1): Note: 95 (/tb_idea_single/uut/k/).
+at 45 ns(1): Note: test l_pos: 4/8 (/tb_idea_single/uut/k/).
+at 45 ns(1): Note: 79 (/tb_idea_single/uut/k/).
+at 45 ns(1): Note: test l_pos: 5/8 (/tb_idea_single/uut/k/).
+at 45 ns(1): Note: 63 (/tb_idea_single/uut/k/).
+at 45 ns(1): Note: test l_pos: 6/8 (/tb_idea_single/uut/k/).
+at 45 ns(1): Note: 47 (/tb_idea_single/uut/k/).
+at 47500 ps(2): Note: Case shift1 = 0 (/tb_idea_single/uut/k/).
+at 47500 ps(2): Note: Case subkey1 = 1 (/tb_idea_single/uut/k/).
+at 47500 ps(2): Note: If 1 (/tb_idea_single/uut/k/).
+at 47500 ps(2): Note: test l_pos: 1/8 (/tb_idea_single/uut/k/).
+at 47500 ps(2): Note: 127 (/tb_idea_single/uut/k/).
+at 47500 ps(2): Note: test l_pos: 2/8 (/tb_idea_single/uut/k/).
+at 47500 ps(2): Note: 111 (/tb_idea_single/uut/k/).
+at 47500 ps(2): Note: test l_pos: 3/8 (/tb_idea_single/uut/k/).
+at 47500 ps(2): Note: 95 (/tb_idea_single/uut/k/).
+at 47500 ps(2): Note: test l_pos: 4/8 (/tb_idea_single/uut/k/).
+at 47500 ps(2): Note: 79 (/tb_idea_single/uut/k/).
+at 47500 ps(2): Note: test l_pos: 5/8 (/tb_idea_single/uut/k/).
+at 47500 ps(2): Note: 63 (/tb_idea_single/uut/k/).
+at 47500 ps(2): Note: test l_pos: 6/8 (/tb_idea_single/uut/k/).
+at 47500 ps(2): Note: 47 (/tb_idea_single/uut/k/).
+at 50 ns(1): Note: Case shift1 = 0 (/tb_idea_single/uut/k/).
+at 50 ns(1): Note: Case subkey1 = 1 (/tb_idea_single/uut/k/).
+at 50 ns(1): Note: If 1 (/tb_idea_single/uut/k/).
+at 50 ns(1): Note: test l_pos: 1/8 (/tb_idea_single/uut/k/).
+at 50 ns(1): Note: 127 (/tb_idea_single/uut/k/).
+at 50 ns(1): Note: test l_pos: 2/8 (/tb_idea_single/uut/k/).
+at 50 ns(1): Note: 111 (/tb_idea_single/uut/k/).
+at 50 ns(1): Note: test l_pos: 3/8 (/tb_idea_single/uut/k/).
+at 50 ns(1): Note: 95 (/tb_idea_single/uut/k/).
+at 50 ns(1): Note: test l_pos: 4/8 (/tb_idea_single/uut/k/).
+at 50 ns(1): Note: 79 (/tb_idea_single/uut/k/).
+at 50 ns(1): Note: test l_pos: 5/8 (/tb_idea_single/uut/k/).
+at 50 ns(1): Note: 63 (/tb_idea_single/uut/k/).
+at 50 ns(1): Note: test l_pos: 6/8 (/tb_idea_single/uut/k/).
+at 50 ns(1): Note: 47 (/tb_idea_single/uut/k/).
+at 52500 ps(2): Note: Case shift1 = 0 (/tb_idea_single/uut/k/).
+at 52500 ps(2): Note: Case subkey1 = 7 (/tb_idea_single/uut/k/).
+at 52500 ps(2): Note: If 1 (/tb_idea_single/uut/k/).
+at 52500 ps(2): Note: test l_pos: 7/8 (/tb_idea_single/uut/k/).
+at 52500 ps(2): Note: 31 (/tb_idea_single/uut/k/).
+at 52500 ps(2): Note: test l_pos: 8/8 (/tb_idea_single/uut/k/).
+at 52500 ps(2): Note: 15 (/tb_idea_single/uut/k/).
+at 52500 ps(2): Note: If 2 (/tb_idea_single/uut/k/).
+at 52500 ps(2): Note: test l_pos: 1/4 (/tb_idea_single/uut/k/).
+at 52500 ps(2): Note: 127 (/tb_idea_single/uut/k/).
+at 52500 ps(2): Note: test l_pos: 2/4 (/tb_idea_single/uut/k/).
+at 52500 ps(2): Note: 111 (/tb_idea_single/uut/k/).
+at 52500 ps(2): Note: test l_pos: 3/4 (/tb_idea_single/uut/k/).
+at 52500 ps(2): Note: 95 (/tb_idea_single/uut/k/).
+at 52500 ps(2): Note: test l_pos: 4/4 (/tb_idea_single/uut/k/).
+at 52500 ps(2): Note: 79 (/tb_idea_single/uut/k/).
+at 57500 ps(2): Note: Case shift1 = 1 (/tb_idea_single/uut/k/).
+at 57500 ps(2): Note: Case subkey1 = 5 (/tb_idea_single/uut/k/).
+at 57500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 57500 ps(2): Note: If 1 (/tb_idea_single/uut/k/).
+at 57500 ps(2): Note: test l_pos: 5/8 (/tb_idea_single/uut/k/).
+at 57500 ps(2): Note: 63 (/tb_idea_single/uut/k/).
+at 57500 ps(2): Note: test l_pos: 6/8 (/tb_idea_single/uut/k/).
+at 57500 ps(2): Note: 47 (/tb_idea_single/uut/k/).
+at 57500 ps(2): Note: test l_pos: 7/8 (/tb_idea_single/uut/k/).
+at 57500 ps(2): Note: 31 (/tb_idea_single/uut/k/).
+at 57500 ps(2): Note: test l_pos: 8/8 (/tb_idea_single/uut/k/).
+at 57500 ps(2): Note: 15 (/tb_idea_single/uut/k/).
+at 57500 ps(2): Note: If 2 (/tb_idea_single/uut/k/).
+at 57500 ps(2): Note: test l_pos: 1/2 (/tb_idea_single/uut/k/).
+at 57500 ps(2): Note: 127 (/tb_idea_single/uut/k/).
+at 57500 ps(2): Note: test l_pos: 2/2 (/tb_idea_single/uut/k/).
+at 57500 ps(2): Note: 111 (/tb_idea_single/uut/k/).
+at 62500 ps(2): Note: Case shift1 = 2 (/tb_idea_single/uut/k/).
+at 62500 ps(2): Note: Case subkey1 = 3 (/tb_idea_single/uut/k/).
+at 62500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 62500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 62500 ps(2): Note: If 1 (/tb_idea_single/uut/k/).
+at 62500 ps(2): Note: test l_pos: 3/8 (/tb_idea_single/uut/k/).
+at 62500 ps(2): Note: 95 (/tb_idea_single/uut/k/).
+at 62500 ps(2): Note: test l_pos: 4/8 (/tb_idea_single/uut/k/).
+at 62500 ps(2): Note: 79 (/tb_idea_single/uut/k/).
+at 62500 ps(2): Note: test l_pos: 5/8 (/tb_idea_single/uut/k/).
+at 62500 ps(2): Note: 63 (/tb_idea_single/uut/k/).
+at 62500 ps(2): Note: test l_pos: 6/8 (/tb_idea_single/uut/k/).
+at 62500 ps(2): Note: 47 (/tb_idea_single/uut/k/).
+at 62500 ps(2): Note: test l_pos: 7/8 (/tb_idea_single/uut/k/).
+at 62500 ps(2): Note: 31 (/tb_idea_single/uut/k/).
+at 62500 ps(2): Note: test l_pos: 8/8 (/tb_idea_single/uut/k/).
+at 62500 ps(2): Note: 15 (/tb_idea_single/uut/k/).
+at 67500 ps(2): Note: Case shift1 = 3 (/tb_idea_single/uut/k/).
+at 67500 ps(2): Note: Case subkey1 = 1 (/tb_idea_single/uut/k/).
+at 67500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 67500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 67500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 67500 ps(2): Note: If 1 (/tb_idea_single/uut/k/).
+at 67500 ps(2): Note: test l_pos: 1/8 (/tb_idea_single/uut/k/).
+at 67500 ps(2): Note: 127 (/tb_idea_single/uut/k/).
+at 67500 ps(2): Note: test l_pos: 2/8 (/tb_idea_single/uut/k/).
+at 67500 ps(2): Note: 111 (/tb_idea_single/uut/k/).
+at 67500 ps(2): Note: test l_pos: 3/8 (/tb_idea_single/uut/k/).
+at 67500 ps(2): Note: 95 (/tb_idea_single/uut/k/).
+at 67500 ps(2): Note: test l_pos: 4/8 (/tb_idea_single/uut/k/).
+at 67500 ps(2): Note: 79 (/tb_idea_single/uut/k/).
+at 67500 ps(2): Note: test l_pos: 5/8 (/tb_idea_single/uut/k/).
+at 67500 ps(2): Note: 63 (/tb_idea_single/uut/k/).
+at 67500 ps(2): Note: test l_pos: 6/8 (/tb_idea_single/uut/k/).
+at 67500 ps(2): Note: 47 (/tb_idea_single/uut/k/).
+at 72500 ps(2): Note: Case shift1 = 3 (/tb_idea_single/uut/k/).
+at 72500 ps(2): Note: Case subkey1 = 7 (/tb_idea_single/uut/k/).
+at 72500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 72500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 72500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 72500 ps(2): Note: If 1 (/tb_idea_single/uut/k/).
+at 72500 ps(2): Note: test l_pos: 7/8 (/tb_idea_single/uut/k/).
+at 72500 ps(2): Note: 31 (/tb_idea_single/uut/k/).
+at 72500 ps(2): Note: test l_pos: 8/8 (/tb_idea_single/uut/k/).
+at 72500 ps(2): Note: 15 (/tb_idea_single/uut/k/).
+at 72500 ps(2): Note: If 2 (/tb_idea_single/uut/k/).
+at 72500 ps(2): Note: test l_pos: 1/4 (/tb_idea_single/uut/k/).
+at 72500 ps(2): Note: 127 (/tb_idea_single/uut/k/).
+at 72500 ps(2): Note: test l_pos: 2/4 (/tb_idea_single/uut/k/).
+at 72500 ps(2): Note: 111 (/tb_idea_single/uut/k/).
+at 72500 ps(2): Note: test l_pos: 3/4 (/tb_idea_single/uut/k/).
+at 72500 ps(2): Note: 95 (/tb_idea_single/uut/k/).
+at 72500 ps(2): Note: test l_pos: 4/4 (/tb_idea_single/uut/k/).
+at 72500 ps(2): Note: 79 (/tb_idea_single/uut/k/).
+at 77500 ps(2): Note: Case shift1 = 4 (/tb_idea_single/uut/k/).
+at 77500 ps(2): Note: Case subkey1 = 5 (/tb_idea_single/uut/k/).
+at 77500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 77500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 77500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 77500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 77500 ps(2): Note: If 1 (/tb_idea_single/uut/k/).
+at 77500 ps(2): Note: test l_pos: 5/8 (/tb_idea_single/uut/k/).
+at 77500 ps(2): Note: 63 (/tb_idea_single/uut/k/).
+at 77500 ps(2): Note: test l_pos: 6/8 (/tb_idea_single/uut/k/).
+at 77500 ps(2): Note: 47 (/tb_idea_single/uut/k/).
+at 77500 ps(2): Note: test l_pos: 7/8 (/tb_idea_single/uut/k/).
+at 77500 ps(2): Note: 31 (/tb_idea_single/uut/k/).
+at 77500 ps(2): Note: test l_pos: 8/8 (/tb_idea_single/uut/k/).
+at 77500 ps(2): Note: 15 (/tb_idea_single/uut/k/).
+at 77500 ps(2): Note: If 2 (/tb_idea_single/uut/k/).
+at 77500 ps(2): Note: test l_pos: 1/2 (/tb_idea_single/uut/k/).
+at 77500 ps(2): Note: 127 (/tb_idea_single/uut/k/).
+at 77500 ps(2): Note: test l_pos: 2/2 (/tb_idea_single/uut/k/).
+at 77500 ps(2): Note: 111 (/tb_idea_single/uut/k/).
+at 82500 ps(2): Note: Case shift1 = 5 (/tb_idea_single/uut/k/).
+at 82500 ps(2): Note: Case subkey1 = 3 (/tb_idea_single/uut/k/).
+at 82500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 82500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 82500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 82500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 82500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 82500 ps(2): Note: If 1 (/tb_idea_single/uut/k/).
+at 82500 ps(2): Note: test l_pos: 3/8 (/tb_idea_single/uut/k/).
+at 82500 ps(2): Note: 95 (/tb_idea_single/uut/k/).
+at 82500 ps(2): Note: test l_pos: 4/8 (/tb_idea_single/uut/k/).
+at 82500 ps(2): Note: 79 (/tb_idea_single/uut/k/).
+at 82500 ps(2): Note: test l_pos: 5/8 (/tb_idea_single/uut/k/).
+at 82500 ps(2): Note: 63 (/tb_idea_single/uut/k/).
+at 82500 ps(2): Note: test l_pos: 6/8 (/tb_idea_single/uut/k/).
+at 82500 ps(2): Note: 47 (/tb_idea_single/uut/k/).
+at 82500 ps(2): Note: test l_pos: 7/8 (/tb_idea_single/uut/k/).
+at 82500 ps(2): Note: 31 (/tb_idea_single/uut/k/).
+at 82500 ps(2): Note: test l_pos: 8/8 (/tb_idea_single/uut/k/).
+at 82500 ps(2): Note: 15 (/tb_idea_single/uut/k/).
+at 87500 ps(2): Note: Case shift1 = 6 (/tb_idea_single/uut/k/).
+at 87500 ps(2): Note: Case subkey1 = 1 (/tb_idea_single/uut/k/).
+at 87500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 87500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 87500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 87500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 87500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 87500 ps(2): Note: If 3 (/tb_idea_single/uut/k/).
+at 87500 ps(2): Note: If 1 (/tb_idea_single/uut/k/).
+at 87500 ps(2): Note: test l_pos: 1/8 (/tb_idea_single/uut/k/).
+at 87500 ps(2): Note: 127 (/tb_idea_single/uut/k/).
+at 87500 ps(2): Note: test l_pos: 2/8 (/tb_idea_single/uut/k/).
+at 87500 ps(2): Note: 111 (/tb_idea_single/uut/k/).
+at 87500 ps(2): Note: test l_pos: 3/8 (/tb_idea_single/uut/k/).
+at 87500 ps(2): Note: 95 (/tb_idea_single/uut/k/).
+at 87500 ps(2): Note: test l_pos: 4/8 (/tb_idea_single/uut/k/).
+at 87500 ps(2): Note: 79 (/tb_idea_single/uut/k/).
+at 87500 ps(2): Note: test l_pos: 5/8 (/tb_idea_single/uut/k/).
+at 87500 ps(2): Note: 63 (/tb_idea_single/uut/k/).
+at 87500 ps(2): Note: test l_pos: 6/8 (/tb_idea_single/uut/k/).
+at 87500 ps(2): Note: 47 (/tb_idea_single/uut/k/).
+# exit 0

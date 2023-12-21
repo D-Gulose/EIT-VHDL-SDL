@@ -1,5 +1,0 @@
-set -tmpdir "/home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/xst/projnav.tmp"
-set -xsthdpdir "/home/ise/my_shared_folder/EIT-VHDL-SDL/assignments/rcs1/xst"
-elaborate
--ifn control.prj
--ifmt mixed

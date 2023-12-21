@@ -41,27 +41,33 @@ ARCHITECTURE behavior OF tb_keygen IS
  
     COMPONENT keygen
     PORT(
-			key : IN  std_logic_vector(127 downto 0);
-         round  : IN   std_logic_vector(3 downto 0);
---         inputkey : IN  std_logic_vector(127 downto 0);
---         lap  : IN   std_logic_vector(3 downto 0);
+--			key : IN  std_logic_vector(127 downto 0);
+--         round  : IN   std_logic_vector(3 downto 0);
+         fullkey : IN  std_logic_vector(127 downto 0);
+         lap  : IN   std_logic_vector(3 downto 0);
          key1 : out  std_logic_vector(15 downto 0);
          key2 : out  std_logic_vector(15 downto 0);
          key3 : out  std_logic_vector(15 downto 0);
          key4 : out  std_logic_vector(15 downto 0);
          key5 : out  std_logic_vector(15 downto 0);
          key6 : out  std_logic_vector(15 downto 0)
+--         round_counter  : IN   std_logic_vector(3 downto 0);
+--			key : IN  std_logic_vector(127 downto 0);
+--         z1 : out  std_logic_vector(15 downto 0);
+--         z2 : out  std_logic_vector(15 downto 0);
+--         z3 : out  std_logic_vector(15 downto 0);
+--         z4 : out  std_logic_vector(15 downto 0);
+--         z5 : out  std_logic_vector(15 downto 0);
+--         z6 : out  std_logic_vector(15 downto 0)
         );
     END COMPONENT;
     
 
    --Inputs
-   signal inputkey : std_logic_vector(127 downto 0) := (others => '0');
+   signal fullkey : std_logic_vector(127 downto 0) := (others => '0');
 	signal lap : std_logic_vector(3 downto 0) := b"0000"; -- Init as round 1 -> value change in first TC 
-   signal 
-		key1, key1e, key2, key2e, key3, key3e, 
-		key4, key4e, key5, key5e, key6, key6e
-		: std_logic_vector(15 downto 0);
+   signal key1, key1e, key2, key2e, key3, key3e, key4, 
+		key4e, key5, key5e, key6, key6e : std_logic_vector(15 downto 0);
 	signal pass : std_logic := '0';
 	constant period : time := 50 ns;
  
@@ -69,18 +75,29 @@ BEGIN
  
 	-- Instantiate the Unit Under Test (UUT)
    uut: keygen PORT MAP (
-          key => inputkey,
-          round => lap,
+--          key => fullkey,
+--          round => lap,
+			 fullkey => fullkey,
+			 lap => lap,
           key1 => key1,
           key2 => key2,
           key3 => key3,
           key4 => key4,
           key5 => key5,
           key6 => key6
+--			 round_counter => lap,
+--			 key => fullkey,
+--			 z1 => key1,
+--          z2 => key2,
+--          z3 => key3,
+--          z4 => key4,
+--          z5 => key5,
+--          z6 => key6
         );
 	
 	process 
 		begin
+			fullkey <= x"00010002000300040005000600070008";
 		
 			-- tc1
 			lap <= b"0000";			
@@ -167,8 +184,7 @@ BEGIN
 			key2e <= x"00c0";
 			key3e <= x"0100";
 			key4e <= x"0140";
-			-- place holder results
-			key5e <= x"0000";
+			key5e <= x"0000"; -- place holder results
 			key6e <= x"0000";
 			wait for period;
 
@@ -176,35 +192,25 @@ BEGIN
 	end process;
 	
 	process
-		variable allpass : integer;
-	
 		begin
 			wait for 1 ns;
-			allpass := 1;
-			for i in 1 to 9 loop
-				
-				if (lap = b"1000") and 
-					(key1 = key1e and key2 = key2e and key3 = key3e and key4 = key4e) 
+			
+			for i in 1 to 9 loop			
+				if (lap = b"1000" and key1 = key1e and key2 = key2e and 
+					key3 = key3e and key4 = key4e) 
+					or 
+					(key1 = key1e and key2 = key2e and key3 = key3e and 
+					key4 = key4e and key5 = key5e and key6 = key6e)
 				then
 					pass <= '1';
-					report "TC PASS: " & integer'image(i) & "-------------------------------------------------";
-				elsif (key1 = key1e and key2 = key2e and key3 = key3e and key4 = key4e and key5 = key5e and key6 = key6e)
-				then
-					pass <= '1';
-					report "TC PASS: " & integer'image(i) & "-------------------------------------------------";
+					report "TC PASS: " & integer'image(i);					
 				else
 					pass <= '0';
-					allpass := 0;
-					report "TC FAIL: " & integer'image(i) & "-------------------------------------------------";
+					report "TC FAIL: " & integer'image(i);
 				end if;
 				wait for period;
-				
 			end loop;
-			if allpass = 1 then
-				report "ALL PASS!";
-			else
-				report "NOT ALL PASS!";
-			end if;
+
 			wait;
 	end process;
 
